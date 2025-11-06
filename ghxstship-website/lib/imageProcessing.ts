@@ -33,12 +33,11 @@ export async function convertToMonochrome(
 export async function applyHalftone(
   inputPath: string,
   outputPath: string,
-  dotSize: number = 4
+  _dotSize: number = 4
 ): Promise<void> {
   try {
     // First convert to grayscale
     const image = sharp(inputPath);
-    const metadata = await image.metadata();
     
     await image
       .grayscale()

@@ -26,7 +26,6 @@ export function CountUp({
   useEffect(() => {
     if (!isInView || hasAnimated) return;
 
-    setHasAnimated(true);
     let startTime: number;
     let animationFrame: number;
 
@@ -39,6 +38,7 @@ export function CountUp({
         animationFrame = requestAnimationFrame(animate);
       } else {
         setCount(end);
+        setHasAnimated(true);
       }
     };
 
@@ -49,7 +49,7 @@ export function CountUp({
         cancelAnimationFrame(animationFrame);
       }
     };
-  }, [isInView, end, duration, hasAnimated]);
+  }, [isInView, hasAnimated, end, duration]);
 
   return (
     <span ref={ref} className={className}>

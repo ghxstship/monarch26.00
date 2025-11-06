@@ -100,7 +100,6 @@ export function generateGeometricPattern(
       shapeElement = `<rect x="${(spacing - size) / 2}" y="${(spacing - size) / 2}" width="${size}" height="${size}" fill="#000000" />`;
       break;
     case 'triangle':
-      const half = size / 2;
       const height = (Math.sqrt(3) / 2) * size;
       shapeElement = `<polygon points="${spacing / 2},${(spacing - height) / 2} ${(spacing - size) / 2},${(spacing + height) / 2} ${(spacing + size) / 2},${(spacing + height) / 2}" fill="#000000" />`;
       break;

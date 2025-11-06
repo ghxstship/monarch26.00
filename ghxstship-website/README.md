@@ -29,6 +29,15 @@ A full-stack immersive entertainment, experiential marketing, and creative media
 # Install dependencies
 npm install
 
+# Set up environment variables
+cp .env.example .env.local
+# Edit .env.local with your configuration
+
+# Set up database
+npm run prisma:generate
+npm run prisma:migrate
+npm run prisma:seed
+
 # Run development server
 npm run dev
 
@@ -128,13 +137,32 @@ ghxstship-website/
 
 ## 🛠️ Tech Stack
 
-- **Framework:** Next.js 14+ (App Router)
+### Frontend
+- **Framework:** Next.js 16+ (App Router)
 - **Language:** TypeScript
-- **Styling:** Tailwind CSS
+- **Styling:** Tailwind CSS v4
 - **Animations:** Framer Motion + GSAP
 - **Fonts:** Google Fonts (Anton, Bebas Neue, Share Tech, Share Tech Mono)
-- **Image Processing:** Sharp (for future B&W conversion)
-- **Forms:** React Hook Form (to be integrated)
+- **Image Processing:** Sharp
+- **Forms:** React Hook Form
+- **State Management:** TanStack Query (React Query)
+
+### Backend
+- **Database:** PostgreSQL with Prisma ORM
+- **API:** Next.js API Routes
+- **Validation:** Zod
+- **Email:** Resend
+- **Authentication:** JWT (ready for implementation)
+
+### Testing
+- **Unit/Integration:** Vitest + Testing Library
+- **E2E:** Playwright
+- **Coverage:** V8
+
+### DevOps
+- **Hosting:** Vercel (recommended)
+- **CI/CD:** GitHub Actions (to be configured)
+- **Monitoring:** Ready for Sentry integration
 
 ## 📱 Pages
 

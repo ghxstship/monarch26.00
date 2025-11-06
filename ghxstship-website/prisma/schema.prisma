@@ -1,0 +1,673 @@
+// GHXSTSHIP Industries - Enterprise Database Schema
+// This schema supports the full marketing website with content management,
+// contact forms, analytics, and future expansion capabilities
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+// ============================================================================
+// USER MANAGEMENT & AUTHENTICATION
+// ============================================================================
+
+enum UserRole {
+  SUPER_ADMIN
+  ADMIN
+  EDITOR
+  VIEWER
+  CLIENT
+}
+
+enum UserStatus {
+  ACTIVE
+  INACTIVE
+  SUSPENDED
+  PENDING_VERIFICATION
+}
+
+model User {
+  id                String      @id @default(cuid())
+  email             String      @unique
+  emailVerified     DateTime?
+  passwordHash      String?
+  name              String?
+  avatar            String?
+  role              UserRole    @default(VIEWER)
+  status            UserStatus  @default(PENDING_VERIFICATION)
+  
+  // Profile information
+  title             String?
+  bio               String?
+  phone             String?
+  timezone          String?
+  
+  // Security
+  twoFactorEnabled  Boolean     @default(false)
+  twoFactorSecret   String?
+  lastLoginAt       DateTime?
+  lastLoginIp       String?
+  failedLoginAttempts Int       @default(0)
+  lockedUntil       DateTime?
+  
+  // Timestamps
+  createdAt         DateTime    @default(now())
+  updatedAt         DateTime    @updatedAt
+  deletedAt         DateTime?
+  
+  // Relations
+  sessions          Session[]
+  projects          Project[]   @relation("ProjectAuthor")
+  blogPosts         BlogPost[]  @relation("BlogPostAuthor")
+  comments          Comment[]
+  activityLogs      ActivityLog[]
+  
+  @@index([email])
+  @@index([role])
+  @@index([status])
+  @@map("users")
+}
+
+model Session {
+  id           String   @id @default(cuid())
+  userId       String
+  token        String   @unique
+  refreshToken String?  @unique
+  expiresAt    DateTime
+  ipAddress    String?
+  userAgent    String?
+  createdAt    DateTime @default(now())
+  
+  user         User     @relation(fields: [userId], references: [id], onDelete: Cascade)
+  
+  @@index([userId])
+  @@index([token])
+  @@index([expiresAt])
+  @@map("sessions")
+}
+
+model PasswordReset {
+  id        String   @id @default(cuid())
+  email     String
+  token     String   @unique
+  expiresAt DateTime
+  usedAt    DateTime?
+  createdAt DateTime @default(now())
+  
+  @@index([email])
+  @@index([token])
+  @@index([expiresAt])
+  @@map("password_resets")
+}
+
+// ============================================================================
+// CONTENT MANAGEMENT - PROJECTS/CASE STUDIES
+// ============================================================================
+
+enum ProjectStatus {
+  DRAFT
+  PUBLISHED
+  ARCHIVED
+}
+
+enum ProjectVertical {
+  IMMERSIVE_ENTERTAINMENT
+  EXPERIENTIAL_MARKETING
+  CREATIVE_MEDIA
+  INTEGRATED_TECHNOLOGY
+}
+
+enum ServiceType {
+  DESIGN
+  DEVELOPMENT
+  DIRECTION
+  DISRUPTION
+}
+
+model Project {
+  id              String            @id @default(cuid())
+  slug            String            @unique
+  title           String
+  subtitle        String?
+  description     String?
+  content         String?           // Rich text/markdown content
+  excerpt         String?
+  
+  // Classification
+  status          ProjectStatus     @default(DRAFT)
+  vertical        ProjectVertical
+  services        ServiceType[]
+  
+  // Media
+  heroImage       String?
+  heroVideo       String?
+  gallery         ProjectImage[]
+  
+  // Metadata
+  client          String?
+  location        String?
+  year            Int?
+  duration        String?
+  budget          String?
+  teamSize        Int?
+  
+  // Project details
+  challenge       String?           // Problem statement
+  solution        String?           // How we solved it
+  results         String?           // Outcomes and metrics
+  technologies    String[]
+  tags            String[]
+  
+  // SEO
+  metaTitle       String?
+  metaDescription String?
+  metaKeywords    String[]
+  ogImage         String?
+  
+  // Publishing
+  publishedAt     DateTime?
+  featuredAt      DateTime?         // For featured projects
+  featured        Boolean           @default(false)
+  order           Int               @default(0)
+  
+  // Analytics
+  viewCount       Int               @default(0)
+  shareCount      Int               @default(0)
+  
+  // Timestamps
+  createdAt       DateTime          @default(now())
+  updatedAt       DateTime          @updatedAt
+  deletedAt       DateTime?
+  
+  // Relations
+  authorId        String?
+  author          User?             @relation("ProjectAuthor", fields: [authorId], references: [id])
+  relatedProjects ProjectRelation[] @relation("ProjectFrom")
+  relatedTo       ProjectRelation[] @relation("ProjectTo")
+  comments        Comment[]
+  
+  @@index([slug])
+  @@index([status])
+  @@index([vertical])
+  @@index([publishedAt])
+  @@index([featured])
+  @@map("projects")
+}
+
+model ProjectImage {
+  id          String   @id @default(cuid())
+  projectId   String
+  url         String
+  alt         String?
+  caption     String?
+  order       Int      @default(0)
+  width       Int?
+  height      Int?
+  createdAt   DateTime @default(now())
+  
+  project     Project  @relation(fields: [projectId], references: [id], onDelete: Cascade)
+  
+  @@index([projectId])
+  @@map("project_images")
+}
+
+model ProjectRelation {
+  id          String   @id @default(cuid())
+  fromId      String
+  toId        String
+  createdAt   DateTime @default(now())
+  
+  from        Project  @relation("ProjectFrom", fields: [fromId], references: [id], onDelete: Cascade)
+  to          Project  @relation("ProjectTo", fields: [toId], references: [id], onDelete: Cascade)
+  
+  @@unique([fromId, toId])
+  @@index([fromId])
+  @@index([toId])
+  @@map("project_relations")
+}
+
+// ============================================================================
+// BLOG & NEWS
+// ============================================================================
+
+enum BlogPostStatus {
+  DRAFT
+  PUBLISHED
+  ARCHIVED
+}
+
+enum BlogCategory {
+  COMPANY_NEWS
+  PROJECT_ANNOUNCEMENT
+  INDUSTRY_INSIGHTS
+  TECHNOLOGY
+  BEHIND_THE_SCENES
+  PRESS_RELEASE
+}
+
+model BlogPost {
+  id              String          @id @default(cuid())
+  slug            String          @unique
+  title           String
+  subtitle        String?
+  content         String          // Rich text/markdown
+  excerpt         String?
+  
+  // Classification
+  status          BlogPostStatus  @default(DRAFT)
+  category        BlogCategory
+  tags            String[]
+  
+  // Media
+  featuredImage   String?
+  featuredVideo   String?
+  
+  // SEO
+  metaTitle       String?
+  metaDescription String?
+  metaKeywords    String[]
+  ogImage         String?
+  
+  // Publishing
+  publishedAt     DateTime?
+  featured        Boolean         @default(false)
+  
+  // Analytics
+  viewCount       Int             @default(0)
+  readTime        Int?            // Estimated read time in minutes
+  
+  // Timestamps
+  createdAt       DateTime        @default(now())
+  updatedAt       DateTime        @updatedAt
+  deletedAt       DateTime?
+  
+  // Relations
+  authorId        String?
+  author          User?           @relation("BlogPostAuthor", fields: [authorId], references: [id])
+  comments        Comment[]
+  
+  @@index([slug])
+  @@index([status])
+  @@index([category])
+  @@index([publishedAt])
+  @@map("blog_posts")
+}
+
+// ============================================================================
+// COMMENTS & ENGAGEMENT
+// ============================================================================
+
+enum CommentStatus {
+  PENDING
+  APPROVED
+  REJECTED
+  SPAM
+}
+
+model Comment {
+  id          String        @id @default(cuid())
+  content     String
+  status      CommentStatus @default(PENDING)
+  
+  // Author (can be user or guest)
+  userId      String?
+  guestName   String?
+  guestEmail  String?
+  
+  // Relations
+  projectId   String?
+  blogPostId  String?
+  parentId    String?       // For nested comments
+  
+  // Moderation
+  ipAddress   String?
+  userAgent   String?
+  flagCount   Int           @default(0)
+  
+  // Timestamps
+  createdAt   DateTime      @default(now())
+  updatedAt   DateTime      @updatedAt
+  deletedAt   DateTime?
+  
+  user        User?         @relation(fields: [userId], references: [id])
+  project     Project?      @relation(fields: [projectId], references: [id], onDelete: Cascade)
+  blogPost    BlogPost?     @relation(fields: [blogPostId], references: [id], onDelete: Cascade)
+  parent      Comment?      @relation("CommentReplies", fields: [parentId], references: [id])
+  replies     Comment[]     @relation("CommentReplies")
+  
+  @@index([projectId])
+  @@index([blogPostId])
+  @@index([userId])
+  @@index([status])
+  @@map("comments")
+}
+
+// ============================================================================
+// CONTACT FORMS & LEAD CAPTURE
+// ============================================================================
+
+enum ContactFormType {
+  GENERAL_INQUIRY
+  PROJECT_INQUIRY
+  PARTNERSHIP
+  PRESS
+  CAREERS
+  SUPPORT
+}
+
+enum ContactStatus {
+  NEW
+  IN_PROGRESS
+  RESPONDED
+  CLOSED
+  SPAM
+}
+
+enum ProjectBudget {
+  UNDER_50K
+  RANGE_50K_100K
+  RANGE_100K_250K
+  RANGE_250K_500K
+  OVER_500K
+  NOT_SPECIFIED
+}
+
+model ContactSubmission {
+  id              String            @id @default(cuid())
+  
+  // Form type and status
+  formType        ContactFormType   @default(GENERAL_INQUIRY)
+  status          ContactStatus     @default(NEW)
+  
+  // Contact information
+  name            String
+  email           String
+  phone           String?
+  company         String?
+  website         String?
+  
+  // Project details (for project inquiries)
+  projectType     String?
+  projectBudget   ProjectBudget?
+  projectTimeline String?
+  projectDescription String?
+  
+  // Message
+  subject         String?
+  message         String
+  
+  // Metadata
+  ipAddress       String?
+  userAgent       String?
+  referrer        String?
+  utmSource       String?
+  utmMedium       String?
+  utmCampaign     String?
+  
+  // Follow-up
+  assignedTo      String?
+  notes           String?
+  respondedAt     DateTime?
+  
+  // Timestamps
+  createdAt       DateTime          @default(now())
+  updatedAt       DateTime          @updatedAt
+  
+  @@index([email])
+  @@index([status])
+  @@index([formType])
+  @@index([createdAt])
+  @@map("contact_submissions")
+}
+
+model NewsletterSubscriber {
+  id          String    @id @default(cuid())
+  email       String    @unique
+  name        String?
+  status      String    @default("active") // active, unsubscribed, bounced
+  source      String?   // Where they signed up from
+  
+  // Preferences
+  interests   String[]
+  frequency   String?   // daily, weekly, monthly
+  
+  // Metadata
+  ipAddress   String?
+  userAgent   String?
+  
+  // Timestamps
+  subscribedAt DateTime @default(now())
+  unsubscribedAt DateTime?
+  confirmedAt DateTime?
+  
+  @@index([email])
+  @@index([status])
+  @@map("newsletter_subscribers")
+}
+
+// ============================================================================
+// ANALYTICS & TRACKING
+// ============================================================================
+
+enum EventType {
+  PAGE_VIEW
+  PROJECT_VIEW
+  BLOG_VIEW
+  FORM_SUBMISSION
+  DOWNLOAD
+  VIDEO_PLAY
+  LINK_CLICK
+  SEARCH
+  ERROR
+}
+
+model AnalyticsEvent {
+  id          String    @id @default(cuid())
+  eventType   EventType
+  eventName   String
+  
+  // Event data
+  path        String?
+  referrer    String?
+  userId      String?
+  sessionId   String?
+  
+  // Device/browser info
+  ipAddress   String?
+  userAgent   String?
+  country     String?
+  city        String?
+  device      String?
+  browser     String?
+  os          String?
+  
+  // Custom properties
+  properties  Json?
+  
+  // Timestamps
+  createdAt   DateTime  @default(now())
+  
+  @@index([eventType])
+  @@index([eventName])
+  @@index([path])
+  @@index([createdAt])
+  @@map("analytics_events")
+}
+
+model PageView {
+  id          String   @id @default(cuid())
+  path        String
+  title       String?
+  referrer    String?
+  
+  // Session tracking
+  sessionId   String?
+  userId      String?
+  
+  // Device info
+  ipAddress   String?
+  userAgent   String?
+  country     String?
+  device      String?
+  
+  // Performance metrics
+  loadTime    Int?     // milliseconds
+  
+  // Timestamps
+  createdAt   DateTime @default(now())
+  
+  @@index([path])
+  @@index([sessionId])
+  @@index([createdAt])
+  @@map("page_views")
+}
+
+// ============================================================================
+// SYSTEM & ADMINISTRATION
+// ============================================================================
+
+enum ActivityType {
+  USER_LOGIN
+  USER_LOGOUT
+  USER_CREATED
+  USER_UPDATED
+  USER_DELETED
+  PROJECT_CREATED
+  PROJECT_UPDATED
+  PROJECT_PUBLISHED
+  PROJECT_DELETED
+  BLOG_CREATED
+  BLOG_UPDATED
+  BLOG_PUBLISHED
+  BLOG_DELETED
+  SETTINGS_UPDATED
+  SYSTEM_ERROR
+}
+
+model ActivityLog {
+  id          String       @id @default(cuid())
+  activityType ActivityType
+  description String
+  
+  // Actor
+  userId      String?
+  ipAddress   String?
+  userAgent   String?
+  
+  // Target
+  targetType  String?      // e.g., "Project", "User", "BlogPost"
+  targetId    String?
+  
+  // Data
+  metadata    Json?
+  
+  // Timestamps
+  createdAt   DateTime     @default(now())
+  
+  user        User?        @relation(fields: [userId], references: [id])
+  
+  @@index([userId])
+  @@index([activityType])
+  @@index([createdAt])
+  @@map("activity_logs")
+}
+
+model SystemSetting {
+  id          String   @id @default(cuid())
+  key         String   @unique
+  value       String
+  description String?
+  category    String?
+  isPublic    Boolean  @default(false)
+  
+  createdAt   DateTime @default(now())
+  updatedAt   DateTime @updatedAt
+  
+  @@index([key])
+  @@index([category])
+  @@map("system_settings")
+}
+
+model EmailLog {
+  id          String   @id @default(cuid())
+  to          String
+  from        String
+  subject     String
+  template    String?
+  status      String   // sent, failed, bounced, opened
+  
+  // Tracking
+  sentAt      DateTime?
+  openedAt    DateTime?
+  clickedAt   DateTime?
+  bouncedAt   DateTime?
+  
+  // Error handling
+  error       String?
+  retryCount  Int      @default(0)
+  
+  // Metadata
+  metadata    Json?
+  
+  createdAt   DateTime @default(now())
+  
+  @@index([to])
+  @@index([status])
+  @@index([createdAt])
+  @@map("email_logs")
+}
+
+// ============================================================================
+// MEDIA LIBRARY
+// ============================================================================
+
+enum MediaType {
+  IMAGE
+  VIDEO
+  DOCUMENT
+  AUDIO
+  OTHER
+}
+
+model Media {
+  id          String    @id @default(cuid())
+  filename    String
+  originalName String
+  mimeType    String
+  size        Int       // bytes
+  type        MediaType
+  
+  // Storage
+  url         String
+  thumbnailUrl String?
+  path        String?
+  
+  // Metadata
+  width       Int?
+  height      Int?
+  duration    Int?      // for video/audio in seconds
+  alt         String?
+  caption     String?
+  tags        String[]
+  
+  // Processing
+  processed   Boolean   @default(false)
+  processingError String?
+  
+  // Usage tracking
+  usageCount  Int       @default(0)
+  
+  // Timestamps
+  createdAt   DateTime  @default(now())
+  updatedAt   DateTime  @updatedAt
+  deletedAt   DateTime?
+  
+  @@index([type])
+  @@index([mimeType])
+  @@index([createdAt])
+  @@map("media")
+}

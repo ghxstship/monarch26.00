@@ -1,3 +1,5 @@
+'use client';
+
 import { VerticalTemplate } from '@/components/sections/VerticalTemplate';
 
 export default function IntegratedTechnologyPage() {
