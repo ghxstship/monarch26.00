@@ -34,7 +34,7 @@ export default function SolutionsPage() {
         {/* Delivery Avenues */}
         <section className="py-24 bg-white">
           <Container>
-            <div className="grid grid-cols-1 md:grid-cols-5 gap-6">
+            <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-6 gap-6">
               {[
                 {
                   title: 'Digital',
@@ -55,6 +55,10 @@ export default function SolutionsPage() {
                 {
                   title: 'Theatrical',
                   description: 'Live performances, staged productions, and entertainment experiences that captivate audiences.'
+                },
+                {
+                  title: 'Global',
+                  description: 'Multi-market campaigns, international tours, and cross-continental operations across 52 countries and counting.'
                 }
               ].map((avenue, index) => (
                 <FadeIn key={avenue.title} delay={index * 0.1}>
