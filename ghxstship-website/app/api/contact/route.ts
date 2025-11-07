@@ -4,9 +4,9 @@
  */
 
 import { NextRequest, NextResponse } from 'next/server';
-import { contactFormSchema } from '@/lib/validations';
-import { prisma } from '@/lib/db';
-import { sendContactEmail } from '@/lib/email';
+import { contactFormSchema } from '@/lib/shared/validation';
+import { prisma } from '@/lib/infrastructure/database';
+import { sendContactEmail } from '@/lib/features/email';
 import { z } from 'zod';
 
 // Rate limiting map (in production, use Redis)

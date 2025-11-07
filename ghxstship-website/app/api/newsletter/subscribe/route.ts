@@ -3,9 +3,9 @@
  */
 
 import { NextRequest, NextResponse } from 'next/server';
-import { newsletterSchema } from '@/lib/validations';
-import { prisma } from '@/lib/db';
-import { sendWelcomeEmail } from '@/lib/email';
+import { newsletterSchema } from '@/lib/shared/validation';
+import { prisma } from '@/lib/infrastructure/database';
+import { sendWelcomeEmail } from '@/lib/features/email';
 import { z } from 'zod';
 
 export async function POST(request: NextRequest) {

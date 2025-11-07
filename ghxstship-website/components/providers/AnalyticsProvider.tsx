@@ -2,7 +2,7 @@
 
 import { useEffect } from 'react';
 import { usePathname, useSearchParams } from 'next/navigation';
-import { analytics } from '@/lib/analytics';
+import { analytics } from '@/lib/features/analytics';
 import Script from 'next/script';
 
 export function AnalyticsProvider({ children }: { children: React.ReactNode }) {

@@ -4,8 +4,8 @@
  */
 
 import { NextRequest, NextResponse } from 'next/server';
-import { projectFilterSchema } from '@/lib/validations';
-import { prisma } from '@/lib/db';
+import { projectFilterSchema } from '@/lib/shared/validation';
+import { prisma } from '@/lib/infrastructure/database';
 
 export async function GET(request: NextRequest) {
   try {

@@ -27,6 +27,7 @@ enum UserStatus {
   ACTIVE
   INACTIVE
   SUSPENDED
+  PENDING
   PENDING_VERIFICATION
 }
 
@@ -51,6 +52,8 @@ model User {
   twoFactorSecret   String?
   lastLoginAt       DateTime?
   lastLoginIp       String?
+  lastFailedLogin   DateTime?
+  emailVerificationToken String?
   failedLoginAttempts Int       @default(0)
   lockedUntil       DateTime?
   
@@ -78,6 +81,7 @@ model Session {
   token        String   @unique
   refreshToken String?  @unique
   expiresAt    DateTime
+  revokedAt    DateTime?
   ipAddress    String?
   userAgent    String?
   createdAt    DateTime @default(now())
@@ -550,8 +554,9 @@ enum ActivityType {
 
 model ActivityLog {
   id          String       @id @default(cuid())
-  activityType ActivityType
-  description String
+  activityType ActivityType?
+  action      String?      // Flexible action field for custom actions
+  description String?
   
   // Actor
   userId      String?

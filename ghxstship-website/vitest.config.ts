@@ -6,8 +6,9 @@ export default defineConfig({
   plugins: [react()],
   test: {
     environment: 'jsdom',
-    globals: true,
     setupFiles: ['./tests/setup.ts'],
+    globals: true,
+    exclude: ['**/node_modules/**', '**/dist/**', '**/tests/e2e/**'],
     coverage: {
       provider: 'v8',
       reporter: ['text', 'json', 'html'],
@@ -17,6 +18,7 @@ export default defineConfig({
         '**/*.config.*',
         '**/*.d.ts',
         '**/types/**',
+        '**/tests/e2e/**',
       ],
     },
   },
