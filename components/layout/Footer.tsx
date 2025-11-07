@@ -29,7 +29,7 @@ export function Footer() {
       title: 'Company',
       links: [
         { label: 'Team', href: '/about' },
-        { label: 'Passport', href: '/work' },
+        { label: 'Portfolio', href: '/work' },
         { label: 'Solutions', href: '/solutions' },
         { label: 'Innovations', href: '/innovations' },
         { label: 'Contact', href: '/contact' },
