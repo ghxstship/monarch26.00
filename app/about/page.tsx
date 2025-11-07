@@ -60,11 +60,11 @@ export default function AboutPage() {
             <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
               {stats.map((stat, index) => (
                 <FadeIn key={stat.label} delay={index * 0.1}>
-                  <div className="text-center border-2 border-black p-8">
-                    <Typography variant="hero" className="mb-2">
+                  <div className="text-center border-2 border-black p-6 md:p-8 flex flex-col justify-center min-h-[180px]">
+                    <Typography variant="hero" className="mb-3 leading-none">
                       {stat.value}
                     </Typography>
-                    <Typography variant="h5" uppercase>
+                    <Typography variant="h6" uppercase className="text-sm md:text-base leading-tight">
                       {stat.label}
                     </Typography>
                   </div>
