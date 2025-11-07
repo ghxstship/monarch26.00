@@ -11,25 +11,25 @@ import { FadeIn } from '../animations/FadeIn';
 const verticals = [
   {
     title: 'Immersive Entertainment',
-    metadata: 'Festival Production // Theatrical Installations // Interactive Environments',
+    metadata: 'Stages That Defy Physics // Festivals That Become Legends // Experiences That Break Reality',
     image: '/images/verticals/immersive.jpg',
     href: '/verticals/immersive-entertainment',
   },
   {
     title: 'Experiential Marketing',
-    metadata: 'Brand Activations // Fortune 500 Campaigns // Six Continents',
+    metadata: 'Brand Activations That Move Markets // Fortune 500 Trust // 52 Countries Conquered',
     image: '/images/verticals/experiential.jpg',
     href: '/verticals/experiential-marketing',
   },
   {
     title: 'Creative Media',
-    metadata: 'Video Production // Photography // Strategic Content',
+    metadata: 'Capturing The Impossible // Strategic Storytelling // Content That Converts',
     image: '/images/verticals/media.jpg',
     href: '/verticals/creative-media',
   },
   {
     title: 'Integrated Technology',
-    metadata: 'Full-Stack Development // Web3 // AR/VR // Data Architecture',
+    metadata: 'Digital Infrastructure // Immersive Tech // Systems That Scale Globally',
     image: '/images/verticals/technology.jpg',
     href: '/verticals/integrated-technology',
   },

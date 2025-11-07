@@ -34,7 +34,7 @@ export default function SolutionsPage() {
         {/* Delivery Avenues */}
         <section className="py-24 bg-white">
           <Container>
-            <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-6 gap-6">
+            <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-4 sm:gap-6">
               {[
                 {
                   title: 'Digital',
@@ -62,11 +62,11 @@ export default function SolutionsPage() {
                 }
               ].map((avenue, index) => (
                 <FadeIn key={avenue.title} delay={index * 0.1}>
-                  <div className="border-2 border-black p-8 h-full flex flex-col">
-                    <Typography variant="h3" uppercase className="mb-4">
+                  <div className="border-2 border-black p-4 sm:p-6 md:p-8 h-full flex flex-col min-h-[280px] sm:min-h-[320px]">
+                    <Typography variant="h3" uppercase className="mb-3 sm:mb-4 text-lg sm:text-xl md:text-2xl leading-tight">
                       {avenue.title}
                     </Typography>
-                    <Typography variant="body" className="text-grey-700">
+                    <Typography variant="body" className="text-grey-700 text-sm sm:text-base leading-relaxed">
                       {avenue.description}
                     </Typography>
                   </div>
