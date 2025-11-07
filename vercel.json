@@ -1,6 +1,5 @@
 {
   "$schema": "https://openapi.vercel.sh/vercel.json",
-  "buildCommand": "cd ghxstship-website && npm run build",
-  "installCommand": "cd ghxstship-website && npm install && npx prisma generate",
-  "framework": null
+  "buildCommand": "npm run build",
+  "installCommand": "npm install && npx prisma generate"
 }
