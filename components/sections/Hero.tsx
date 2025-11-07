@@ -7,21 +7,7 @@ import { Container } from '../layout/Container';
 
 export function Hero() {
   return (
-    <section className="relative min-h-screen bg-black text-white flex items-center justify-center overflow-hidden">
-      {/* Geometric Background Elements */}
-      <div className="absolute inset-0 opacity-10">
-        <motion.div
-          className="absolute top-20 right-20 w-64 h-64 border-2 border-white"
-          animate={{ rotate: 360 }}
-          transition={{ duration: 20, repeat: Infinity, ease: 'linear' }}
-        />
-        <motion.div
-          className="absolute bottom-20 left-20 w-48 h-48 bg-white"
-          animate={{ scale: [1, 1.1, 1] }}
-          transition={{ duration: 3, repeat: Infinity, ease: 'easeInOut' }}
-        />
-      </div>
-
+    <section className="relative min-h-screen bg-black text-white flex items-center justify-center">
       <Container className="relative z-10 text-center">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
