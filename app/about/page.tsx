@@ -9,10 +9,9 @@ import { FadeIn } from '@/components/animations/FadeIn';
 
 export default function AboutPage() {
   const stats = [
-    { value: '52+', label: 'Countries' },
+    { value: '52', label: 'Countries Traveled' },
     { value: '13+', label: 'Years Experience' },
     { value: '100+', label: 'Projects Delivered' },
-    { value: '4', label: 'Core Verticals' },
   ];
 
   const partners = [
@@ -57,7 +56,7 @@ export default function AboutPage() {
         {/* Stats Section */}
         <section className="py-24 bg-white">
           <Container>
-            <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
               {stats.map((stat, index) => (
                 <FadeIn key={stat.label} delay={index * 0.1}>
                   <div className="text-center border-2 border-black p-8">
