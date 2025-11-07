@@ -87,7 +87,7 @@ export default function WorkPage() {
             <SlideUp>
               <div className="text-center max-w-3xl mx-auto">
                 <Typography variant="hero" className="text-white mb-6" uppercase>
-                  Proof Over Promise
+                  Our Passport
                 </Typography>
                 <Typography variant="body" className="text-grey-400 text-xl">
                   Fifty-two countries. Hundreds of projects. More &quot;that&apos;s impossible&quot; moments than we can count—all 

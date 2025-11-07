@@ -81,7 +81,7 @@ export default function VerticalsPage() {
             <SlideUp>
               <div className="text-center max-w-3xl mx-auto">
                 <Typography variant="hero" className="text-white mb-6" uppercase>
-                  Our Verticals
+                  Our Fleet
                 </Typography>
                 <Typography variant="body" className="text-grey-400 text-xl">
                   Four core verticals where we deliver impossible experiences across 

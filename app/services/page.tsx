@@ -6,7 +6,6 @@ import { Footer } from '@/components/layout/Footer';
 import { Container } from '@/components/layout/Container';
 import { Typography } from '@/components/ui/Typography';
 import { SlideUp } from '@/components/animations/SlideUp';
-import { FadeIn } from '@/components/animations/FadeIn';
 
 const services = [
   {
@@ -184,35 +183,6 @@ export default function ServicesPage() {
           </section>
         ))}
 
-        {/* Delivery Avenues */}
-        <section className="py-24 bg-white">
-          <Container>
-            <FadeIn>
-              <div className="text-center mb-16">
-                <Typography variant="h2" uppercase className="mb-4">
-                  Avenues of Delivery
-                </Typography>
-                <Typography variant="body" className="text-grey-600 max-w-2xl mx-auto">
-                  We deliver experiences across multiple platforms and mediums, 
-                  ensuring your vision reaches audiences wherever they are.
-                </Typography>
-              </div>
-            </FadeIn>
-
-            <div className="grid grid-cols-2 md:grid-cols-5 gap-6">
-              {['Digital', 'Virtual', 'Physical', 'Experiential', 'Theatrical'].map((avenue, index) => (
-                <FadeIn key={avenue} delay={index * 0.1}>
-                  <div className="border-2 border-black p-6 text-center">
-                    <Typography variant="h5" uppercase>
-                      {avenue}
-                    </Typography>
-                  </div>
-                </FadeIn>
-              ))}
-            </div>
-          </Container>
-        </section>
-
         {/* CTA */}
         <section className="py-24 bg-black text-white">
           <Container>
@@ -221,7 +191,7 @@ export default function ServicesPage() {
                 Ready to Start?
               </Typography>
               <Typography variant="body" className="text-grey-400 max-w-2xl mx-auto mb-8">
-                Let&apos;s discuss how our 4D Approach can bring your vision to life.
+                Let&apos;s discuss how our operational process can bring your vision to life.
               </Typography>
               <Link href="/contact">
                 <button className="font-bebas uppercase tracking-wide px-8 py-4 text-lg border-2 border-white text-white hover:bg-white hover:text-black transition-all">
