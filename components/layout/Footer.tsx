@@ -28,8 +28,8 @@ export function Footer() {
     {
       title: 'Company',
       links: [
-        { label: 'Team', href: '/about' },
-        { label: 'Portfolio', href: '/work' },
+        { label: 'Story', href: '/about' },
+        { label: 'Showcase', href: '/work' },
         { label: 'Solutions', href: '/solutions' },
         { label: 'Innovations', href: '/innovations' },
         { label: 'Contact', href: '/contact' },
