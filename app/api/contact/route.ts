@@ -73,7 +73,7 @@ export async function POST(request: NextRequest) {
     if (!isSpam) {
       try {
         await sendContactEmail({
-          to: process.env.CONTACT_EMAIL || 'hello@ghxstship.com',
+          to: process.env.CONTACT_EMAIL || 'greetings@ghxstship.pro',
           from: validatedData.email,
           name: validatedData.name,
           subject: validatedData.subject || 'New Contact Form Submission',

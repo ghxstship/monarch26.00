@@ -16,11 +16,15 @@ export default function AboutPage() {
   ];
 
   const partners = [
-    'Formula 1',
-    'Insomniac',
-    'PATRÓN',
-    'Heineken',
     'Red Bull',
+    'Celebrity Cruise Line',
+    'Insomniac',
+    'Carnival Cruise Line',
+    'PATRÓN',
+    'Live Nation',
+    'Formula 1',
+    'Norwegian Cruise Line',
+    'Heineken',
   ];
 
   return (
@@ -32,7 +36,7 @@ export default function AboutPage() {
           <Container>
             <SlideUp>
               <Typography variant="hero" className="text-white mb-8" uppercase>
-                The Story
+                Our Story
               </Typography>
               <div className="max-w-4xl">
                 <Typography variant="body" className="text-grey-400 text-xl leading-relaxed mb-6">
@@ -102,7 +106,7 @@ export default function AboutPage() {
             <FadeIn>
               <div className="text-center mb-16">
                 <Typography variant="h1" uppercase className="mb-4">
-                  The 4 D&apos;s Framework
+                  Our 4D Approach
                 </Typography>
                 <Typography variant="body" className="text-grey-600 max-w-2xl mx-auto">
                   Our comprehensive service framework that guides every project from concept to completion.

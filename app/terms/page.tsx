@@ -94,7 +94,7 @@ export default function TermsPage() {
                 </Typography>
                 <Typography variant="body" className="text-grey-700 leading-relaxed">
                   For questions about these Terms of Service, please contact us at:<br />
-                  Email: hello@ghxstship.com<br />
+                  Email: greetings@ghxstship.pro<br />
                   Address: Tampa, FL
                 </Typography>
               </div>

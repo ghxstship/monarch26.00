@@ -92,7 +92,7 @@ export default function PrivacyPage() {
                 <Typography variant="body" className="text-grey-700 leading-relaxed">
                   You have the right to access, correct, or delete your personal information. You may also 
                   object to or restrict certain processing of your data. To exercise these rights, please 
-                  contact us at hello@ghxstship.com.
+                  contact us at greetings@ghxstship.pro.
                 </Typography>
               </div>
 
@@ -102,7 +102,7 @@ export default function PrivacyPage() {
                 </Typography>
                 <Typography variant="body" className="text-grey-700 leading-relaxed">
                   If you have questions about this Privacy Policy, please contact us at:<br />
-                  Email: hello@ghxstship.com<br />
+                  Email: greetings@ghxstship.pro<br />
                   Address: Tampa, FL
                 </Typography>
               </div>

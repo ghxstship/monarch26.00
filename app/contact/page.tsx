@@ -245,7 +245,7 @@ export default function ContactPage() {
                   Email
                 </Typography>
                 <Typography variant="body" className="text-grey-400">
-                  hello@ghxstship.com
+                  greetings@ghxstship.pro
                 </Typography>
               </SlideUp>
 
