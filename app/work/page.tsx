@@ -100,15 +100,19 @@ export default function WorkPage() {
         </section>
 
         {/* Filter Section */}
-        <section className="py-12 bg-white border-b-2 border-black sticky top-20 z-40">
+        <section className="py-6 sm:py-8 md:py-12 bg-white border-b-2 border-black sticky top-20 z-40">
           <Container>
-            <div className="flex flex-wrap justify-center gap-4">
+            <div className="flex flex-wrap justify-center gap-2 sm:gap-3 md:gap-4">
               {verticals.map((vertical) => (
                 <button
                   key={vertical}
                   onClick={() => setFilter(vertical)}
                   className={`
-                    font-bebas uppercase tracking-wide px-6 py-2 border-2 transition-all
+                    font-bebas uppercase tracking-wide 
+                    px-3 py-1.5 sm:px-4 sm:py-2 md:px-6 md:py-2.5
+                    text-xs sm:text-sm md:text-base lg:text-lg
+                    border-2 transition-all
+                    whitespace-nowrap
                     ${filter === vertical 
                       ? 'bg-black text-white border-black' 
                       : 'bg-white text-black border-black hover:bg-black hover:text-white'
