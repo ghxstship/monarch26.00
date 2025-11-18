@@ -23,9 +23,10 @@ export function CTA() {
           </Typography>
           
           <Typography variant="body" className="text-grey-600 max-w-2xl mx-auto mb-12">
-            Fifty-two countries. Countless 3 AM crisis calls. More &quot;that&apos;s impossible&quot; moments 
-            than we can count—all of which we made possible anyway. If you&apos;ve got the vision and the budget, 
-            we&apos;ve got the operational chops and the audacity to make it real.
+            Thirteen years of turning constraints into creative advantages. We&apos;ve delivered festival 
+            infrastructure for 50,000+ attendees, managed F1 hospitality operations, and built brand 
+            activations for Fortune 500s. If you&apos;ve got the vision and the budget, we&apos;ve got the 
+            operational expertise and creative audacity to make it real.
           </Typography>
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center">

@@ -24,7 +24,7 @@ export function Hero() {
             transition={{ duration: 0.8, delay: 0.2 }}
           >
             <Typography variant="h1" className="text-white mb-8" uppercase>
-              Navigate the Impossible
+              Experience Off the Charts
             </Typography>
           </motion.div>
 
@@ -34,9 +34,9 @@ export function Hero() {
             transition={{ duration: 0.8, delay: 0.4 }}
           >
             <Typography variant="body" className="text-grey-400 max-w-2xl mx-auto mb-12">
-              Thirteen years. Fifty-two countries. More 3 AM crisis calls than we care to count. 
-              We&apos;ve built festival stages that defied physics, managed hospitality operations where failure 
-              wasn&apos;t an option, and turned &quot;that&apos;s impossible&quot; into &quot;when do you need it by?&quot;
+              Thirteen years building the impossible. Festival stages that defied physics, hospitality operations 
+              where failure wasn&apos;t an option, and brand activations that became industry benchmarks. We turned 
+              &quot;that can&apos;t be done&quot; into &quot;when do you need it by?&quot;
             </Typography>
           </motion.div>
 
@@ -51,9 +51,6 @@ export function Hero() {
             </Typography>
             <Typography variant="meta" className="text-grey-500" uppercase>
               Est. 2022
-            </Typography>
-            <Typography variant="meta" className="text-grey-500" uppercase>
-              52 Countries
             </Typography>
           </motion.div>
 

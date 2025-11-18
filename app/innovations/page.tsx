@@ -11,9 +11,25 @@ import Link from 'next/link';
 
 const innovations = [
   {
+    id: 'gvteway',
+    name: 'GVTEWAY',
+    tagline: 'Experiential Ticketing (Memberships) & Communities',
+    description: 'Seamless client collaboration platform that keeps everyone aligned. Share updates, approve deliverables, and track progress in real-time.',
+    features: [
+      'Client Dashboard',
+      'File Sharing',
+      'Approval Workflows',
+      'Communication Hub',
+      'Project Timeline',
+      'Asset Library',
+    ],
+    status: 'Coming Soon',
+    href: '/innovations/gvteway',
+  },
+  {
     id: 'atlvs',
     name: 'ATLVS',
-    tagline: 'Production Management Platform',
+    tagline: 'Experiential Project (Production) Management',
     description: 'Enterprise-grade production management software designed for experiential agencies. Streamline your workflow from concept to strike.',
     features: [
       'Project Management',
@@ -27,20 +43,20 @@ const innovations = [
     href: '/innovations/atlvs',
   },
   {
-    id: 'gvteway',
-    name: 'GVTEWAY',
-    tagline: 'Client Portal & Collaboration Hub',
-    description: 'Seamless client collaboration platform that keeps everyone aligned. Share updates, approve deliverables, and track progress in real-time.',
+    id: 'compvss',
+    name: 'COMPVSS',
+    tagline: 'Experiential Team (Operations) Management',
+    description: 'Comprehensive operations management platform for experiential teams. Optimize crew scheduling, track certifications, and manage logistics seamlessly.',
     features: [
-      'Client Dashboard',
-      'File Sharing',
-      'Approval Workflows',
-      'Communication Hub',
-      'Project Timeline',
-      'Asset Library',
+      'Crew Scheduling',
+      'Certification Tracking',
+      'Equipment Management',
+      'Logistics Coordination',
+      'Time Tracking',
+      'Performance Analytics',
     ],
     status: 'Coming Soon',
-    href: '/innovations/gvteway',
+    href: '/innovations/compvss',
   },
 ];
 
@@ -71,7 +87,7 @@ export default function InnovationsPage() {
         {/* Innovations Grid */}
         <section className="py-24 bg-white">
           <Container>
-            <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12">
               {innovations.map((innovation, index) => (
                 <FadeIn key={innovation.id} delay={index * 0.1}>
                   <div className="border-2 border-black bg-white p-8 hover:scale-[1.02] transition-transform duration-200">

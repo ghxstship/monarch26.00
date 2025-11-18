@@ -37,7 +37,7 @@ export function FeaturedProjects() {
         <SlideUp>
           <div className="text-center mb-16">
             <Typography variant="h1" uppercase className="mb-4 text-white">
-              Our Passport
+              The Museum
             </Typography>
             <Typography variant="body" className="text-grey-400 max-w-2xl mx-auto">
               Fifty-two countries. Hundreds of projects. More &quot;that&apos;s impossible&quot; moments than we can count—all 
@@ -75,7 +75,7 @@ export function FeaturedProjects() {
           <div className="text-center">
             <Link href="/work">
               <button className="font-bebas uppercase tracking-wide px-8 py-4 text-lg border-2 border-white text-white hover:bg-white hover:text-black transition-all">
-                View Full Passport
+                Explore The Museum
               </button>
             </Link>
           </div>

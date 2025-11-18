@@ -9,31 +9,31 @@ import { Button } from '@/components/ui/Button';
 import { SlideUp } from '@/components/animations/SlideUp';
 import { FadeIn } from '@/components/animations/FadeIn';
 
-export default function ATLVSPage() {
+export default function COMPVSSPage() {
   const features = [
     {
-      title: 'Project Management',
-      description: 'Comprehensive tools for managing complex experiential projects from concept to completion.',
+      title: 'Crew Scheduling',
+      description: 'Advanced scheduling system for managing crew availability, shifts, and assignments across multiple events.',
     },
     {
-      title: 'Resource Allocation',
-      description: 'Intelligent resource management and scheduling across multiple projects and teams.',
+      title: 'Certification Tracking',
+      description: 'Automated tracking of crew certifications, licenses, and training requirements with expiration alerts.',
     },
     {
-      title: 'Budget Tracking',
-      description: 'Real-time budget monitoring and financial reporting for complete cost control.',
+      title: 'Equipment Management',
+      description: 'Comprehensive inventory management for tracking equipment, maintenance schedules, and deployment.',
     },
     {
-      title: 'Team Collaboration',
-      description: 'Seamless collaboration tools for distributed teams working across time zones.',
+      title: 'Logistics Coordination',
+      description: 'Streamlined logistics planning for transportation, accommodation, and on-site operations.',
     },
     {
-      title: 'Vendor Management',
-      description: 'Centralized vendor database with performance tracking and contract management.',
+      title: 'Time Tracking',
+      description: 'Accurate time tracking and payroll integration for crew hours, overtime, and project costing.',
     },
     {
-      title: 'Timeline Visualization',
-      description: 'Interactive Gantt charts and timeline views for project planning and tracking.',
+      title: 'Performance Analytics',
+      description: 'Data-driven insights into crew performance, utilization rates, and operational efficiency.',
     },
   ];
 
@@ -46,26 +46,26 @@ export default function ATLVSPage() {
           <Container>
             <SlideUp>
               <Typography variant="hero" className="text-white mb-6" uppercase>
-                ATLVS
+                COMPVSS
               </Typography>
               <Typography variant="h2" uppercase className="text-grey-400 mb-8">
-                Experiential Project (Production) Management
+                Experiential Team (Operations) Management
               </Typography>
               <div className="max-w-4xl">
                 <Typography variant="body" className="text-grey-400 text-xl leading-relaxed mb-8">
-                  ATLVS is the industry&apos;s most comprehensive project management platform designed 
-                  specifically for experiential production. Built by producers, for producers, ATLVS 
-                  streamlines every aspect of project management from initial concept to final strike.
+                  COMPVSS is the comprehensive operations management platform designed for experiential 
+                  teams. Built to handle the complexities of crew management, equipment tracking, and 
+                  logistics coordination, COMPVSS ensures your operations run smoothly from load-in to strike.
                 </Typography>
                 <div className="flex flex-col sm:flex-row gap-4">
-                  <a href="https://atlvs.one" target="_blank" rel="noopener noreferrer">
-                    <Button variant="outlined" size="lg" className="border-white text-white hover:bg-white hover:text-black">
-                      Visit ATLVS.one
-                    </Button>
-                  </a>
                   <Link href="/contact">
                     <Button variant="outlined" size="lg" className="border-white text-white hover:bg-white hover:text-black">
                       Request Demo
+                    </Button>
+                  </Link>
+                  <Link href="/innovations">
+                    <Button variant="outlined" size="lg" className="border-white text-white hover:bg-white hover:text-black">
+                      View All Products
                     </Button>
                   </Link>
                 </div>
@@ -83,7 +83,7 @@ export default function ATLVSPage() {
                   Platform Features
                 </Typography>
                 <Typography variant="body" className="text-grey-600 max-w-2xl mx-auto">
-                  Everything you need to manage complex experiential projects in one powerful platform.
+                  Everything you need to manage experiential operations and teams in one powerful platform.
                 </Typography>
               </div>
             </FadeIn>
@@ -110,21 +110,21 @@ export default function ATLVSPage() {
             <div className="grid md:grid-cols-2 gap-16 items-center">
               <SlideUp>
                 <Typography variant="h2" uppercase className="text-white mb-6">
-                  Built for Professionals
+                  Built for Operations Teams
                 </Typography>
                 <Typography variant="body" className="text-grey-400 text-lg leading-relaxed mb-6">
-                  ATLVS is designed for experiential production professionals who demand precision, 
-                  efficiency, and control. Whether you&apos;re managing a single activation or coordinating 
-                  a global tour, ATLVS scales to meet your needs.
+                  COMPVSS is designed for operations managers, crew coordinators, and logistics professionals 
+                  who need to manage complex teams and resources. Whether you&apos;re coordinating a single 
+                  event or managing operations across multiple venues, COMPVSS scales to meet your needs.
                 </Typography>
                 <Typography variant="body" className="text-grey-400 text-lg leading-relaxed">
-                  Join leading production companies, agencies, and brands who trust ATLVS to manage 
-                  their most critical projects.
+                  Join leading production companies and event teams who trust COMPVSS to manage their 
+                  operations and crew.
                 </Typography>
               </SlideUp>
               <SlideUp delay={0.2}>
                 <div className="space-y-4">
-                  {['Production Companies', 'Event Agencies', 'Brand Teams', 'Venue Operators', 'Festival Producers'].map((user) => (
+                  {['Operations Managers', 'Crew Coordinators', 'Logistics Teams', 'Production Companies', 'Event Venues'].map((user) => (
                     <div key={user} className="border-2 border-white p-6">
                       <Typography variant="h5" uppercase className="text-white">
                         {user}
@@ -146,9 +146,10 @@ export default function ATLVSPage() {
                   GHXSTSHIP Integration
                 </Typography>
                 <Typography variant="body" className="text-grey-700 text-lg leading-relaxed max-w-3xl mx-auto">
-                  ATLVS was born from GHXSTSHIP&apos;s need for a better way to manage complex experiential 
-                  projects. Today, it powers our operations and is available to the industry. When you work 
-                  with GHXSTSHIP, you get direct access to ATLVS for seamless project collaboration.
+                  COMPVSS was developed from GHXSTSHIP&apos;s need to efficiently manage crew, equipment, 
+                  and operations across multiple projects. Today, it powers our operations management and 
+                  is available to the industry. When you work with GHXSTSHIP, you get direct access to 
+                  COMPVSS for seamless operations coordination.
                 </Typography>
               </div>
             </SlideUp>
@@ -160,10 +161,10 @@ export default function ATLVSPage() {
           <Container>
             <div className="text-center">
               <Typography variant="h1" uppercase className="text-white mb-6">
-                Ready to Transform Your Workflow?
+                Ready to Optimize Your Operations?
               </Typography>
               <Typography variant="body" className="text-grey-400 max-w-2xl mx-auto mb-8">
-                Experience the power of ATLVS with a personalized demo.
+                Experience the power of COMPVSS with a personalized demo.
               </Typography>
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
                 <Link href="/contact">
@@ -171,11 +172,11 @@ export default function ATLVSPage() {
                     Request Demo
                   </Button>
                 </Link>
-                <a href="https://atlvs.one" target="_blank" rel="noopener noreferrer">
+                <Link href="/innovations">
                   <Button variant="outlined" size="lg" className="border-white text-white hover:bg-white hover:text-black">
-                    Visit ATLVS.one
+                    View All Products
                   </Button>
-                </a>
+                </Link>
               </div>
             </div>
           </Container>

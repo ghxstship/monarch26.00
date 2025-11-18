@@ -83,6 +83,9 @@ export default function GVTEWAYPage() {
                 <Typography variant="hero" className="text-white mb-6" uppercase>
                   GVTEWAY
                 </Typography>
+                <Typography variant="h2" uppercase className="text-grey-400 mb-6">
+                  Experiential Ticketing (Memberships) & Communities
+                </Typography>
                 <Typography variant="h1" uppercase className="text-white mb-8">
                   Coming Soon
                 </Typography>

@@ -7,7 +7,7 @@ export default function CreativeMediaPage() {
     <VerticalTemplate
       title="Creative Media"
       subtitle="Video Production // Photography // Strategic Content"
-      description="Visual storytelling for brands competing in saturated markets. Video production, photography, design, and digital content created by teams who understand both aesthetic excellence and strategic objectives. We've shot across 52 countries—every location taught us something about light, logistics, and what actually works when the sun sets in 20 minutes and the talent is late."
+      description="Visual storytelling for brands competing in saturated markets. Video production, photography, design, and digital content created by teams who understand both aesthetic excellence and strategic objectives. We've shot across multiple continents—every location taught us something about light, logistics, and what actually works when the sun sets in 20 minutes and the talent is late."
       services={[
         'Video Production',
         'Commercial Production',

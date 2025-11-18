@@ -10,10 +10,13 @@ export function Footer() {
     {
       title: 'Services',
       links: [
-        { label: 'Design', href: '/services/design' },
-        { label: 'Development', href: '/services/development' },
-        { label: 'Direction', href: '/services/direction' },
-        { label: 'Disruption', href: '/services/disruption' },
+        { label: 'Discover', href: '/services#discover' },
+        { label: 'Design', href: '/services#design' },
+        { label: 'Develop', href: '/services#develop' },
+        { label: 'Deliver', href: '/services#deliver' },
+        { label: 'Direct', href: '/services#direct' },
+        { label: 'Disrupt', href: '/services#disrupt' },
+        { label: 'Dominate', href: '/services#dominate' },
       ],
     },
     {
@@ -29,6 +32,8 @@ export function Footer() {
       title: 'Company',
       links: [
         { label: 'Story', href: '/about' },
+        { label: 'Team', href: '/team' },
+        { label: 'Careers', href: '/careers' },
         { label: 'Showcase', href: '/work' },
         { label: 'Solutions', href: '/solutions' },
         { label: 'Innovations', href: '/innovations' },

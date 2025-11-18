@@ -92,9 +92,10 @@ export default function ContactPage() {
                   Chart Your Course
                 </Typography>
                 <Typography variant="body" className="text-grey-400 text-xl">
-                  Fifty-two countries. More 3 AM crisis calls than we care to count. If you&apos;ve got the vision 
-                  and the budget, we&apos;ve got the operational chops and the audacity to make it real. 
-                  Tell us about your project. We&apos;ll tell you if it&apos;s possible. Spoiler: it probably is.
+                  From festival grounds to Formula 1 hospitality to Fortune 500 brand activations—we&apos;ve navigated 
+                  complex productions where failure wasn&apos;t an option. If you&apos;ve got the vision and the budget, 
+                  we&apos;ve got the operational expertise to make it real. Tell us about your project. We&apos;ll tell you 
+                  if it&apos;s possible. Spoiler: it probably is.
                 </Typography>
               </div>
             </SlideUp>
@@ -255,8 +256,8 @@ export default function ContactPage() {
                   Global Reach
                 </Typography>
                 <Typography variant="body" className="text-grey-400">
-                  52+ Countries<br />
-                  Worldwide Operations
+                  Worldwide Operations<br />
+                  Multi-Continental Experience
                 </Typography>
               </SlideUp>
             </div>

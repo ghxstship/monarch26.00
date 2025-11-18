@@ -87,11 +87,11 @@ export default function WorkPage() {
             <SlideUp>
               <div className="text-center max-w-3xl mx-auto">
                 <Typography variant="hero" className="text-white mb-6" uppercase>
-                  Our Passport
+                  The Museum
                 </Typography>
                 <Typography variant="body" className="text-grey-400 text-xl">
-                  Fifty-two countries. Hundreds of projects. More &quot;that&apos;s impossible&quot; moments than we can count—all 
-                  of which we made possible anyway. Every project solved problems that shouldn&apos;t technically work. 
+                  From 50,000+ capacity festival production to intimate brand activations, we&apos;ve delivered experiences 
+                  that push boundaries and exceed expectations. Every project solved problems that shouldn&apos;t technically work. 
                   But they do. Because we made them.
                 </Typography>
               </div>

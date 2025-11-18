@@ -17,7 +17,7 @@ const verticals = [
   },
   {
     title: 'Experiential Marketing',
-    metadata: 'Brand Activations That Move Markets // Fortune 500 Trust // 52 Countries Conquered',
+    metadata: 'Brand Activations That Move Markets // Fortune 500 Trust // Global Execution',
     image: '/images/verticals/experiential.jpg',
     href: '/verticals/experiential-marketing',
   },

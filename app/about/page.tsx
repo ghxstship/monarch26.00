@@ -35,19 +35,68 @@ export default function AboutPage() {
         <section className="min-h-screen bg-black text-white flex items-center">
           <Container>
             <SlideUp>
-              <Typography variant="hero" className="text-white mb-8" uppercase>
-                Forged By Failure
+              <Typography variant="hero" className="text-white mb-12" uppercase>
+                The History
               </Typography>
-              <div className="max-w-4xl">
+              
+              {/* Prologue Section */}
+              <div className="max-w-4xl mb-16">
+                <Typography variant="h2" className="text-white mb-8 italic">
+                  Prologue | Forged by Failure
+                </Typography>
+                
                 <Typography variant="body" className="text-grey-400 text-xl leading-relaxed mb-6">
                   Every legend starts somewhere. This one started with a kid who could read sheet music before 
-                  he could read maps—and ended up navigating experiences across 52 countries. This is how 
-                  impossible became inevitable. Also how we learned that sleep is optional.
+                  he could read maps—and ended up navigating experiences across continents. Five woodwinds mastered 
+                  at Indiana University. Classical training that taught precision, discipline, and the art of performing 
+                  under pressure. But concert halls don&apos;t prepare you for festival grounds at 3 AM when the main 
+                  stage rigging fails and thousands of people are waiting.
                 </Typography>
+                
+                <Typography variant="body" className="text-grey-400 text-xl leading-relaxed mb-6">
+                  The cruise ships came first. Carnival, Celebrity, Norwegian—floating cities where entertainment never 
+                  stops and failure isn&apos;t an option. Started as a musician. Became a DJ. Then somehow ended up 
+                  supervising talent acquisition across oceans and time zones. Built a casting system that turned 
+                  weeks into minutes. Not because we were smart—because we had to. When you&apos;re sourcing talent 
+                  across dozens of countries and the old system is drowning, you either innovate or quit. We didn&apos;t quit.
+                </Typography>
+                
+                <Typography variant="body" className="text-grey-400 text-xl leading-relaxed mb-6">
+                  Then came the festivals. Insomniac. EDC. Massive crowds. Bigger productions. Audio, lighting, video, 
+                  staging—all the technical systems that make or break a show. Learned that festival production is just 
+                  controlled chaos with better insurance. Streamlined operations. Built communication platforms. Connected 
+                  internal teams with external contractors. Reduced timelines. Maintained world-class standards. And discovered 
+                  that sleep is optional when showtime is non-negotiable.
+                </Typography>
+                
+                <Typography variant="body" className="text-grey-400 text-xl leading-relaxed mb-6">
+                  Formula 1 Las Vegas changed everything. Managing hospitality operations across premium venues for the 
+                  inaugural Grand Prix. International clientele. Celebrities. Athletes. Entertainment executives. The kind 
+                  of high-stakes environment where one mistake becomes international news. Where perfect execution isn&apos;t 
+                  celebrated—it&apos;s expected. We didn&apos;t make mistakes. We made memories.
+                </Typography>
+                
+                <Typography variant="body" className="text-grey-400 text-xl leading-relaxed mb-6">
+                  The brand activations taught us scale. Heineken&apos;s Turn 4 Nightclub at F1. Red Bull&apos;s Unforeseen 
+                  Motel at III Points Miami. PATRÓN Cristalino&apos;s North American launch with Becky G. Fortune 500 brands 
+                  that demand operational excellence and zero margin for error. Each activation a masterclass in logistics, 
+                  creativity, and making the impossible look inevitable. Each one a reminder that the difference between 
+                  legendary and forgotten is usually just better execution.
+                </Typography>
+                
+                <Typography variant="body" className="text-grey-400 text-xl leading-relaxed mb-6">
+                  Factory Town and Salvage City Supper Club became the proving grounds. Venues that never sleep. Operations 
+                  that run around the clock. Integrating live entertainment with luxury dining for festival crowds that expect 
+                  perfection. Every failure taught something. Every impossible deadline revealed what&apos;s actually possible. 
+                  Every 3 AM emergency added another story we probably shouldn&apos;t tell clients. Every crisis became a case 
+                  study in what happens when you refuse to accept &quot;it can&apos;t be done.&quot;
+                </Typography>
+                
                 <Typography variant="body" className="text-grey-400 text-xl leading-relaxed">
-                  Thirteen years operating at the intersection of hospitality, live entertainment, and experiential 
-                  marketing taught us that the difference between epic and disaster is usually just better planning, 
-                  a crew that&apos;s seen it before, and knowing which rules are suggestions.
+                  That accumulated knowledge became GHXSTSHIP. Founded April 2023. From classical musician to cruise line 
+                  casting supervisor to festival producer to brand strategist to technical architect—every chapter built the 
+                  next. Every lesson compounded. Every gray hair earned. Every failure forged the foundation for what comes next. 
+                  This is how impossible became inevitable. This is how we learned to navigate the uncharted.
                 </Typography>
               </div>
             </SlideUp>
@@ -89,7 +138,7 @@ export default function AboutPage() {
                 </Typography>
                 <Typography variant="body" className="text-grey-400 text-lg leading-relaxed">
                   Every challenging install taught something. Every impossible deadline revealed what&apos;s 
-                  actually possible. Every 3 AM crisis call added another story we probably shouldn&apos;t tell clients. 
+                  actually possible. Every late-night emergency added another story we probably shouldn&apos;t tell clients. 
                   That accumulated knowledge became GHXSTSHIP. From classical musician to cruise director to festival 
                   producer to brand strategist to technical architect—every chapter built the next. Every lesson compounded. 
                   Every gray hair earned.
@@ -99,7 +148,7 @@ export default function AboutPage() {
           </Container>
         </section>
 
-        {/* The Journey Framework */}
+        {/* The Journey Timeline */}
         <section className="py-24 bg-white">
           <Container>
             <FadeIn>
@@ -109,30 +158,139 @@ export default function AboutPage() {
                 </Typography>
                 <Typography variant="body" className="text-grey-600 max-w-2xl mx-auto">
                   From classical concert halls to cruise ships to festival grounds to motorsport hospitality—every 
-                  chapter taught lessons that became operational advantages. Also taught us that Murphy&apos;s Law is real 
-                  and has excellent timing.
+                  port of call taught lessons that became operational advantages. This is the voyage that forged GHXSTSHIP.
                 </Typography>
               </div>
             </FadeIn>
 
-            <div className="grid md:grid-cols-2 gap-8">
-              {[
-                { title: 'INDIANA UNIVERSITY', desc: 'Classical musician learning precision and adaptability under pressure' },
-                { title: 'CARNIVAL CRUISE LINES', desc: 'Entertainment at scale—systems that work across floating cities' },
-                { title: 'INSOMNIAC EVENTS', desc: 'Festival production mastery—50,000+ capacity venues and impossible logistics' },
-                { title: 'F1 // PATRÓN // RED BULL', desc: 'Brand activations across 52 countries where excellence is mandatory' },
-              ].map((item, index) => (
-                <SlideUp key={item.title} delay={index * 0.1}>
-                  <div className="border-2 border-black p-8">
-                    <Typography variant="h3" uppercase className="mb-4">
-                      {item.title}
-                    </Typography>
-                    <Typography variant="body" className="text-grey-700">
-                      {item.desc}
-                    </Typography>
-                  </div>
-                </SlideUp>
-              ))}
+            {/* Vertical Timeline */}
+            <div className="max-w-4xl mx-auto">
+              <div className="relative">
+                {/* Timeline Line */}
+                <div className="absolute left-8 md:left-1/2 top-0 bottom-0 w-0.5 bg-black transform md:-translate-x-1/2" />
+
+                {/* Timeline Items */}
+                {[
+                  {
+                    date: 'June 1990',
+                    location: 'California',
+                    title: 'First Port: San Diego',
+                    description: 'The vessel launched. A kid who could read sheet music before maps set sail.',
+                    icon: '🌊',
+                  },
+                  {
+                    date: 'January 1996',
+                    location: 'Minnesota',
+                    title: 'Northern Waters',
+                    description: 'Navigated to colder climates. Learned that ice and snow build character.',
+                    icon: '❄️',
+                  },
+                  {
+                    date: 'August 2008',
+                    location: 'Indiana',
+                    title: 'Indiana University',
+                    description: 'Classical musician learning precision and adaptability under pressure. Concert halls became the first stage.',
+                    icon: '🎵',
+                  },
+                  {
+                    date: 'January 2012',
+                    location: 'Cruise Ships',
+                    title: 'Open Ocean',
+                    description: 'Entertainment at scale—systems that work across floating cities. Carnival taught us hospitality without borders.',
+                    icon: '🚢',
+                  },
+                  {
+                    date: 'December 2015',
+                    location: 'Miami',
+                    title: 'Gateway Port',
+                    description: 'Docked in the cruise capital. Where the Caribbean meets production excellence.',
+                    icon: '🌴',
+                  },
+                  {
+                    date: 'December 2018',
+                    location: 'Orlando',
+                    title: 'Festival Grounds',
+                    description: 'Festival production mastery with Insomniac. 50,000+ capacity venues and impossible logistics became routine.',
+                    icon: '🎪',
+                  },
+                  {
+                    date: 'July 2023',
+                    location: 'Founded',
+                    title: 'GHXSTSHIP Launches',
+                    description: 'Every lesson, every failure, every impossible deadline—all distilled into something new. The ship sets sail.',
+                    icon: '👻',
+                  },
+                  {
+                    date: 'October 2025',
+                    location: 'Tampa',
+                    title: 'Current Coordinates',
+                    description: 'Home port established. Building the future of experiential innovation from the Gulf Coast.',
+                    icon: '⚓',
+                  },
+                ].map((milestone, index) => (
+                  <SlideUp key={milestone.date} delay={index * 0.1}>
+                    <div className={`relative mb-12 md:mb-16 ${
+                      index % 2 === 0 ? 'md:pr-1/2 md:text-right' : 'md:pl-1/2 md:ml-auto'
+                    }`}>
+                      {/* Timeline Dot */}
+                      <div className="absolute left-8 md:left-1/2 w-4 h-4 bg-black rounded-full transform -translate-x-1/2 md:translate-x-0 md:-translate-x-1/2" />
+                      
+                      {/* Content Card */}
+                      <div className={`ml-20 md:ml-0 ${
+                        index % 2 === 0 ? 'md:mr-12' : 'md:ml-12'
+                      }`}>
+                        <div className="border-2 border-black p-6 bg-white">
+                          {/* Icon */}
+                          <div className={`text-4xl mb-3 ${
+                            index % 2 === 0 ? 'md:text-right' : 'md:text-left'
+                          }`}>
+                            {milestone.icon}
+                          </div>
+                          
+                          {/* Date & Location */}
+                          <div className={`mb-2 ${
+                            index % 2 === 0 ? 'md:text-right' : 'md:text-left'
+                          }`}>
+                            <Typography variant="meta" className="text-grey-500 uppercase tracking-wider">
+                              {milestone.date}
+                            </Typography>
+                          </div>
+                          
+                          {/* Title */}
+                          <Typography 
+                            variant="h4" 
+                            uppercase 
+                            className={`mb-2 ${
+                              index % 2 === 0 ? 'md:text-right' : 'md:text-left'
+                            }`}
+                          >
+                            {milestone.title}
+                          </Typography>
+                          
+                          {/* Location Badge */}
+                          <div className={`mb-3 ${
+                            index % 2 === 0 ? 'md:flex md:justify-end' : 'md:flex md:justify-start'
+                          }`}>
+                            <span className="inline-block px-3 py-1 bg-black text-white text-xs uppercase tracking-wider">
+                              {milestone.location}
+                            </span>
+                          </div>
+                          
+                          {/* Description */}
+                          <Typography 
+                            variant="body" 
+                            className={`text-grey-700 ${
+                              index % 2 === 0 ? 'md:text-right' : 'md:text-left'
+                            }`}
+                          >
+                            {milestone.description}
+                          </Typography>
+                        </div>
+                      </div>
+                    </div>
+                  </SlideUp>
+                ))}
+              </div>
             </div>
           </Container>
         </section>

@@ -25,7 +25,7 @@ const services = [
   },
   {
     title: 'DELIVER',
-    description: 'Project management as operational excellence. Load-in schedules, vendor coordination, permit acquisition, contingency planning. We&apos;ve managed simultaneous productions across continents and solved 3 AM problems that would make lesser crews cry into their walkie-talkies.',
+    description: 'Project management as operational excellence. Load-in schedules, vendor coordination, permit acquisition, contingency planning. We&apos;ve managed simultaneous productions across continents and solved real-time problems that would make lesser crews quit on the spot.',
     bg: 'bg-black text-white',
   },
   {
@@ -57,8 +57,8 @@ export function Services() {
                 The Itinerary
               </Typography>
               <Typography variant="body" className="text-grey-400 text-xl mb-12">
-                Seven phases from vision to victory. Our operational process refined through 13 years of solving 
-                problems that emerge at 3 AM during setup. Discover. Design. Develop. Deliver. Direct. Disrupt. Dominate.
+                Seven phases from vision to victory. Our operational process refined through 13 years of 
+                high-stakes production. Discover. Design. Develop. Deliver. Direct. Disrupt. Dominate.
               </Typography>
               <Link href="/services">
                 <button className="font-bebas uppercase tracking-wide px-8 py-4 text-lg border-2 border-white text-white hover:bg-white hover:text-black transition-all">
