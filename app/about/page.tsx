@@ -6,6 +6,8 @@ import { Container } from '@/components/layout/Container';
 import { Typography } from '@/components/ui/Typography';
 import { SlideUp } from '@/components/animations/SlideUp';
 import { FadeIn } from '@/components/animations/FadeIn';
+import { Waves, Snowflake, Music, Ship, Palmtree, Tent, Ghost, Anchor } from 'lucide-react';
+import { TeamMemberCard } from '@/components/ui/TeamMemberCard';
 
 export default function AboutPage() {
   const stats = [
@@ -123,26 +125,23 @@ export default function AboutPage() {
           </Container>
         </section>
 
-        {/* Captain Jay Sea Section */}
-        <section className="py-24 bg-black text-white">
+        {/* Founder Section */}
+        <section className="py-24 bg-white">
           <Container>
             <div className="max-w-4xl mx-auto">
               <SlideUp>
-                <Typography variant="h2" uppercase className="text-white mb-6">
-                  Captain Jay Sea - CXO
+                <Typography variant="h2" uppercase className="mb-12 text-center">
+                  The Founder
                 </Typography>
-                <Typography variant="body" className="text-grey-400 text-lg leading-relaxed mb-6">
-                  Founder. 13 years operating at the intersection of hospitality, live entertainment, and 
-                  experiential marketing across 52 countries. Former F&B Operations Manager for Formula 1 
-                  Las Vegas Grand Prix. Production experience with Insomniac, F1, PATRÓN, Heineken, and Red Bull.
-                </Typography>
-                <Typography variant="body" className="text-grey-400 text-lg leading-relaxed">
-                  Every challenging install taught something. Every impossible deadline revealed what&apos;s 
-                  actually possible. Every late-night emergency added another story we probably shouldn&apos;t tell clients. 
-                  That accumulated knowledge became GHXSTSHIP. From classical musician to cruise director to festival 
-                  producer to brand strategist to technical architect—every chapter built the next. Every lesson compounded. 
-                  Every gray hair earned.
-                </Typography>
+                <TeamMemberCard
+                  name="Julian Clarkson"
+                  alias="Captain J. Sea"
+                  role="CXO & Founder"
+                  location="Tampa, FL"
+                  yearsExperience="13+"
+                  founded="July 2023"
+                  bio="13 years operating at the intersection of hospitality, live entertainment, and experiential marketing across 52 countries. Former F&B Operations Manager for Formula 1 Las Vegas Grand Prix. Production experience with Insomniac, F1, PATRÓN, Heineken, and Red Bull. Every challenging install taught something. Every impossible deadline revealed what's actually possible. That accumulated knowledge became GHXSTSHIP. From classical musician to cruise director to festival producer to brand strategist to technical architect—every chapter built the next."
+                />
               </SlideUp>
             </div>
           </Container>
@@ -176,56 +175,56 @@ export default function AboutPage() {
                     location: 'California',
                     title: 'First Port: San Diego',
                     description: 'The vessel launched. A kid who could read sheet music before maps set sail.',
-                    icon: '🌊',
+                    Icon: Waves,
                   },
                   {
                     date: 'January 1996',
                     location: 'Minnesota',
                     title: 'Northern Waters',
                     description: 'Navigated to colder climates. Learned that ice and snow build character.',
-                    icon: '❄️',
+                    Icon: Snowflake,
                   },
                   {
                     date: 'August 2008',
                     location: 'Indiana',
                     title: 'Indiana University',
                     description: 'Classical musician learning precision and adaptability under pressure. Concert halls became the first stage.',
-                    icon: '🎵',
+                    Icon: Music,
                   },
                   {
                     date: 'January 2012',
                     location: 'Cruise Ships',
                     title: 'Open Ocean',
                     description: 'Entertainment at scale—systems that work across floating cities. Carnival taught us hospitality without borders.',
-                    icon: '🚢',
+                    Icon: Ship,
                   },
                   {
                     date: 'December 2015',
                     location: 'Miami',
                     title: 'Gateway Port',
                     description: 'Docked in the cruise capital. Where the Caribbean meets production excellence.',
-                    icon: '🌴',
+                    Icon: Palmtree,
                   },
                   {
                     date: 'December 2018',
                     location: 'Orlando',
                     title: 'Festival Grounds',
                     description: 'Festival production mastery with Insomniac. 50,000+ capacity venues and impossible logistics became routine.',
-                    icon: '🎪',
+                    Icon: Tent,
                   },
                   {
                     date: 'July 2023',
-                    location: 'Founded',
+                    location: 'Dry Dock',
                     title: 'GHXSTSHIP Launches',
                     description: 'Every lesson, every failure, every impossible deadline—all distilled into something new. The ship sets sail.',
-                    icon: '👻',
+                    Icon: Ghost,
                   },
                   {
                     date: 'October 2025',
                     location: 'Tampa',
                     title: 'Current Coordinates',
                     description: 'Home port established. Building the future of experiential innovation from the Gulf Coast.',
-                    icon: '⚓',
+                    Icon: Anchor,
                   },
                 ].map((milestone, index) => (
                   <SlideUp key={milestone.date} delay={index * 0.1}>
@@ -241,10 +240,10 @@ export default function AboutPage() {
                       }`}>
                         <div className="border-2 border-black p-6 bg-white">
                           {/* Icon */}
-                          <div className={`text-4xl mb-3 ${
-                            index % 2 === 0 ? 'md:text-right' : 'md:text-left'
+                          <div className={`mb-3 ${
+                            index % 2 === 0 ? 'md:flex md:justify-end' : 'md:flex md:justify-start'
                           }`}>
-                            {milestone.icon}
+                            <milestone.Icon size={40} className="text-black" strokeWidth={1.5} />
                           </div>
                           
                           {/* Date & Location */}

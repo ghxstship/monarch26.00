@@ -11,82 +11,121 @@ const services = [
   {
     title: 'DISCOVER',
     description: 'Strategic discovery and market analysis. We map the territory between "I have a crazy idea" and "this might actually work." Understanding objectives, spotting constraints before they become disasters, and designing experiences that move audiences without bankrupting anyone.',
-    bg: 'bg-white text-black',
+    icon: '🔍',
   },
   {
     title: 'DESIGN',
     description: 'Concept development backed by actual physics. Environmental design, experience mapping, visual identity creation, and journey architecture. Every element serves strategic objectives while maintaining creative integrity—and structural integrity. Both matter.',
-    bg: 'bg-black text-white',
+    icon: '✏️',
   },
   {
     title: 'DEVELOP',
     description: 'Production execution where vision becomes tangible. Steel, pixels, fabric, circuits—whatever the medium, we engineer it at scale. Our teams build festival infrastructure, branded environments, and installations that make engineers nervous and audiences lose their minds. In a good way.',
-    bg: 'bg-white text-black',
+    icon: '🔨',
   },
   {
     title: 'DELIVER',
     description: 'Project management as operational excellence. Load-in schedules, vendor coordination, permit acquisition, contingency planning. We&apos;ve managed simultaneous productions across continents and solved real-time problems that would make lesser crews quit on the spot.',
-    bg: 'bg-black text-white',
+    icon: '🚚',
   },
   {
     title: 'DIRECT',
     description: 'On-site technical direction and real-time problem solving. Our teams supervise every detail from first truck arrival to final strike, ensuring execution matches design intent and client expectations—even when reality has other plans.',
-    bg: 'bg-white text-black',
+    icon: '🎬',
   },
   {
     title: 'DISRUPT',
     description: 'Innovation without recklessness. We deploy emerging technologies ahead of adoption curves, create experiences that set new industry standards, and push boundaries with proper engineering documentation and adequate insurance coverage. Because chaos is fun, lawsuits are not.',
-    bg: 'bg-black text-white',
+    icon: '⚡',
   },
   {
     title: 'DOMINATE',
     description: 'Post-event analysis and continuous improvement. Performance metrics, lessons learned, evolution planning. Results that speak louder than promises—delivered on time, within budget, as specified. Revolutionary concept in this industry, apparently.',
-    bg: 'bg-white text-black',
+    icon: '👑',
   },
 ];
 
 export function Services() {
   return (
-    <section className="py-0">
-      {/* Header Section */}
-      <div className="min-h-screen flex items-center bg-black text-white">
-        <Container>
-          <FadeIn>
-            <div className="text-center max-w-4xl mx-auto">
-              <Typography variant="h1" uppercase className="mb-6 text-white">
-                The Itinerary
-              </Typography>
-              <Typography variant="body" className="text-grey-400 text-xl mb-12">
-                Seven phases from vision to victory. Our operational process refined through 13 years of 
-                high-stakes production. Discover. Design. Develop. Deliver. Direct. Disrupt. Dominate.
-              </Typography>
-              <Link href="/services">
-                <button className="font-bebas uppercase tracking-wide px-8 py-4 text-lg border-2 border-white text-white hover:bg-white hover:text-black transition-all">
-                  Explore The Full Itinerary
-                </button>
-              </Link>
-            </div>
-          </FadeIn>
-        </Container>
-      </div>
+    <section className="py-24 bg-white">
+      <Container>
+        <FadeIn>
+          <div className="text-center mb-16">
+            <Typography variant="h1" uppercase className="mb-4">
+              The Itinerary
+            </Typography>
+            <Typography variant="body" className="text-grey-600 max-w-2xl mx-auto">
+              Seven phases from vision to victory. Our operational process refined through 13 years of 
+              high-stakes production. Discover. Design. Develop. Deliver. Direct. Disrupt. Dominate.
+            </Typography>
+          </div>
+        </FadeIn>
 
-      {/* Services Preview - First 3 */}
-      {services.slice(0, 3).map((service) => (
-        <div key={service.title} className={`min-h-screen flex items-center ${service.bg}`}>
-          <Container>
-            <SlideUp delay={0.2}>
-              <div className="max-w-4xl">
-                <Typography variant="h1" uppercase className="mb-8">
-                  {service.title}
-                </Typography>
-                <Typography variant="body" className="text-xl leading-relaxed">
-                  {service.description}
-                </Typography>
-              </div>
-            </SlideUp>
-          </Container>
+        {/* Vertical Timeline */}
+        <div className="max-w-4xl mx-auto">
+          <div className="relative">
+            {/* Timeline Line */}
+            <div className="absolute left-8 md:left-1/2 top-0 bottom-0 w-0.5 bg-black transform md:-translate-x-1/2" />
+
+            {/* Timeline Items */}
+            {services.map((service, index) => (
+              <SlideUp key={service.title} delay={index * 0.1}>
+                <div className={`relative mb-12 md:mb-16 ${
+                  index % 2 === 0 ? 'md:pr-1/2 md:text-right' : 'md:pl-1/2 md:ml-auto'
+                }`}>
+                  {/* Timeline Dot */}
+                  <div className="absolute left-8 md:left-1/2 w-4 h-4 bg-black rounded-full transform -translate-x-1/2 md:translate-x-0 md:-translate-x-1/2" />
+                  
+                  {/* Content Card */}
+                  <div className={`ml-20 md:ml-0 ${
+                    index % 2 === 0 ? 'md:mr-12' : 'md:ml-12'
+                  }`}>
+                    <div className="border-2 border-black p-6 bg-white">
+                      {/* Icon */}
+                      <div className={`text-4xl mb-3 ${
+                        index % 2 === 0 ? 'md:text-right' : 'md:text-left'
+                      }`}>
+                        {service.icon}
+                      </div>
+                      
+                      {/* Title */}
+                      <Typography 
+                        variant="h4" 
+                        uppercase 
+                        className={`mb-4 ${
+                          index % 2 === 0 ? 'md:text-right' : 'md:text-left'
+                        }`}
+                      >
+                        {service.title}
+                      </Typography>
+                      
+                      {/* Description */}
+                      <Typography 
+                        variant="body" 
+                        className={`text-grey-700 ${
+                          index % 2 === 0 ? 'md:text-right' : 'md:text-left'
+                        }`}
+                      >
+                        {service.description}
+                      </Typography>
+                    </div>
+                  </div>
+                </div>
+              </SlideUp>
+            ))}
+          </div>
         </div>
-      ))}
+
+        <FadeIn delay={0.8}>
+          <div className="text-center mt-16">
+            <Link href="/services">
+              <button className="font-bebas uppercase tracking-wide px-8 py-4 text-lg border-2 border-black text-black hover:bg-black hover:text-white transition-all">
+                Explore The Full Itinerary
+              </button>
+            </Link>
+          </div>
+        </FadeIn>
+      </Container>
     </section>
   );
 }

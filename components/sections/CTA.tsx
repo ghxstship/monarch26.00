@@ -19,7 +19,7 @@ export function CTA() {
           className="text-center"
         >
           <Typography variant="hero" uppercase className="mb-8">
-            Chart Your Course
+            Where To Next?
           </Typography>
           
           <Typography variant="body" className="text-grey-600 max-w-2xl mx-auto mb-12">

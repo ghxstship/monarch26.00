@@ -7,13 +7,18 @@ import { Container } from '@/components/layout/Container';
 import { Typography } from '@/components/ui/Typography';
 import { SlideUp } from '@/components/animations/SlideUp';
 import { FadeIn } from '@/components/animations/FadeIn';
+import { TeamMemberCard } from '@/components/ui/TeamMemberCard';
 
 export default function TeamPage() {
   const teamMembers = [
     {
-      name: 'Captain Jay Sea',
-      role: 'CXO',
-      bio: 'Founder. 13 years operating at the intersection of hospitality, live entertainment, and experiential marketing across 52 countries. Former F&B Operations Manager for Formula 1 Las Vegas Grand Prix. Production experience with Insomniac, F1, PATRÓN, Heineken, and Red Bull.',
+      name: 'Julian Clarkson',
+      alias: 'Captain J. Sea',
+      role: 'CXO & Founder',
+      location: 'Tampa, FL',
+      yearsExperience: '13+',
+      founded: 'July 2023',
+      bio: '13 years operating at the intersection of hospitality, live entertainment, and experiential marketing across 52 countries. Former F&B Operations Manager for Formula 1 Las Vegas Grand Prix. Production experience with Insomniac, F1, PATRÓN, Heineken, and Red Bull.',
     },
   ];
 
@@ -46,26 +51,15 @@ export default function TeamPage() {
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12">
               {teamMembers.map((member, index) => (
                 <FadeIn key={member.name} delay={index * 0.1}>
-                  <div className="border-2 border-black p-8 h-full flex flex-col">
-                    {/* Placeholder for team member photo */}
-                    <div className="w-full aspect-square bg-grey-200 mb-6 flex items-center justify-center">
-                      <Typography variant="h4" className="text-grey-500" uppercase>
-                        Photo
-                      </Typography>
-                    </div>
-                    
-                    <Typography variant="h3" uppercase className="mb-2">
-                      {member.name}
-                    </Typography>
-                    
-                    <Typography variant="h6" uppercase className="text-grey-600 mb-4">
-                      {member.role}
-                    </Typography>
-                    
-                    <Typography variant="body" className="text-grey-700 leading-relaxed">
-                      {member.bio}
-                    </Typography>
-                  </div>
+                  <TeamMemberCard
+                    name={member.name}
+                    alias={member.alias}
+                    role={member.role}
+                    location={member.location}
+                    yearsExperience={member.yearsExperience}
+                    founded={member.founded}
+                    bio={member.bio}
+                  />
                 </FadeIn>
               ))}
             </div>
