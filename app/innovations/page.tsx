@@ -71,7 +71,7 @@ export default function InnovationsPage() {
             <SlideUp>
               <div className="text-center max-w-3xl mx-auto">
                 <Typography variant="hero" className="text-white mb-4" uppercase>
-                  R&amp;D for the Restless
+                  The Tools
                 </Typography>
                 <Typography variant="h3" className="text-grey-400 mb-6">
                   If it already existed, we&apos;d be bored.

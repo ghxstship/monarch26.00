@@ -36,7 +36,7 @@ export function Future() {
         <SlideUp>
           <div className="text-center mb-16">
             <Typography variant="h1" uppercase className="mb-4 text-white">
-              The Future
+              The Tools
             </Typography>
             <Typography variant="body" className="text-grey-400 max-w-2xl mx-auto">
               Innovation meets execution. We&apos;re building the next generation of experiential technology—platforms 

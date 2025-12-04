@@ -28,10 +28,10 @@ export default function Home() {
         <Verticals />
         <Solutions />
         <Services />
+        <Future />
         <Crew />
         <History />
         <FeaturedProjects />
-        <Future />
         <CTA />
       </main>
       <Footer />
