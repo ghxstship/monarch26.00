@@ -1,7 +1,7 @@
 'use client';
 
 import React from 'react';
-import { DoorOpen, Settings, Compass } from 'lucide-react';
+import { Key, Settings, Compass } from 'lucide-react';
 import Link from 'next/link';
 import { Typography } from '../ui/Typography';
 import { Container } from '../layout/Container';
@@ -13,7 +13,7 @@ const apps = [
     name: 'GVTEWAY',
     type: 'B2C',
     description: 'Consumer-facing platform connecting audiences to unforgettable experiences. Your gateway to the extraordinary.',
-    icon: DoorOpen,
+    icon: Key,
   },
   {
     name: 'ATLVS',

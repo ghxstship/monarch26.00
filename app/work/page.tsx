@@ -87,10 +87,10 @@ export default function WorkPage() {
             <SlideUp>
               <div className="text-center max-w-3xl mx-auto">
                 <Typography variant="hero" className="text-white mb-4" uppercase>
-                  The Trophy Case
+                  The Museum
                 </Typography>
                 <Typography variant="h3" className="text-grey-400 mb-6">
-                  Proof we weren&apos;t lying on the first date.
+                  Artifacts from voyages past. Proof the legends are real.
                 </Typography>
                 <Typography variant="body" className="text-grey-400 text-xl">
                   From 50,000+ capacity festival production to intimate brand activations, we&apos;ve delivered experiences 

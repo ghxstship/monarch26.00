@@ -112,10 +112,10 @@ export default function ServicesPage() {
             <SlideUp>
               <div className="text-center max-w-3xl mx-auto">
                 <Typography variant="hero" className="text-white mb-4" uppercase>
-                  The Playbook
+                  The Itinerary
                 </Typography>
                 <Typography variant="h3" className="text-grey-400 mb-6">
-                  Seven phases. Zero shortcuts. Unlimited &quot;I told you so&quot; moments when it works.
+                  Seven milestones. Zero shortcuts. Unlimited &quot;I told you so&quot; moments when it works.
                 </Typography>
                 <Typography variant="body" className="text-grey-400 text-xl">
                   Our operational process refined through 13 years of solving problems that emerge at 3 AM during setup. 

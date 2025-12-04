@@ -14,7 +14,7 @@ export function Crew() {
         <SlideUp>
           <div className="text-center mb-16">
             <Typography variant="h1" uppercase className="mb-4">
-              The Crew
+              The Misfits
             </Typography>
             <Typography variant="body" className="text-grey-600 max-w-2xl mx-auto">
               The people who navigate the impossible. Every crew member brings battle-tested expertise from 
@@ -29,7 +29,7 @@ export function Crew() {
           <FadeIn delay={0.1}>
             <div className="border-2 border-black p-8">
               <Typography variant="h3" uppercase className="mb-4">
-                Meet The Team
+                Meet The Crew
               </Typography>
               <Typography variant="body" className="text-grey-700 mb-6">
                 From production managers to technical directors, creative designers to fabricators—our crew 
