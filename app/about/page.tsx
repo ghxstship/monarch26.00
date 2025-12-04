@@ -34,7 +34,7 @@ export default function AboutPage() {
       <Header />
       <main className="pt-20">
         {/* Hero Section */}
-        <section className="min-h-screen bg-black text-white flex items-center">
+        <section className="min-h-screen py-24 bg-black text-white flex items-center">
           <Container>
             <SlideUp>
               <Typography variant="hero" className="text-white mb-4" uppercase>

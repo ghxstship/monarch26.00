@@ -32,7 +32,7 @@ export function Footer() {
       title: 'Company',
       links: [
         { label: 'Story', href: '/about' },
-        { label: 'Team', href: '/team' },
+        { label: 'Crew', href: '/team' },
         { label: 'Careers', href: '/careers' },
         { label: 'Showcase', href: '/work' },
         { label: 'Solutions', href: '/solutions' },

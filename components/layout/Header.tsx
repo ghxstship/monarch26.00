@@ -17,7 +17,7 @@ export function Header() {
     { label: 'Solutions', href: '/solutions' },
     { label: 'Showcase', href: '/work' },
     { label: 'Story', href: '/about' },
-    { label: 'Team', href: '/team' },
+    { label: 'Crew', href: '/team' },
     { label: 'Contact', href: '/contact' },
   ];
 
