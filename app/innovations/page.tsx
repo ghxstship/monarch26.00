@@ -70,14 +70,16 @@ export default function InnovationsPage() {
           <Container>
             <SlideUp>
               <div className="text-center max-w-3xl mx-auto">
-                <Typography variant="hero" className="text-white mb-6" uppercase>
-                  Building What Doesn&apos;t Exist Yet
+                <Typography variant="hero" className="text-white mb-4" uppercase>
+                  R&amp;D for the Restless
+                </Typography>
+                <Typography variant="h3" className="text-grey-400 mb-6">
+                  If it already existed, we&apos;d be bored.
                 </Typography>
                 <Typography variant="body" className="text-grey-400 text-xl">
-                  The best competitive advantage is building what doesn&apos;t exist yet. Production management 
-                  platforms that understand reality, not just project theory. Tools built by crews who&apos;ve 
-                  managed load-in at 3 AM, solved problems with duct tape and prayer, and know what actually matters 
-                  when everything&apos;s on fire. Metaphorically. Usually.
+                  Production management platforms that understand reality, not just project theory. Tools built 
+                  by crews who&apos;ve managed load-in at 3 AM, solved problems with duct tape and prayer, and know 
+                  what actually matters when everything&apos;s on fire. Metaphorically. Usually.
                 </Typography>
               </div>
             </SlideUp>

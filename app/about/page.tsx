@@ -37,8 +37,11 @@ export default function AboutPage() {
         <section className="min-h-screen bg-black text-white flex items-center">
           <Container>
             <SlideUp>
-              <Typography variant="hero" className="text-white mb-12" uppercase>
-                The History
+              <Typography variant="hero" className="text-white mb-4" uppercase>
+                The Origin Story
+              </Typography>
+              <Typography variant="h3" className="text-grey-400 mb-12">
+                Every empire starts somewhere. Ours started with a &quot;hold my beer&quot; moment.
               </Typography>
               
               {/* Prologue Section */}

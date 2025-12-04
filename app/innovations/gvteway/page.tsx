@@ -80,8 +80,11 @@ export default function GVTEWAYPage() {
           <Container>
             <div className="text-center">
               <SlideUp>
-                <Typography variant="hero" className="text-white mb-6" uppercase>
+                <Typography variant="hero" className="text-white mb-4" uppercase>
                   GVTEWAY
+                </Typography>
+                <Typography variant="h3" className="text-grey-400 mb-6">
+                  Access granted. Drama denied.
                 </Typography>
                 <Typography variant="h2" uppercase className="text-grey-400 mb-6">
                   Experiential Ticketing (Memberships) & Communities

@@ -45,8 +45,11 @@ export default function ATLVSPage() {
         <section className="min-h-screen bg-black text-white flex items-center">
           <Container>
             <SlideUp>
-              <Typography variant="hero" className="text-white mb-6" uppercase>
+              <Typography variant="hero" className="text-white mb-4" uppercase>
                 ATLVS
+              </Typography>
+              <Typography variant="h3" className="text-grey-400 mb-6">
+                Your entire operation. One dashboard. Zero excuses.
               </Typography>
               <Typography variant="h2" uppercase className="text-grey-400 mb-8">
                 Experiential Project (Production) Management

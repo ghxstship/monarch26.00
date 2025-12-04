@@ -1,6 +1,7 @@
 'use client';
 
 import React from 'react';
+import { Search, Pencil, Hammer, Truck, Clapperboard, Zap, Crown } from 'lucide-react';
 import Link from 'next/link';
 import { Typography } from '../ui/Typography';
 import { Container } from '../layout/Container';
@@ -11,37 +12,37 @@ const services = [
   {
     title: 'DISCOVER',
     description: 'Strategic discovery and market analysis. We map the territory between "I have a crazy idea" and "this might actually work." Understanding objectives, spotting constraints before they become disasters, and designing experiences that move audiences without bankrupting anyone.',
-    icon: '🔍',
+    icon: Search,
   },
   {
     title: 'DESIGN',
     description: 'Concept development backed by actual physics. Environmental design, experience mapping, visual identity creation, and journey architecture. Every element serves strategic objectives while maintaining creative integrity—and structural integrity. Both matter.',
-    icon: '✏️',
+    icon: Pencil,
   },
   {
     title: 'DEVELOP',
     description: 'Production execution where vision becomes tangible. Steel, pixels, fabric, circuits—whatever the medium, we engineer it at scale. Our teams build festival infrastructure, branded environments, and installations that make engineers nervous and audiences lose their minds. In a good way.',
-    icon: '🔨',
+    icon: Hammer,
   },
   {
     title: 'DELIVER',
     description: 'Project management as operational excellence. Load-in schedules, vendor coordination, permit acquisition, contingency planning. We&apos;ve managed simultaneous productions across continents and solved real-time problems that would make lesser crews quit on the spot.',
-    icon: '🚚',
+    icon: Truck,
   },
   {
     title: 'DIRECT',
     description: 'On-site technical direction and real-time problem solving. Our teams supervise every detail from first truck arrival to final strike, ensuring execution matches design intent and client expectations—even when reality has other plans.',
-    icon: '🎬',
+    icon: Clapperboard,
   },
   {
     title: 'DISRUPT',
     description: 'Innovation without recklessness. We deploy emerging technologies ahead of adoption curves, create experiences that set new industry standards, and push boundaries with proper engineering documentation and adequate insurance coverage. Because chaos is fun, lawsuits are not.',
-    icon: '⚡',
+    icon: Zap,
   },
   {
     title: 'DOMINATE',
     description: 'Post-event analysis and continuous improvement. Performance metrics, lessons learned, evolution planning. Results that speak louder than promises—delivered on time, within budget, as specified. Revolutionary concept in this industry, apparently.',
-    icon: '👑',
+    icon: Crown,
   },
 ];
 
@@ -82,10 +83,10 @@ export function Services() {
                   }`}>
                     <div className="border-2 border-black p-6 bg-white">
                       {/* Icon */}
-                      <div className={`text-4xl mb-3 ${
+                      <div className={`mb-3 ${
                         index % 2 === 0 ? 'md:text-right' : 'md:text-left'
                       }`}>
-                        {service.icon}
+                        <service.icon className="w-10 h-10 inline-block" strokeWidth={1.5} />
                       </div>
                       
                       {/* Title */}

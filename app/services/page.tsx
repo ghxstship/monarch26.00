@@ -111,13 +111,16 @@ export default function ServicesPage() {
           <Container>
             <SlideUp>
               <div className="text-center max-w-3xl mx-auto">
-                <Typography variant="hero" className="text-white mb-6" uppercase>
-                  The Itinerary
+                <Typography variant="hero" className="text-white mb-4" uppercase>
+                  The Playbook
+                </Typography>
+                <Typography variant="h3" className="text-grey-400 mb-6">
+                  Seven phases. Zero shortcuts. Unlimited &quot;I told you so&quot; moments when it works.
                 </Typography>
                 <Typography variant="body" className="text-grey-400 text-xl">
-                  Seven phases from vision to victory. Our operational process refined through 13 years of solving 
-                  problems that emerge at 3 AM during setup. Also refined through countless moments of &quot;this shouldn&apos;t 
-                  work&quot; followed by &quot;but it does.&quot; Discover. Design. Develop. Deliver. Direct. Disrupt. Dominate.
+                  Our operational process refined through 13 years of solving problems that emerge at 3 AM during setup. 
+                  Also refined through countless moments of &quot;this shouldn&apos;t work&quot; followed by &quot;but it does.&quot; 
+                  Discover. Design. Develop. Deliver. Direct. Disrupt. Dominate.
                 </Typography>
               </div>
             </SlideUp>

@@ -80,12 +80,14 @@ export default function VerticalsPage() {
           <Container>
             <SlideUp>
               <div className="text-center max-w-3xl mx-auto">
-                <Typography variant="hero" className="text-white mb-6" uppercase>
-                  The Fleet
+                <Typography variant="hero" className="text-white mb-4" uppercase>
+                  The Arsenal
+                </Typography>
+                <Typography variant="h3" className="text-grey-400 mb-6">
+                  Four divisions. One mission. Absolutely no chill when it comes to execution.
                 </Typography>
                 <Typography variant="body" className="text-grey-400 text-xl">
-                  Four core verticals where we deliver impossible experiences across 
-                  digital, virtual, physical, experiential, and theatrical avenues.
+                  We deliver impossible experiences across digital, virtual, physical, experiential, and theatrical avenues.
                 </Typography>
               </div>
             </SlideUp>

@@ -31,13 +31,15 @@ export default function TeamPage() {
           <Container>
             <SlideUp>
               <div className="text-center max-w-3xl mx-auto">
-                <Typography variant="hero" className="text-white mb-6" uppercase>
-                  The Crew
+                <Typography variant="hero" className="text-white mb-4" uppercase>
+                  The Misfits
+                </Typography>
+                <Typography variant="h3" className="text-grey-400 mb-6">
+                  Overqualified. Underestimated. Dangerously caffeinated.
                 </Typography>
                 <Typography variant="body" className="text-grey-400 text-xl">
-                  The people who navigate the impossible. Every crew member brings battle-tested expertise 
-                  from high-stakes productions where failure wasn&apos;t an option. We&apos;ve built teams 
-                  that deliver under pressure, solve problems at 3 AM, and turn &quot;that can&apos;t be done&quot; 
+                  Every crew member brings battle-tested expertise from high-stakes productions where failure wasn&apos;t 
+                  an option. We deliver under pressure, solve problems at 3 AM, and turn &quot;that can&apos;t be done&quot; 
                   into &quot;when do you need it by?&quot;
                 </Typography>
               </div>

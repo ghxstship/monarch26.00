@@ -8,7 +8,7 @@ import { PrismaClient } from '@prisma/client';
 const prisma = new PrismaClient();
 
 async function main() {
-  console.log('🌱 Starting database seed...');
+  console.log('[SEED] Starting database seed...');
 
   // Create sample projects
   const projects = await Promise.all([
@@ -100,7 +100,7 @@ async function main() {
     }),
   ]);
 
-  console.log(`✅ Created ${projects.length} sample projects`);
+  console.log(`[OK] Created ${projects.length} sample projects`);
 
   // Create sample blog posts
   const blogPosts = await Promise.all([
@@ -134,7 +134,7 @@ async function main() {
     }),
   ]);
 
-  console.log(`✅ Created ${blogPosts.length} sample blog posts`);
+  console.log(`[OK] Created ${blogPosts.length} sample blog posts`);
 
   // Create system settings
   const settings = await Promise.all([
@@ -167,14 +167,14 @@ async function main() {
     }),
   ]);
 
-  console.log(`✅ Created ${settings.length} system settings`);
+  console.log(`[OK] Created ${settings.length} system settings`);
 
-  console.log('🎉 Database seed completed successfully!');
+  console.log('[DONE] Database seed completed successfully!');
 }
 
 main()
   .catch((e) => {
-    console.error('❌ Error seeding database:', e);
+    console.error('[ERROR] Error seeding database:', e);
     process.exit(1);
   })
   .finally(async () => {

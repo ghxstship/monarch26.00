@@ -48,13 +48,15 @@ export default function CareersPage() {
           <Container>
             <SlideUp>
               <div className="text-center max-w-3xl mx-auto">
-                <Typography variant="hero" className="text-white mb-6" uppercase>
-                  Careers
+                <Typography variant="hero" className="text-white mb-4" uppercase>
+                  Join the Chaos
+                </Typography>
+                <Typography variant="h3" className="text-grey-400 mb-6">
+                  We can&apos;t promise work-life balance. We can promise it won&apos;t be boring.
                 </Typography>
                 <Typography variant="body" className="text-grey-400 text-xl">
-                  Join a crew that navigates the impossible. We&apos;re building teams that deliver world-class 
-                  experiences under pressure, solve problems that shouldn&apos;t have solutions, and turn ambitious 
-                  visions into operational reality.
+                  We&apos;re building teams that deliver world-class experiences under pressure, solve problems 
+                  that shouldn&apos;t have solutions, and turn ambitious visions into operational reality.
                 </Typography>
               </div>
             </SlideUp>

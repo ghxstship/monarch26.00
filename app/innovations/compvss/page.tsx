@@ -45,8 +45,11 @@ export default function COMPVSSPage() {
         <section className="min-h-screen bg-black text-white flex items-center">
           <Container>
             <SlideUp>
-              <Typography variant="hero" className="text-white mb-6" uppercase>
+              <Typography variant="hero" className="text-white mb-4" uppercase>
                 COMPVSS
+              </Typography>
+              <Typography variant="h3" className="text-grey-400 mb-6">
+                Track your people. Trust your people. Stop texting your people.
               </Typography>
               <Typography variant="h2" uppercase className="text-grey-400 mb-8">
                 Experiential Team (Operations) Management

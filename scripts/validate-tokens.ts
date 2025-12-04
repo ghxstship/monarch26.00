@@ -100,7 +100,7 @@ srcPaths.forEach(srcPath => {
 });
 
 if (allErrors.length > 0) {
-  console.error('\n❌ Design Token Violations Found:\n');
+  console.error('\n[ERROR] Design Token Violations Found:\n');
   allErrors.forEach(error => {
     console.error(`${error.file}:${error.line}`);
     console.error(`  Violation: ${error.violation}`);
@@ -109,6 +109,6 @@ if (allErrors.length > 0) {
   console.error(`Total violations: ${allErrors.length}\n`);
   process.exit(1);
 } else {
-  console.log('✅ All files comply with design token requirements');
+  console.log('[OK] All files comply with design token requirements');
   process.exit(0);
 }

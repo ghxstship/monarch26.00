@@ -1,6 +1,7 @@
 'use client';
 
 import React from 'react';
+import { DoorOpen, Settings, Compass } from 'lucide-react';
 import Link from 'next/link';
 import { Typography } from '../ui/Typography';
 import { Container } from '../layout/Container';
@@ -12,19 +13,19 @@ const apps = [
     name: 'GVTEWAY',
     type: 'B2C',
     description: 'Consumer-facing platform connecting audiences to unforgettable experiences. Your gateway to the extraordinary.',
-    icon: '🚪',
+    icon: DoorOpen,
   },
   {
     name: 'ATLVS',
     type: 'Internal',
     description: 'Internal operations platform powering our production workflow. The backbone of operational excellence.',
-    icon: '⚙️',
+    icon: Settings,
   },
   {
     name: 'COMPVSS',
     type: 'B2B',
     description: 'Enterprise solution for brands and partners. Navigate complex productions with confidence.',
-    icon: '🧭',
+    icon: Compass,
   },
 ];
 
@@ -48,7 +49,7 @@ export function Future() {
           {apps.map((app, index) => (
             <FadeIn key={app.name} delay={index * 0.1}>
               <div className="border-2 border-white p-8 h-full hover:bg-white hover:text-black transition-all group">
-                <div className="text-5xl mb-4">{app.icon}</div>
+                <app.icon className="w-12 h-12 mb-4" strokeWidth={1.5} />
                 <Typography variant="h3" uppercase className="mb-2 group-hover:text-black">
                   {app.name}
                 </Typography>

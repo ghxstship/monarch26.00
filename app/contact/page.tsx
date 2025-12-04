@@ -88,8 +88,11 @@ export default function ContactPage() {
           <Container>
             <SlideUp>
               <div className="text-center max-w-3xl mx-auto">
-                <Typography variant="hero" className="text-white mb-6" uppercase>
-                  Chart Your Course
+                <Typography variant="hero" className="text-white mb-4" uppercase>
+                  Let&apos;s Make Problems
+                </Typography>
+                <Typography variant="h3" className="text-grey-400 mb-6">
+                  The fun kind. The kind that ends with champagne and case studies.
                 </Typography>
                 <Typography variant="body" className="text-grey-400 text-xl">
                   From festival grounds to Formula 1 hospitality to Fortune 500 brand activations—we&apos;ve navigated 
