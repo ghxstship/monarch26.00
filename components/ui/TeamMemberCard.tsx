@@ -20,6 +20,7 @@ export interface TeamMemberCardProps {
   founded?: string;
   image?: string;
   className?: string;
+  vacant?: boolean;
 }
 
 export function TeamMemberCard({
@@ -32,17 +33,27 @@ export function TeamMemberCard({
   founded,
   image,
   className = '',
+  vacant = false,
 }: TeamMemberCardProps) {
   return (
     <motion.div
-      className={`border-2 border-black bg-white h-full flex flex-col ${className}`}
+      className={`border-2 h-full flex flex-col ${vacant ? 'border-dashed border-grey-400 bg-grey-100' : 'border-black bg-white'} ${className}`}
       whileHover={{ scale: 1.02 }}
       transition={{ duration: 0.2 }}
     >
       {/* Header Section - Photo/Avatar */}
-      <div className="relative w-full aspect-square bg-grey-200 flex items-center justify-center border-b-2 border-black">
+      <div className={`relative w-full aspect-square flex items-center justify-center border-b-2 ${vacant ? 'bg-grey-200 border-dashed border-grey-400' : 'bg-grey-200 border-black'}`}>
         {image ? (
           <Image src={image} alt={name} fill className="object-cover" />
+        ) : vacant ? (
+          <div className="text-center">
+            <Typography variant="h1" className="text-grey-400" uppercase>
+              ?
+            </Typography>
+            <Typography variant="meta" className="text-grey-500 text-xs mt-2 uppercase tracking-wider">
+              Missing in Action
+            </Typography>
+          </div>
         ) : (
           <Typography variant="h1" className="text-grey-400" uppercase>
             {name.split(' ').map(n => n[0]).join('')}
