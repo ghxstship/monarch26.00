@@ -18,7 +18,7 @@ export default function TeamPage() {
       location: 'Tampa, FL',
       yearsExperience: '13+',
       founded: 'July 2023',
-      bio: '13 years operating at the intersection of hospitality, live entertainment, and experiential marketing across 52 countries. Former F&B Operations Manager for Formula 1 Las Vegas Grand Prix. Production experience with Insomniac, F1, PATRÓN, Heineken, and Red Bull.',
+      bio: 'Survived 13 years in the trenches where hospitality, live entertainment, and experiential marketing collide—across 52 countries and counting. Fluent in chaos management, deadline alchemy, and the ancient art of making impossible timelines work. Powered by basslines, passport stamps, and an inexplicable talent for throwing axes with alarming accuracy. Builds systems, breaks personal records, and founded this ship because someone had to.',
     },
     {
       name: 'Position Vacant',
