@@ -110,7 +110,7 @@ export default function ContactPage() {
           <Container maxWidth="md">
             <SlideUp delay={0.2}>
               <form onSubmit={handleSubmit} className="space-y-6">
-                <div className="grid md:grid-cols-2 gap-6">
+                <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 sm:gap-6">
                   <Input
                     label="Name"
                     name="name"
@@ -140,7 +140,7 @@ export default function ContactPage() {
                   placeholder="Your company name"
                 />
 
-                <div className="grid md:grid-cols-2 gap-6">
+                <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 sm:gap-6">
                   <div>
                     <Typography variant="h6" uppercase className="mb-2">
                       Project Type
@@ -234,7 +234,7 @@ export default function ContactPage() {
         {/* Contact Info */}
         <section className="py-24 bg-black text-white">
           <Container>
-            <div className="grid md:grid-cols-3 gap-12 text-center">
+            <div className="grid grid-cols-1 sm:grid-cols-3 gap-8 sm:gap-12 text-center">
               <SlideUp>
                 <Typography variant="h5" uppercase className="text-white mb-4">
                   Headquarters

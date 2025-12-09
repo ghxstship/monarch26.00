@@ -134,7 +134,7 @@ export default function ServicesPage() {
             className={`py-24 ${index % 2 === 0 ? 'bg-white' : 'bg-black text-white'}`}
           >
             <Container>
-              <div className="grid md:grid-cols-2 gap-16 items-center">
+              <div className="grid md:grid-cols-2 gap-8 md:gap-16 items-center">
                 <SlideUp>
                   <Typography 
                     variant="h1" 
@@ -159,15 +159,15 @@ export default function ServicesPage() {
                 </SlideUp>
 
                 <SlideUp delay={0.2}>
-                  <div className={`border-2 p-8 ${index % 2 === 0 ? 'border-black' : 'border-white'}`}>
+                  <div className={`border-2 p-6 sm:p-8 ${index % 2 === 0 ? 'border-black' : 'border-white'}`}>
                     <Typography 
                       variant="h5" 
                       uppercase 
-                      className={`mb-6 ${index % 2 === 0 ? 'text-black' : 'text-white'}`}
+                      className={`mb-4 sm:mb-6 ${index % 2 === 0 ? 'text-black' : 'text-white'}`}
                     >
                       Core Capabilities
                     </Typography>
-                    <ul className="space-y-3">
+                    <ul className="space-y-2 sm:space-y-3">
                       {service.capabilities.map((capability) => (
                         <li key={capability}>
                           <Typography 

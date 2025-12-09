@@ -111,10 +111,10 @@ export default function AboutPage() {
         {/* Stats Section */}
         <section className="py-24 bg-white">
           <Container>
-            <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
+            <div className="grid grid-cols-2 md:grid-cols-4 gap-4 sm:gap-6 md:gap-8">
               {stats.map((stat, index) => (
                 <FadeIn key={stat.label} delay={index * 0.1}>
-                  <div className="text-center border-2 border-black p-6 md:p-8 flex flex-col justify-center min-h-[180px]">
+                  <div className="text-center border-2 border-black p-4 sm:p-6 md:p-8 flex flex-col justify-center min-h-[140px] sm:min-h-[160px] md:min-h-[180px]">
                     <Typography variant="hero" className="mb-3 leading-none">
                       {stat.value}
                     </Typography>
@@ -241,7 +241,7 @@ export default function AboutPage() {
                       <div className={`ml-20 md:ml-0 ${
                         index % 2 === 0 ? 'md:mr-12' : 'md:ml-12'
                       }`}>
-                        <div className="border-2 border-black p-6 bg-white">
+                        <div className="border-2 border-black p-4 sm:p-6 bg-white">
                           {/* Icon */}
                           <div className={`mb-3 ${
                             index % 2 === 0 ? 'md:flex md:justify-end' : 'md:flex md:justify-start'

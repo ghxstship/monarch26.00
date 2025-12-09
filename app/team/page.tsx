@@ -194,7 +194,7 @@ export default function TeamPage() {
         {/* Team Members */}
         <section className="py-24 bg-white">
           <Container>
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12">
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8 lg:gap-12">
               {teamMembers.map((member, index) => (
                 <FadeIn key={`${member.role}-${index}`} delay={index * 0.1}>
                   <TeamMemberCard
@@ -231,7 +231,7 @@ export default function TeamPage() {
               </SlideUp>
 
               <SlideUp delay={0.2}>
-                <div className="border-2 border-white p-8 md:p-12">
+                <div className="border-2 border-white p-6 sm:p-8 md:p-12">
                   <Typography variant="h3" uppercase className="text-white mb-6">
                     What We&apos;re Looking For
                   </Typography>

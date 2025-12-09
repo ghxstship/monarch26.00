@@ -54,15 +54,15 @@ export function CookieConsent() {
   
   return (
     <div 
-      className="fixed bottom-0 left-0 right-0 z-50 bg-black text-white border-t-2 border-white p-6"
+      className="fixed bottom-0 left-0 right-0 z-50 bg-black text-white border-t-2 border-white p-4 sm:p-6"
       role="dialog"
       aria-label="Cookie consent"
       aria-describedby="cookie-description"
     >
-      <div className="max-w-7xl mx-auto">
-        <h2 className="font-bebas text-2xl uppercase mb-4">Cookie Preferences</h2>
+      <div className="max-w-7xl mx-auto px-4 sm:px-0">
+        <h2 className="font-bebas text-xl sm:text-2xl uppercase mb-3 sm:mb-4">Cookie Preferences</h2>
         
-        <p id="cookie-description" className="mb-6 max-w-3xl">
+        <p id="cookie-description" className="mb-4 sm:mb-6 max-w-3xl text-sm sm:text-base">
           We use cookies to enhance your experience and analyze site traffic. 
           You can customize your preferences below.
         </p>
@@ -117,21 +117,21 @@ export function CookieConsent() {
           </div>
         )}
         
-        <div className="flex flex-wrap gap-4">
-          <Button variant="filled" size="md" onClick={handleAcceptAll}>
+        <div className="flex flex-wrap gap-2 sm:gap-4">
+          <Button variant="filled" size="sm" onClick={handleAcceptAll} className="text-sm sm:text-base">
             Accept All
           </Button>
           
-          <Button variant="outlined" size="md" onClick={handleRejectAll} className="border-white text-white hover:bg-white hover:text-black">
+          <Button variant="outlined" size="sm" onClick={handleRejectAll} className="border-white text-white hover:bg-white hover:text-black text-sm sm:text-base">
             Reject All
           </Button>
           
-          <Button variant="outlined" size="md" onClick={() => setShowDetails(!showDetails)} className="border-white text-white hover:bg-white hover:text-black">
+          <Button variant="outlined" size="sm" onClick={() => setShowDetails(!showDetails)} className="border-white text-white hover:bg-white hover:text-black text-sm sm:text-base">
             {showDetails ? 'Hide' : 'Show'} Details
           </Button>
           
           {showDetails && (
-            <Button variant="filled" size="md" onClick={handleAcceptSelected}>
+            <Button variant="filled" size="sm" onClick={handleAcceptSelected} className="text-sm sm:text-base">
               Save Preferences
             </Button>
           )}

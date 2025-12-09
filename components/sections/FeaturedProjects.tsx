@@ -49,8 +49,8 @@ export function FeaturedProjects() {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-12">
           {projects.map((project, index) => (
             <SlideUp key={project.title} delay={index * 0.1}>
-              <div className="border-2 border-white bg-black overflow-hidden hover:scale-[1.02] transition-transform duration-200 cursor-pointer">
-                <div className="relative w-full aspect-[16/9] bg-grey-900">
+              <div className="border-2 border-white bg-black overflow-hidden hover:scale-[1.02] transition-transform duration-200 cursor-pointer h-full flex flex-col">
+                <div className="relative w-full aspect-[16/9] bg-grey-900 flex-shrink-0">
                   {/* Placeholder for image */}
                   <div className="absolute inset-0 flex items-center justify-center">
                     <Typography variant="h3" className="text-grey-700" uppercase>
@@ -58,11 +58,11 @@ export function FeaturedProjects() {
                     </Typography>
                   </div>
                 </div>
-                <div className="p-6">
-                  <Typography variant="h4" uppercase className="mb-2 text-white">
+                <div className="p-4 sm:p-6 flex-grow flex flex-col">
+                  <Typography variant="h4" uppercase className="mb-2 text-white text-sm sm:text-base md:text-lg leading-tight">
                     {project.title}
                   </Typography>
-                  <Typography variant="meta" uppercase className="text-grey-500">
+                  <Typography variant="meta" uppercase className="text-grey-500 text-xs sm:text-sm mt-auto">
                     {project.metadata}
                   </Typography>
                 </div>

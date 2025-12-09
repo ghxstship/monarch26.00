@@ -66,14 +66,14 @@ export function Modal({
               aria-modal="true"
               aria-labelledby="modal-title"
               aria-describedby={description ? "modal-description" : undefined}
-              className="bg-white text-black border-2 border-black max-w-2xl w-full max-h-[90vh] overflow-y-auto"
+              className="bg-white text-black border-2 border-black max-w-2xl w-full max-h-[90vh] overflow-y-auto mx-4 sm:mx-0"
               initial={{ opacity: 0, scale: 0.95, y: 20 }}
               animate={{ opacity: 1, scale: 1, y: 0 }}
               exit={{ opacity: 0, scale: 0.95, y: 20 }}
               transition={{ duration: 0.2 }}
             >
-              <div className="p-6 border-b-2 border-black flex items-center justify-between">
-                <h2 id="modal-title" className="font-bebas text-3xl uppercase">
+              <div className="p-4 sm:p-6 border-b-2 border-black flex items-center justify-between gap-4">
+                <h2 id="modal-title" className="font-bebas text-2xl sm:text-3xl uppercase">
                   {title}
                 </h2>
                 <button
@@ -88,12 +88,12 @@ export function Modal({
               </div>
               
               {description && (
-                <p id="modal-description" className="p-6 border-b-2 border-black">
+                <p id="modal-description" className="p-4 sm:p-6 border-b-2 border-black">
                   {description}
                 </p>
               )}
               
-              <div className="p-6">
+              <div className="p-4 sm:p-6">
                 {children}
               </div>
             </motion.div>

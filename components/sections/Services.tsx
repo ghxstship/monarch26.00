@@ -81,7 +81,7 @@ export function Services() {
                   <div className={`ml-20 md:ml-0 ${
                     index % 2 === 0 ? 'md:mr-12' : 'md:ml-12'
                   }`}>
-                    <div className="border-2 border-black p-6 bg-white">
+                    <div className="border-2 border-black p-4 sm:p-6 bg-white">
                       {/* Icon */}
                       <div className={`mb-3 ${
                         index % 2 === 0 ? 'md:text-right' : 'md:text-left'
