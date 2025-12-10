@@ -59,10 +59,24 @@ export function Footer() {
       aria-label="Site footer"
       className="bg-black text-white border-t-2 border-white"
     >
-      <Container className="py-16">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-12 mb-12">
-          {/* Brand Column */}
-          <div className="lg:col-span-1">
+      <Container className="py-12 sm:py-16">
+        {/* Mobile: Brand centered at top */}
+        <div className="text-center mb-10 sm:hidden">
+          <Typography variant="h3" className="text-white mb-2" uppercase>
+            GHXSTSHIP
+          </Typography>
+          <Typography variant="body" className="text-grey-400 mb-2">
+            Charter the Uncharted.
+          </Typography>
+          <Typography variant="meta" className="text-grey-500" uppercase>
+            Tampa, FL // Global
+          </Typography>
+        </div>
+
+        {/* Link Sections Grid */}
+        <div className="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-4 lg:grid-cols-5 gap-8 sm:gap-10 mb-10 sm:mb-12">
+          {/* Brand Column - Hidden on mobile, shown on lg+ */}
+          <div className="hidden lg:block">
             <Typography variant="h3" className="text-white mb-4" uppercase>
               GHXSTSHIP
             </Typography>
@@ -77,15 +91,15 @@ export function Footer() {
           {/* Footer Sections */}
           {footerSections.map((section) => (
             <div key={section.title}>
-              <Typography variant="h6" className="text-white mb-4" uppercase>
+              <Typography variant="h6" className="text-white mb-3 sm:mb-4 text-sm sm:text-base" uppercase>
                 {section.title}
               </Typography>
-              <ul className="space-y-2">
+              <ul className="space-y-1.5 sm:space-y-2">
                 {section.links.map((link) => (
                   <li key={link.href}>
                     <Link
                       href={link.href}
-                      className="font-share text-grey-400 hover:text-white transition-colors"
+                      className="font-share text-grey-400 hover:text-white transition-colors text-sm sm:text-base"
                     >
                       {link.label}
                     </Link>
@@ -96,10 +110,10 @@ export function Footer() {
           ))}
         </div>
 
-        {/* Divider */}
-        <div className="border-t-2 border-grey-800 pt-8">
-          <div className="flex justify-center items-center">
-            <Typography variant="meta" className="text-grey-500" uppercase>
+        {/* Divider & Copyright */}
+        <div className="border-t-2 border-grey-800 pt-6 sm:pt-8">
+          <div className="flex flex-col sm:flex-row justify-center items-center gap-2">
+            <Typography variant="meta" className="text-grey-500 text-xs sm:text-sm text-center" uppercase>
               © {currentYear} GHXSTSHIP Industries LLC. All rights reserved.
             </Typography>
           </div>
