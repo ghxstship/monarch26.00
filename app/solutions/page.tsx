@@ -177,7 +177,7 @@ export default function SolutionsPage() {
           <Container>
             <div className="max-w-4xl mx-auto text-center">
               <SlideUp>
-                <Typography variant="h2" uppercase className="text-black mb-6">
+                <Typography variant="h1" uppercase className="text-black mb-6">
                   Seamless Integration
                 </Typography>
                 <Typography variant="body" className="text-grey-700 text-lg leading-relaxed mb-8">
