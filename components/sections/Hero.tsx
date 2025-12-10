@@ -67,7 +67,7 @@ export function Hero() {
             </a>
             <a href="/work">
               <button className="font-bebas uppercase tracking-wide px-8 py-4 text-lg border-2 border-white text-white hover:bg-white hover:text-black transition-all">
-                View Our Passport
+                View the Museum
               </button>
             </a>
           </motion.div>

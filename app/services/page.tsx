@@ -10,93 +10,93 @@ import { SlideUp } from '@/components/animations/SlideUp';
 const services = [
   {
     title: 'DISCOVER',
-    subtitle: 'Strategic Discovery & Market Analysis',
-    description: 'We map territory between ambitious vision and executable reality—understanding objectives, identifying constraints, designing experiences that move audiences while staying operationally achievable.',
+    subtitle: 'Insight Development • Strategic Planning • Research & Consulting',
+    description: 'Comprehensive market, trend, and audience research for experiential campaigns. Brand audits, competitive benchmarking, and cultural intelligence analysis. Experience strategy, customer journey mapping, and opportunity modeling. Data-driven insights that define creative direction and campaign objectives.',
     capabilities: [
-      'Strategic Discovery',
-      'Market Analysis',
-      'Constraint Mapping',
-      'Feasibility Studies',
-      'Objective Alignment',
-      'Experience Design',
+      'Market & Audience Research',
+      'Brand Audits & Benchmarking',
+      'Experience Strategy',
+      'Customer Journey Mapping',
+      'Stakeholder Interviews',
+      'Strategic Roadmaps',
     ],
   },
   {
     title: 'DESIGN',
-    subtitle: 'Concept Development & Technical Feasibility',
-    description: 'Concept development backed by technical feasibility. Environmental design, experience mapping, visual identity creation, and journey architecture. Every element serves strategic objectives while maintaining creative integrity.',
+    subtitle: 'Creative Direction • Concept Development • Experience Design',
+    description: 'High-impact creative ideation for live events, brand activations, and digital campaigns. Visual language creation, spatial and environmental design, storyboarding and narrative architecture. UX/UI for interactive content and hybrid platforms. Technical, scenic, lighting, and AV design integrated into cohesive concepts.',
     capabilities: [
-      'Environmental Design',
-      'Experience Mapping',
-      'Visual Identity',
-      'Journey Architecture',
-      'Technical Planning',
-      'Creative Strategy',
+      'Creative Ideation',
+      'Visual Language & Moodboards',
+      'Spatial & Environmental Design',
+      'Storyboarding & Narrative',
+      'UX/UI Design',
+      'Technical & Scenic Design',
     ],
   },
   {
     title: 'DEVELOP',
-    subtitle: 'Production Execution at Scale',
-    description: 'Production execution where vision becomes tangible. Steel, pixels, fabric, circuits—whatever the medium, we engineer it at scale. Our teams build festival infrastructure, branded environments, custom platforms, and installations that shouldn&apos;t technically work but absolutely do.',
+    subtitle: 'Contracting & Planning • Technical Development • Pre-Production',
+    description: 'Production budgeting, scoping, and contracting for events and experiential builds. End-to-end pre-production planning, schedules, runbooks, and workflow mapping. Vendor sourcing, procurement, and supply-chain coordination. Technical design integration: staging, AV, XR/AR, projection, lighting, and effects.',
     capabilities: [
-      'Festival Infrastructure',
-      'Branded Environments',
-      'Custom Platforms',
-      'Technical Fabrication',
-      'Installation Build',
-      'Production Management',
+      'Production Budgeting & Scoping',
+      'Pre-Production Planning',
+      'Vendor Sourcing & Procurement',
+      'Technical Design Integration',
+      'Fabrication Documentation',
+      'Logistics & Compliance Planning',
     ],
   },
   {
     title: 'DELIVER',
-    subtitle: 'Project Management as Operational Excellence',
-    description: "Load-in schedules, vendor coordination, permit acquisition, contingency planning. We've managed simultaneous productions across continents and solved 3 AM problems that would break other crews.",
+    subtitle: 'Production Management • Logistics Coordination • Site Operations',
+    description: 'Turnkey production management for events, activations, and branded experiences. On-site build supervision, installation oversight, and engineering coordination. Technical rehearsals, programming sessions, and cue walkthroughs. Load-in/load-out management, guest flow, and operational readiness.',
     capabilities: [
-      'Load-in Management',
-      'Vendor Coordination',
-      'Permit Acquisition',
-      'Contingency Planning',
-      'Multi-site Operations',
-      'Crisis Management',
+      'Turnkey Production Management',
+      'On-Site Build Supervision',
+      'Vendor & Team Alignment',
+      'Technical Rehearsals',
+      'Load-In/Load-Out Management',
+      'QA & Safety Oversight',
     ],
   },
   {
     title: 'DIRECT',
-    subtitle: 'On-site Technical Direction',
-    description: 'Our teams supervise every detail from first truck arrival to final strike, ensuring execution matches design intent and client expectations.',
+    subtitle: 'Operations Leadership • Technical Direction • Event Staffing',
+    description: 'Live show calling, technical directing, and editorial execution. Real-time operational oversight for productions, stages, and experiences. Stage management, broadcast direction, and digital control room operations. Live troubleshooting, crisis management, and maintaining operational continuity from open to close.',
     capabilities: [
-      'Technical Direction',
-      'On-site Supervision',
-      'Quality Assurance',
-      'Real-time Problem Solving',
-      'Crew Management',
-      'Strike Coordination',
+      'Live Show Calling',
+      'Technical Directing',
+      'Stage Management',
+      'Broadcast Direction',
+      'Live Troubleshooting',
+      'Operational Continuity',
     ],
   },
   {
     title: 'DISRUPT',
-    subtitle: 'Innovation Without Recklessness',
-    description: 'We deploy emerging technologies ahead of adoption curves, create experiences that set new industry standards, and push boundaries with proper engineering documentation and adequate insurance coverage.',
+    subtitle: 'Innovation Development • Emerging Technology • Creative Experimentation',
+    description: 'Pioneering experiential concepts using emerging tech, XR/AR, and interactive systems. Development of multisensory installations, immersive activations, and digital layers. Proprietary tools, custom software, and next-gen engagement mechanics. Category-defying creative R&D that challenges industry norms.',
     capabilities: [
-      'Emerging Technology',
-      'Industry Innovation',
-      'Standards Setting',
-      'R&D Implementation',
-      'Risk Management',
-      'Future-forward Design',
+      'Emerging Tech & XR/AR',
+      'Multisensory Installations',
+      'Proprietary Tools & Software',
+      'Rapid Prototyping',
+      'Experimental Storytelling',
+      'Creative R&D',
     ],
   },
   {
     title: 'DOMINATE',
-    subtitle: 'Post-event Analysis & Continuous Improvement',
-    description: 'Performance metrics, lessons learned, evolution planning. Results that speak louder than promises—delivered on time, within budget, as specified.',
+    subtitle: 'Scaling & Optimization • Performance Growth • Amplification',
+    description: 'Multi-market campaign rollout, touring systems, and scalable event models. Analytics dashboards, performance insights, and data-driven optimization. Conversion funnels, community development, and lifecycle engagement. Always-on content production and audience expansion for long-term growth.',
     capabilities: [
-      'Performance Metrics',
-      'Post-event Analysis',
-      'Lessons Documentation',
-      'Evolution Planning',
-      'ROI Reporting',
-      'Continuous Improvement',
+      'Multi-Market Rollout',
+      'Analytics & Performance Insights',
+      'Conversion Optimization',
+      'Community Development',
+      'Always-On Content',
+      'Postmortems & Continuous Improvement',
     ],
   },
 ];
@@ -112,14 +112,13 @@ export default function ServicesPage() {
             <SlideUp>
               <div className="text-center max-w-3xl mx-auto">
                 <Typography variant="hero" className="text-white mb-4" uppercase>
-                  The Itinerary
+                  The Services
                 </Typography>
                 <Typography variant="h3" className="text-grey-400 mb-6">
-                  Seven milestones. Zero shortcuts. Unlimited &quot;I told you so&quot; moments when it works.
+                  Seven D&apos;s. Zero shortcuts.
                 </Typography>
                 <Typography variant="body" className="text-grey-400 text-xl">
-                  Our operational process refined through 13 years of solving problems that emerge at 3 AM during setup. 
-                  Also refined through countless moments of &quot;this shouldn&apos;t work&quot; followed by &quot;but it does.&quot; 
+                  Our operational methodology refined through 13 years of solving problems that emerge at 3 AM during setup. 
                   Discover. Design. Develop. Deliver. Direct. Disrupt. Dominate.
                 </Typography>
               </div>

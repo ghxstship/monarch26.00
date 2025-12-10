@@ -8,24 +8,28 @@ import { FadeIn } from '../animations/FadeIn';
 
 const solutions = [
   {
+    title: 'Social',
+    description: 'Strategy, content production, community building, and always-on content studios.',
+  },
+  {
     title: 'Digital',
-    description: 'Web platforms, mobile applications, and digital experiences that scale across devices and audiences.',
+    description: 'Web design, UX development, performance marketing, and interactive experiences.',
   },
   {
     title: 'Virtual',
-    description: 'AR/VR experiences, virtual events, and immersive digital environments that transcend physical limitations.',
+    description: 'Virtual events, livestreams, podcasts, webinars, and on-demand content.',
   },
   {
     title: 'Physical',
-    description: 'Installations, fabrications, and built environments that transform spaces into experiences.',
+    description: 'Live events, fabrication, scenic builds, and turnkey production management.',
   },
   {
-    title: 'Musical Experiential',
-    description: 'Brand activations, pop-ups, and interactive experiences that create lasting impressions.',
+    title: 'Experiential',
+    description: 'Brand activations, installations, interactive tech, and VIP experience design.',
   },
   {
-    title: 'Theatrical',
-    description: 'Live performances, staged productions, and entertainment experiences that captivate audiences.',
+    title: 'International',
+    description: 'Global touring, multi-city rollouts, and cross-market campaign localization.',
   },
 ];
 
@@ -36,11 +40,11 @@ export function Solutions() {
         <FadeIn>
           <div className="text-center mb-16">
             <Typography variant="h1" uppercase className="mb-4">
-              The Destinations
+              The Solutions
             </Typography>
             <Typography variant="body" className="text-grey-600 max-w-2xl mx-auto">
-              We deliver experiences across multiple platforms and mediums. From digital interfaces to physical 
-              installations, virtual environments to theatrical productions—we navigate every avenue with precision.
+              Six platforms. Infinite possibilities. We deliver experiences across every medium—ensuring your vision 
+              reaches audiences wherever they are.
             </Typography>
           </div>
         </FadeIn>
@@ -64,7 +68,7 @@ export function Solutions() {
           <div className="text-center">
             <Link href="/solutions">
               <button className="font-bebas uppercase tracking-wide px-8 py-4 text-lg border-2 border-black text-black hover:bg-black hover:text-white transition-all">
-                Explore All Destinations
+                Explore All Solutions
               </button>
             </Link>
           </div>

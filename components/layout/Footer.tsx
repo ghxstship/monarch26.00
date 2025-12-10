@@ -8,43 +8,44 @@ export function Footer() {
 
   const footerSections = [
     {
+      title: 'Industries',
+      links: [
+        { label: 'Concerts, Festivals & Tours', href: '/industries#concerts-festivals-tours' },
+        { label: 'Sports & Entertainment', href: '/industries#sports-entertainment' },
+        { label: 'Retail', href: '/industries#retail' },
+        { label: 'Hospitality', href: '/industries#hospitality' },
+        { label: 'Corporate & Private', href: '/industries#corporate-private' },
+      ],
+    },
+    {
       title: 'Services',
       links: [
         { label: 'Discover', href: '/services#discover' },
         { label: 'Design', href: '/services#design' },
         { label: 'Develop', href: '/services#develop' },
         { label: 'Deliver', href: '/services#deliver' },
-        { label: 'Direct', href: '/services#direct' },
         { label: 'Disrupt', href: '/services#disrupt' },
-        { label: 'Dominate', href: '/services#dominate' },
       ],
     },
     {
-      title: 'Verticals',
+      title: 'Solutions',
       links: [
-        { label: 'Immersive Entertainment', href: '/verticals/immersive-entertainment' },
-        { label: 'Experiential Marketing', href: '/verticals/experiential-marketing' },
-        { label: 'Creative Media', href: '/verticals/creative-media' },
-        { label: 'Integrated Technology', href: '/verticals/integrated-technology' },
+        { label: 'Social', href: '/solutions#social' },
+        { label: 'Digital', href: '/solutions#digital' },
+        { label: 'Virtual', href: '/solutions#virtual' },
+        { label: 'Physical', href: '/solutions#physical' },
+        { label: 'Experiential', href: '/solutions#experiential' },
+        { label: 'International', href: '/solutions#international' },
       ],
     },
     {
       title: 'Company',
       links: [
         { label: 'Story', href: '/about' },
-        { label: 'Crew', href: '/team' },
-        { label: 'Careers', href: '/careers' },
         { label: 'Showcase', href: '/work' },
-        { label: 'Solutions', href: '/solutions' },
         { label: 'Innovations', href: '/innovations' },
+        { label: 'Careers', href: '/careers' },
         { label: 'Contact', href: '/contact' },
-      ],
-    },
-    {
-      title: 'Legal',
-      links: [
-        { label: 'Privacy Policy', href: '/privacy' },
-        { label: 'Terms of Service', href: '/terms' },
       ],
     },
   ];

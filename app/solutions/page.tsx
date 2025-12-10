@@ -9,81 +9,81 @@ import { SlideUp } from '@/components/animations/SlideUp';
 
 const solutions = [
   {
-    title: 'Digital',
-    subtitle: 'Web // Mobile // Digital Experiences',
-    description: 'Web platforms, mobile applications, and digital experiences that scale across devices and audiences. From responsive websites to native applications, we create digital touchpoints that engage users wherever they are.',
+    title: 'Social',
+    subtitle: 'Strategy // Content // Community',
+    description: 'Social media strategy and management, content production across short-form, motion, and editorial. Community building, influencer and creator programs, campaign development. Always-on content studios that keep your brand in the conversation.',
     capabilities: [
-      'Web Platforms',
-      'Mobile Applications',
-      'Responsive Design',
-      'User Experience',
-      'Digital Strategy',
-      'Cross-device Integration',
+      'Social Media Strategy & Management',
+      'Content Production',
+      'Community Building & Moderation',
+      'Influencer & Creator Programs',
+      'Campaign Development',
+      'Digital Reputation Tracking',
+    ],
+  },
+  {
+    title: 'Digital',
+    subtitle: 'Web // Mobile // Performance',
+    description: 'Digital campaign strategy, web design and UX development, landing pages and conversion paths. Email marketing, CRM automation, SEO, SEM, and performance marketing. Interactive web experiences that drive results.',
+    capabilities: [
+      'Digital Campaign Strategy',
+      'Web Design & UX Development',
+      'Landing Pages & Funnels',
+      'Email Marketing & CRM',
+      'SEO, SEM & Performance Marketing',
+      'Interactive Web Experiences',
     ],
   },
   {
     title: 'Virtual',
-    subtitle: 'AR/VR // Virtual Events // Immersive Digital',
-    description: 'AR/VR experiences, virtual events, and immersive digital environments that transcend physical limitations. We create virtual worlds that feel tangible and experiences that push the boundaries of reality.',
+    subtitle: 'Events // Livestreams // On-Demand',
+    description: 'Virtual events and livestreams, podcasts and talk formats, webinars and masterclasses. Remote studio and recording systems, virtual product launches, on-demand content libraries. Interactive digital experiences that transcend physical limitations.',
     capabilities: [
-      'AR/VR Experiences',
-      'Virtual Events',
-      'Immersive Environments',
-      'Digital Twins',
-      '3D Modeling',
-      'Interactive Simulations',
+      'Virtual Events & Livestreams',
+      'Podcasts & Talk Formats',
+      'Webinars & Masterclasses',
+      'Remote Studio Systems',
+      'Virtual Product Launches',
+      'On-Demand Content Libraries',
     ],
   },
   {
     title: 'Physical',
-    subtitle: 'Installations // Fabrications // Built Environments',
-    description: 'Installations, fabrications, and built environments that transform spaces into experiences. Steel, wood, fabric, and light—we engineer physical structures that shouldn\'t work but absolutely do.',
+    subtitle: 'Events // Fabrication // Environments',
+    description: 'Live events and productions, environmental design and architecture, fabrication and scenic builds. Retail, pop-up, and in-store environments. Trade shows, exhibits, mobile and roadshow units. Turnkey production management from concept to strike.',
     capabilities: [
-      'Custom Installations',
-      'Fabrication',
+      'Live Events & Productions',
       'Environmental Design',
-      'Structural Engineering',
-      'Material Innovation',
-      'Space Transformation',
-    ],
-  },
-  {
-    title: 'Musical',
-    subtitle: 'Tours // Concerts // Live Music',
-    description: 'Concert tours, music festivals, and live performances that move audiences. From intimate venues to stadium shows, we orchestrate musical experiences that resonate long after the last note.',
-    capabilities: [
-      'Concert Tours',
-      'Music Festivals',
-      'Live Performances',
-      'Artist Production',
-      'Sound Design',
-      'Venue Management',
+      'Fabrication & Scenic Builds',
+      'Retail & Pop-Up Environments',
+      'Trade Shows & Exhibits',
+      'Turnkey Production Management',
     ],
   },
   {
     title: 'Experiential',
-    subtitle: 'Brand Activations // Pop-ups // Interactive',
-    description: 'Brand activations, pop-ups, and interactive experiences that create lasting impressions. We design moments that audiences remember long after the event ends.',
+    subtitle: 'Activations // Installations // Immersive',
+    description: 'Brand activations and experiential installations, custom venues and pop-up worlds. Interactive technology—RFID, NFC, projection, AR/XR. Gamified experiences, experiential storytelling, immersive photo/video moments. Hospitality and VIP experience design.',
     capabilities: [
       'Brand Activations',
-      'Pop-up Experiences',
-      'Interactive Installations',
-      'Engagement Design',
-      'Audience Journey',
-      'Memorable Moments',
+      'Experiential Installations',
+      'Custom Venues & Pop-Up Worlds',
+      'Interactive Technology',
+      'Gamified Experiences',
+      'VIP Experience Design',
     ],
   },
   {
-    title: 'Theatrical',
-    subtitle: 'Live Performances // Staged Productions // Entertainment',
-    description: 'Live performances, staged productions, and entertainment experiences that captivate audiences. From intimate shows to grand spectacles, we create theatrical moments that move people.',
+    title: 'International',
+    subtitle: 'Global // Touring // Multi-Market',
+    description: 'Global touring installations and international event production. Cross-market campaign localization, global fabrication and supply chain. Remote and borderless creative operations, artist and talent touring support. Multi-city rollout planning, customs, permitting, and regulatory navigation.',
     capabilities: [
-      'Live Performances',
-      'Staged Productions',
-      'Show Design',
-      'Entertainment Systems',
-      'Audience Experience',
-      'Production Management',
+      'Global Touring Installations',
+      'International Event Production',
+      'Cross-Market Localization',
+      'Global Fabrication & Supply Chain',
+      'Multi-City Rollout Planning',
+      'Customs & Regulatory Navigation',
     ],
   },
 ];
@@ -99,15 +99,14 @@ export default function SolutionsPage() {
             <SlideUp>
               <div className="text-center max-w-3xl mx-auto">
                 <Typography variant="hero" className="text-white mb-4" uppercase>
-                  The Destinations
+                  The Solutions
                 </Typography>
                 <Typography variant="h3" className="text-grey-400 mb-6">
-                  Where &quot;uncharted&quot; becomes unforgettable.
+                  Six platforms. Infinite possibilities.
                 </Typography>
                 <Typography variant="body" className="text-grey-400 text-xl">
-                  We deliver experiences across multiple platforms and mediums, ensuring your vision 
-                  reaches audiences wherever they are. From digital interfaces to physical installations, 
-                  we navigate every avenue with precision.
+                  We deliver experiences across every platform and medium—ensuring your vision 
+                  reaches audiences wherever they are. Social, digital, virtual, physical, experiential, international.
                 </Typography>
               </div>
             </SlideUp>
@@ -204,11 +203,10 @@ export default function SolutionsPage() {
           <Container>
             <div className="text-center">
               <Typography variant="h1" uppercase className="text-white mb-6">
-                Chart Your Course
+                Find Your Platform
               </Typography>
               <Typography variant="body" className="text-grey-400 max-w-2xl mx-auto mb-8">
-                Let&apos;s discuss which destinations align with your vision and how we can navigate 
-                the journey together.
+                Let&apos;s discuss which solutions align with your vision and how we can bring it to life.
               </Typography>
               <Link href="/contact">
                 <button className="font-bebas uppercase tracking-wide px-8 py-4 text-lg border-2 border-white text-white hover:bg-white hover:text-black transition-all">

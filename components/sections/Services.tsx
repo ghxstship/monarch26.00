@@ -53,10 +53,10 @@ export function Services() {
         <FadeIn>
           <div className="text-center mb-16">
             <Typography variant="h1" uppercase className="mb-4">
-              The Itinerary
+              The Services
             </Typography>
             <Typography variant="body" className="text-grey-600 max-w-2xl mx-auto">
-              Seven phases from vision to victory. Our operational process refined through 13 years of 
+              Seven D&apos;s. Zero shortcuts. Our operational methodology refined through 13 years of 
               high-stakes production. Discover. Design. Develop. Deliver. Direct. Disrupt. Dominate.
             </Typography>
           </div>
@@ -121,7 +121,7 @@ export function Services() {
           <div className="text-center mt-16">
             <Link href="/services">
               <button className="font-bebas uppercase tracking-wide px-8 py-4 text-lg border-2 border-black text-black hover:bg-black hover:text-white transition-all">
-                Explore The Full Itinerary
+                Explore All Services
               </button>
             </Link>
           </div>

@@ -2,76 +2,77 @@
 
 import React from 'react';
 import Link from 'next/link';
-import { useRouter } from 'next/navigation';
 import { Typography } from '../ui/Typography';
 import { Container } from '../layout/Container';
-import { Card } from '../ui/Card';
 import { FadeIn } from '../animations/FadeIn';
+import { Music, Trophy, ShoppingBag, Hotel, Building2 } from 'lucide-react';
 
-const verticals = [
+const industries = [
   {
-    title: 'Immersive Entertainment',
-    metadata: 'Stages That Defy Physics // Festivals That Become Legends // Experiences That Break Reality',
-    image: '/images/verticals/immersive.jpg',
-    href: '/verticals/immersive-entertainment',
+    title: 'Concerts, Festivals & Tours',
+    description: 'Live music at every scale. Club shows to stadium spectacles.',
+    icon: Music,
   },
   {
-    title: 'Experiential Marketing',
-    metadata: 'Brand Activations That Move Markets // Fortune 500 Trust // Global Execution',
-    image: '/images/verticals/experiential.jpg',
-    href: '/verticals/experiential-marketing',
+    title: 'Sports & Entertainment',
+    description: 'Stadium activations and fan experiences that match game day energy.',
+    icon: Trophy,
   },
   {
-    title: 'Creative Media',
-    metadata: 'Capturing The Impossible // Strategic Storytelling // Content That Converts',
-    image: '/images/verticals/media.jpg',
-    href: '/verticals/creative-media',
+    title: 'Retail',
+    description: 'Pop-ups and brand environments that drive traffic and conversion.',
+    icon: ShoppingBag,
   },
   {
-    title: 'Integrated Technology',
-    metadata: 'Digital Infrastructure // Immersive Tech // Systems That Scale Globally',
-    image: '/images/verticals/technology.jpg',
-    href: '/verticals/integrated-technology',
+    title: 'Hospitality',
+    description: 'Hotels, resorts, and cruise lines. Hospitality without borders.',
+    icon: Hotel,
+  },
+  {
+    title: 'Corporate & Private',
+    description: 'Summits, launches, and galas that don\'t feel corporate.',
+    icon: Building2,
   },
 ];
 
 export function Verticals() {
-  const router = useRouter();
   return (
     <section className="py-24 bg-white">
       <Container>
         <FadeIn>
           <div className="text-center mb-16">
             <Typography variant="h1" uppercase className="mb-4">
-              The Fleet
+              The Industries
             </Typography>
             <Typography variant="body" className="text-grey-600 max-w-2xl mx-auto">
-              Four operational verticals. Festival production that shouldn&apos;t stand up but does. Theatrical 
-              installations that make people question reality. Pop-up experiences that redefine spaces. We create 
-              the moments that become legends—executed with precision that makes the impossible look easy. It&apos;s not.
+              Different waters. Same standards. Every industry has its own language, its own politics, 
+              its own way of measuring success. We&apos;ve learned them all—not from textbooks, but from 
+              3 AM problem-solving sessions and post-mortems that actually meant something.
             </Typography>
           </div>
         </FadeIn>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-12">
-          {verticals.map((vertical, index) => (
-            <FadeIn key={vertical.title} delay={index * 0.1}>
-              <Card
-                type="project"
-                title={vertical.title}
-                metadata={vertical.metadata}
-                image={vertical.image}
-                onClick={() => router.push(vertical.href)}
-              />
+        <div className="grid grid-cols-1 md:grid-cols-5 gap-6 mb-12">
+          {industries.map((industry, index) => (
+            <FadeIn key={industry.title} delay={index * 0.1}>
+              <div className="border-2 border-black p-6 h-full hover:bg-black hover:text-white transition-all group text-center">
+                <industry.icon className="w-8 h-8 mx-auto mb-4" strokeWidth={1.5} />
+                <Typography variant="h5" uppercase className="mb-2 group-hover:text-white">
+                  {industry.title}
+                </Typography>
+                <Typography variant="body" className="text-grey-600 group-hover:text-grey-300 text-sm">
+                  {industry.description}
+                </Typography>
+              </div>
             </FadeIn>
           ))}
         </div>
 
         <FadeIn delay={0.5}>
           <div className="text-center">
-            <Link href="/verticals">
+            <Link href="/industries">
               <button className="font-bebas uppercase tracking-wide px-8 py-4 text-lg border-2 border-black text-black hover:bg-black hover:text-white transition-all">
-                Explore The Full Fleet
+                Explore All Industries
               </button>
             </Link>
           </div>
