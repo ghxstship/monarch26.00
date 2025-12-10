@@ -12,7 +12,7 @@ const projects = [
   {
     title: 'Salvage City Supper Club at EDC Las Vegas',
     metadata: 'Client: Insomniac // Year: 2024 // Location: Las Vegas, NV',
-    image: 'https://images.unsplash.com/photo-1414235077428-338989a2e8c0?w=800&q=80',
+    image: 'https://images.unsplash.com/photo-1519708227418-c8fd9a32b7a2?w=800&q=80',
   },
   {
     title: 'Heineken Turn4 Nightclub at F1 Las Vegas Grand Prix',

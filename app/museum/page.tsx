@@ -18,7 +18,7 @@ const projects = [
     year: '2024',
     vertical: 'Immersive Entertainment',
     location: 'Las Vegas, NV',
-    image: 'https://images.unsplash.com/photo-1414235077428-338989a2e8c0?w=600&q=80',
+    image: 'https://images.unsplash.com/photo-1519708227418-c8fd9a32b7a2?w=600&q=80',
   },
   {
     id: 2,
