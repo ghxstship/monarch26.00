@@ -156,7 +156,7 @@ export async function sendWelcomeEmail(email: string, name: string): Promise<voi
               <li>Company news and announcements</li>
               <li>Behind-the-scenes content</li>
             </ul>
-            <p>Charter the Uncharted. Stay tuned.</p>
+            <p>Venture Beyond. Stay tuned.</p>
             <p><strong>— The GHXSTSHIP Team</strong></p>
           </div>
           <div class="footer">

@@ -37,14 +37,14 @@ export const metadata: Metadata = {
   metadataBase: new URL('https://ghxstship.tours'),
   openGraph: {
     title: 'GHXSTSHIP Industries',
-    description: 'Charter the Uncharted',
+    description: 'Venture Beyond',
     type: 'website',
     url: 'https://ghxstship.tours',
   },
   twitter: {
     card: 'summary_large_image',
     title: 'GHXSTSHIP Industries',
-    description: 'Charter the Uncharted',
+    description: 'Venture Beyond',
   },
 };
 
