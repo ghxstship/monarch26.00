@@ -45,7 +45,7 @@ const projects = [
     year: '2023',
     vertical: 'Experiential Marketing',
     location: 'Los Angeles, CA',
-    image: 'https://images.unsplash.com/photo-1534237710431-e2fc698436d0?w=600&q=80',
+    image: 'https://images.unsplash.com/photo-1516450137517-162bfbeb8dba?w=600&q=80',
   },
   {
     id: 5,

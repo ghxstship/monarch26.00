@@ -27,7 +27,7 @@ const projects = [
   {
     title: 'PATRÓN Cristalino North American Launch with Becky G',
     metadata: 'Client: PATRÓN // Year: 2023 // Location: Los Angeles, CA',
-    image: 'https://images.unsplash.com/photo-1534237710431-e2fc698436d0?w=800&q=80',
+    image: 'https://images.unsplash.com/photo-1516450137517-162bfbeb8dba?w=800&q=80',
   },
 ];
 
