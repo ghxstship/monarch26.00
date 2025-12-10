@@ -33,53 +33,27 @@ export function Services() {
           </div>
         </FadeIn>
 
-        {/* Itinerary Timeline */}
-        <div className="max-w-5xl mx-auto">
-          {/* Timeline Track */}
+        {/* Itinerary Timeline - Vertical Scroll Reveal */}
+        <div className="max-w-3xl mx-auto">
           <div className="relative">
-            {/* Vertical Line - Mobile */}
-            <div className="absolute left-6 top-0 bottom-0 w-0.5 bg-black md:hidden" />
-            
-            {/* Horizontal Line - Desktop */}
-            <div className="hidden md:block absolute left-0 right-0 top-8 h-0.5 bg-black" />
+            {/* Vertical Line */}
+            <div className="absolute left-6 md:left-8 top-0 bottom-0 w-0.5 bg-black" />
 
-            {/* Desktop: Horizontal Layout */}
-            <div className="hidden md:grid md:grid-cols-7 gap-2">
+            {/* Vertical Layout */}
+            <div className="space-y-8 md:space-y-12">
               {services.map((service, index) => (
                 <FadeIn key={service.title} delay={index * 0.1}>
-                  <div className="flex flex-col items-center group cursor-pointer">
-                    {/* Step Number */}
-                    <div className="w-16 h-16 bg-black text-white flex items-center justify-center mb-4 group-hover:bg-white group-hover:text-black group-hover:border-2 group-hover:border-black transition-all">
-                      <service.icon className="w-7 h-7" strokeWidth={1.5} />
-                    </div>
-                    {/* Title */}
-                    <Typography variant="h6" uppercase className="text-center mb-1">
-                      {service.title}
-                    </Typography>
-                    {/* Subtitle */}
-                    <Typography variant="meta" className="text-grey-500 text-center text-xs">
-                      {service.subtitle}
-                    </Typography>
-                  </div>
-                </FadeIn>
-              ))}
-            </div>
-
-            {/* Mobile: Vertical Layout */}
-            <div className="md:hidden space-y-8">
-              {services.map((service, index) => (
-                <FadeIn key={service.title} delay={index * 0.05}>
-                  <div className="flex items-start gap-6 group">
+                  <div className="flex items-start gap-6 md:gap-8 group">
                     {/* Step Marker */}
-                    <div className="relative z-10 w-12 h-12 bg-black text-white flex items-center justify-center flex-shrink-0 group-hover:bg-white group-hover:text-black group-hover:border-2 group-hover:border-black transition-all">
-                      <service.icon className="w-5 h-5" strokeWidth={1.5} />
+                    <div className="relative z-10 w-12 h-12 md:w-16 md:h-16 bg-black text-white flex items-center justify-center flex-shrink-0 group-hover:bg-white group-hover:text-black group-hover:border-2 group-hover:border-black transition-all">
+                      <service.icon className="w-5 h-5 md:w-7 md:h-7" strokeWidth={1.5} />
                     </div>
                     {/* Content */}
-                    <div className="pt-2">
-                      <Typography variant="h5" uppercase className="mb-1">
+                    <div className="pt-1 md:pt-3">
+                      <Typography variant="h4" uppercase className="mb-1">
                         {service.title}
                       </Typography>
-                      <Typography variant="meta" className="text-grey-500 text-sm">
+                      <Typography variant="body" className="text-grey-500">
                         {service.subtitle}
                       </Typography>
                     </div>

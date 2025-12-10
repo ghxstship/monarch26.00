@@ -59,15 +59,15 @@ export default function AboutPage() {
                 </Typography>
                 
                 <Typography variant="body" className="text-grey-400 text-xl leading-relaxed mb-6">
-                  The cruise ships came first. Carnival, Celebrity, Norwegian—floating cities where entertainment never 
-                  stops and failure isn&apos;t an option. Started as a musician. Became a DJ. Then somehow ended up 
+                  The cruise ships came first. Floating cities where entertainment never stops and failure 
+                  isn&apos;t an option. Started as a musician. Became a DJ. Then somehow ended up 
                   supervising talent acquisition across oceans and time zones. Built a casting system that turned 
                   weeks into minutes. Not because we were smart—because we had to. When you&apos;re sourcing talent 
                   across dozens of countries and the old system is drowning, you either innovate or quit. We didn&apos;t quit.
                 </Typography>
                 
                 <Typography variant="body" className="text-grey-400 text-xl leading-relaxed mb-6">
-                  Then came the festivals. Insomniac. EDC. Massive crowds. Bigger productions. Audio, lighting, video, 
+                  Then came the festivals. Massive crowds. Bigger productions. Audio, lighting, video, 
                   staging—all the technical systems that make or break a show. Learned that festival production is just 
                   controlled chaos with better insurance. Streamlined operations. Built communication platforms. Connected 
                   internal teams with external contractors. Reduced timelines. Maintained world-class standards. And discovered 
@@ -75,16 +75,16 @@ export default function AboutPage() {
                 </Typography>
                 
                 <Typography variant="body" className="text-grey-400 text-xl leading-relaxed mb-6">
-                  Formula 1 Las Vegas changed everything. Managing hospitality operations across premium venues for the 
+                  Motorsport hospitality changed everything. Managing operations across premium venues for an 
                   inaugural Grand Prix. International clientele. Celebrities. Athletes. Entertainment executives. The kind 
                   of high-stakes environment where one mistake becomes international news. Where perfect execution isn&apos;t 
                   celebrated—it&apos;s expected. We didn&apos;t make mistakes. We made memories.
                 </Typography>
                 
                 <Typography variant="body" className="text-grey-400 text-xl leading-relaxed mb-6">
-                  The brand activations taught us scale. Heineken&apos;s Turn 4 Nightclub at F1. Red Bull&apos;s Unforeseen 
-                  Motel at III Points Miami. PATRÓN Cristalino&apos;s North American launch with Becky G. Fortune 500 brands 
-                  that demand operational excellence and zero margin for error. Each activation a masterclass in logistics, 
+                  The brand activations taught us scale. Nightclubs at motorsport events. Immersive experiences 
+                  at music festivals. Product launches with global artists. Fortune 500 brands that demand 
+                  operational excellence and zero margin for error. Each activation a masterclass in logistics, 
                   creativity, and making the impossible look inevitable. Each one a reminder that the difference between 
                   legendary and forgotten is usually just better execution.
                 </Typography>
@@ -133,8 +133,8 @@ export default function AboutPage() {
           <Container>
             <div className="max-w-sm mx-auto">
               <SlideUp>
-                <Typography variant="h2" uppercase className="mb-12 text-center">
-                  The Founder
+                <Typography variant="h1" uppercase className="mb-12 text-center">
+                  The Captain
                 </Typography>
                 <TeamMemberCard
                   name="Julian Clarkson"
@@ -165,54 +165,14 @@ export default function AboutPage() {
               </div>
             </FadeIn>
 
-            {/* Journey Timeline */}
-            <div className="max-w-6xl mx-auto">
-              {/* Timeline Track */}
+            {/* Journey Timeline - Vertical Scroll Reveal */}
+            <div className="max-w-3xl mx-auto">
               <div className="relative">
-                {/* Vertical Line - Mobile */}
-                <div className="absolute left-6 top-0 bottom-0 w-0.5 bg-black lg:hidden" />
-                
-                {/* Horizontal Line - Desktop */}
-                <div className="hidden lg:block absolute left-0 right-0 top-8 h-0.5 bg-black" />
+                {/* Vertical Line */}
+                <div className="absolute left-6 md:left-8 top-0 bottom-0 w-0.5 bg-black" />
 
-                {/* Desktop: Horizontal Layout */}
-                <div className="hidden lg:grid lg:grid-cols-9 gap-2">
-                  {[
-                    { title: 'Origin', subtitle: 'Newport Beach', date: '1990', Icon: Waves },
-                    { title: 'Viking Territory', subtitle: 'Minnesota', date: '1996', Icon: Snowflake },
-                    { title: 'The Conservatory', subtitle: 'Indiana', date: '2008', Icon: Music },
-                    { title: 'The High Seas', subtitle: 'Intl. Waters', date: '2012', Icon: Ship },
-                    { title: 'The 305', subtitle: 'Miami', date: '2015', Icon: Palmtree },
-                    { title: 'The Site Yard', subtitle: 'Orlando', date: '2018', Icon: Tent },
-                    { title: 'The Ship Yard', subtitle: 'Beyond the Sea', date: '2023', Icon: Ghost },
-                    { title: 'Current', subtitle: 'Tampa', date: '2025', Icon: Anchor },
-                    { title: 'Unknown', subtitle: 'Classified', date: 'TBD', Icon: HelpCircle },
-                  ].map((stop, index) => (
-                    <FadeIn key={stop.title} delay={index * 0.1}>
-                      <div className="flex flex-col items-center group cursor-pointer">
-                        {/* Step Icon */}
-                        <div className="w-16 h-16 bg-black text-white flex items-center justify-center mb-4 group-hover:bg-white group-hover:text-black group-hover:border-2 group-hover:border-black transition-all">
-                          <stop.Icon className="w-7 h-7" strokeWidth={1.5} />
-                        </div>
-                        {/* Title */}
-                        <Typography variant="meta" uppercase className="text-center mb-1 text-xs font-bold">
-                          {stop.title}
-                        </Typography>
-                        {/* Subtitle */}
-                        <Typography variant="meta" className="text-grey-500 text-center text-[10px]">
-                          {stop.subtitle}
-                        </Typography>
-                        {/* Date */}
-                        <Typography variant="meta" className="text-grey-400 text-center text-[10px] mt-1">
-                          {stop.date}
-                        </Typography>
-                      </div>
-                    </FadeIn>
-                  ))}
-                </div>
-
-                {/* Mobile/Tablet: Vertical Layout */}
-                <div className="lg:hidden space-y-8">
+                {/* Vertical Layout */}
+                <div className="space-y-8 md:space-y-12">
                   {[
                     { title: 'Origin: Newport Beach', location: 'California', date: 'June 1990', description: 'The vessel launched. A kid who could read sheet music before maps set sail.', Icon: Waves },
                     { title: 'Viking Territory', location: 'Minnesota', date: 'January 1996', description: 'Navigated to colder climates. Learned that ice and snow build character.', Icon: Snowflake },
@@ -224,24 +184,24 @@ export default function AboutPage() {
                     { title: 'Current Coordinates', location: 'Tampa', date: 'October 2025', description: 'Home port established. Building the future of experiential innovation from the Gulf Coast.', Icon: Anchor },
                     { title: 'Destination: Unknown', location: 'Classified', date: 'TBD', description: 'The voyage continues. New waters to chart. New impossibilities to make possible.', Icon: HelpCircle },
                   ].map((milestone, index) => (
-                    <FadeIn key={milestone.title} delay={index * 0.05}>
-                      <div className="flex items-start gap-6 group">
+                    <FadeIn key={milestone.title} delay={index * 0.1}>
+                      <div className="flex items-start gap-6 md:gap-8 group">
                         {/* Step Marker */}
-                        <div className="relative z-10 w-12 h-12 bg-black text-white flex items-center justify-center flex-shrink-0 group-hover:bg-white group-hover:text-black group-hover:border-2 group-hover:border-black transition-all">
-                          <milestone.Icon className="w-5 h-5" strokeWidth={1.5} />
+                        <div className="relative z-10 w-12 h-12 md:w-16 md:h-16 bg-black text-white flex items-center justify-center flex-shrink-0 group-hover:bg-white group-hover:text-black group-hover:border-2 group-hover:border-black transition-all">
+                          <milestone.Icon className="w-5 h-5 md:w-7 md:h-7" strokeWidth={1.5} />
                         </div>
                         {/* Content */}
-                        <div className="pt-1">
+                        <div className="pt-1 md:pt-3">
                           <Typography variant="meta" className="text-grey-500 uppercase tracking-wider text-xs">
                             {milestone.date}
                           </Typography>
-                          <Typography variant="h5" uppercase className="mb-1">
+                          <Typography variant="h4" uppercase className="mb-1">
                             {milestone.title}
                           </Typography>
-                          <span className="inline-block px-2 py-0.5 bg-black text-white text-[10px] uppercase tracking-wider mb-2">
+                          <Typography variant="meta" className="text-grey-600 text-sm">
                             {milestone.location}
-                          </span>
-                          <Typography variant="body" className="text-grey-600 text-sm">
+                          </Typography>
+                          <Typography variant="body" className="text-grey-700 mt-2">
                             {milestone.description}
                           </Typography>
                         </div>
@@ -259,8 +219,8 @@ export default function AboutPage() {
           <Container>
             <FadeIn>
               <div className="text-center mb-16">
-                <Typography variant="h2" uppercase className="text-white mb-4">
-                  We&apos;ve Navigated With
+                <Typography variant="h1" uppercase className="text-white mb-4">
+                  Past Voyagers Include
                 </Typography>
                 <Typography variant="body" className="text-grey-400 max-w-2xl mx-auto">
                   Production experience with brands that demand operational excellence and zero margin for error. 
