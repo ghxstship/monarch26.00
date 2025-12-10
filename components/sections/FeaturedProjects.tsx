@@ -1,6 +1,7 @@
 'use client';
 
 import React from 'react';
+import Image from 'next/image';
 import Link from 'next/link';
 import { Typography } from '../ui/Typography';
 import { Container } from '../layout/Container';
@@ -11,22 +12,22 @@ const projects = [
   {
     title: 'Salvage City Supper Club at EDC Las Vegas',
     metadata: 'Client: Insomniac // Year: 2024 // Location: Las Vegas, NV',
-    image: '/images/projects/edc.jpg',
+    image: 'https://images.unsplash.com/photo-1470229722913-7c0e2dbbafd3?w=800&q=80',
   },
   {
     title: 'Heineken Turn4 Nightclub at F1 Las Vegas Grand Prix',
     metadata: 'Client: Heineken // Year: 2023 // Location: Las Vegas, NV',
-    image: '/images/projects/heineken.jpg',
+    image: 'https://images.unsplash.com/photo-1504707748692-419802cf939d?w=800&q=80',
   },
   {
     title: 'Red Bull Unforeseen Motel Nightclub at III Points Miami',
     metadata: 'Client: Red Bull // Year: 2023 // Location: Miami, FL',
-    image: '/images/projects/redbull.jpg',
+    image: 'https://images.unsplash.com/photo-1514525253161-7a46d19cd819?w=800&q=80',
   },
   {
     title: 'PATRÓN Cristalino North American Launch with Becky G',
     metadata: 'Client: PATRÓN // Year: 2023 // Location: Los Angeles, CA',
-    image: '/images/projects/patron.jpg',
+    image: 'https://images.unsplash.com/photo-1492684223066-81342ee5ff30?w=800&q=80',
   },
 ];
 
@@ -52,12 +53,13 @@ export function FeaturedProjects() {
             <SlideUp key={project.title} delay={index * 0.1}>
               <div className="border-2 border-white bg-black overflow-hidden hover:scale-[1.02] transition-transform duration-200 cursor-pointer h-full flex flex-col">
                 <div className="relative w-full aspect-[16/9] bg-grey-900 flex-shrink-0">
-                  {/* Placeholder for image */}
-                  <div className="absolute inset-0 flex items-center justify-center">
-                    <Typography variant="h3" className="text-grey-700" uppercase>
-                      Image
-                    </Typography>
-                  </div>
+                  <Image
+                    src={project.image}
+                    alt={project.title}
+                    fill
+                    className="object-cover"
+                    sizes="(max-width: 768px) 100vw, 50vw"
+                  />
                 </div>
                 <div className="p-4 sm:p-6 flex-grow flex flex-col">
                   <Typography variant="h4" uppercase className="mb-2 text-white text-sm sm:text-base md:text-lg leading-tight">
