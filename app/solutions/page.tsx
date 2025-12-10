@@ -102,7 +102,7 @@ export default function SolutionsPage() {
                   Solutions
                 </Typography>
                 <Typography variant="h3" className="text-grey-400 mb-6">
-                  Six platforms. Infinite possibilities.
+                  Six channels. Infinite reach.
                 </Typography>
                 <Typography variant="body" className="text-grey-400 text-xl">
                   We deliver experiences across every platform and medium—ensuring your vision 
