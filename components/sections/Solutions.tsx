@@ -20,16 +20,12 @@ const solutions = [
     description: 'Installations, fabrications, and built environments that transform spaces into experiences.',
   },
   {
-    title: 'Experiential',
+    title: 'Musical Experiential',
     description: 'Brand activations, pop-ups, and interactive experiences that create lasting impressions.',
   },
   {
     title: 'Theatrical',
     description: 'Live performances, staged productions, and entertainment experiences that captivate audiences.',
-  },
-  {
-    title: 'Global',
-    description: 'Multi-market campaigns, international tours, and cross-continental operations spanning six continents.',
   },
 ];
 

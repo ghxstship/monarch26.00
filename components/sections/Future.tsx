@@ -1,7 +1,7 @@
 'use client';
 
 import React from 'react';
-import { Key, Settings, Compass } from 'lucide-react';
+import { Key, Globe, Compass } from 'lucide-react';
 import Link from 'next/link';
 import { Typography } from '../ui/Typography';
 import { Container } from '../layout/Container';
@@ -10,22 +10,22 @@ import { FadeIn } from '../animations/FadeIn';
 
 const apps = [
   {
-    name: 'GVTEWAY',
-    type: 'B2C',
-    description: 'Consumer-facing platform connecting audiences to unforgettable experiences. Your gateway to the extraordinary.',
-    icon: Key,
-  },
-  {
     name: 'ATLVS',
     type: 'Internal',
     description: 'Internal operations platform powering our production workflow. The backbone of operational excellence.',
-    icon: Settings,
+    icon: Globe,
   },
   {
     name: 'COMPVSS',
     type: 'B2B',
     description: 'Enterprise solution for brands and partners. Navigate complex productions with confidence.',
     icon: Compass,
+  },
+  {
+    name: 'GVTEWAY',
+    type: 'B2C',
+    description: 'Consumer-facing platform connecting audiences to unforgettable experiences. Your gateway to the extraordinary.',
+    icon: Key,
   },
 ];
 

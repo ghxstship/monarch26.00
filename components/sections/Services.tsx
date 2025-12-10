@@ -26,7 +26,7 @@ const services = [
   },
   {
     title: 'DELIVER',
-    description: 'Project management as operational excellence. Load-in schedules, vendor coordination, permit acquisition, contingency planning. We&apos;ve managed simultaneous productions across continents and solved real-time problems that would make lesser crews quit on the spot.',
+    description: "Project management as operational excellence. Load-in schedules, vendor coordination, permit acquisition, contingency planning. We've managed simultaneous productions across continents and solved real-time problems that would make lesser crews quit on the spot.",
     icon: Truck,
   },
   {

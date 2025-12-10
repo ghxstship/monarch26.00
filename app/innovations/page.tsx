@@ -11,33 +11,17 @@ import Link from 'next/link';
 
 const innovations = [
   {
-    id: 'gvteway',
-    name: 'GVTEWAY',
-    tagline: 'Experiential Ticketing (Memberships) & Communities',
-    description: 'Seamless client collaboration platform that keeps everyone aligned. Share updates, approve deliverables, and track progress in real-time.',
-    features: [
-      'Client Dashboard',
-      'File Sharing',
-      'Approval Workflows',
-      'Communication Hub',
-      'Project Timeline',
-      'Asset Library',
-    ],
-    status: 'Coming Soon',
-    href: '/innovations/gvteway',
-  },
-  {
     id: 'atlvs',
     name: 'ATLVS',
-    tagline: 'Experiential Project (Production) Management',
-    description: 'Enterprise-grade production management software designed for experiential agencies. Streamline your workflow from concept to strike.',
+    tagline: 'Experiential Project & Resource Management',
+    description: 'Production management built for experiential agencies. From initial concept to final strike, orchestrate every detail with precision—budgets, timelines, resources, and team coordination in perfect sync.',
     features: [
-      'Project Management',
-      'Resource Allocation',
-      'Budget Tracking',
-      'Team Collaboration',
-      'Real-time Updates',
-      'Analytics Dashboard',
+      'End-to-End Project Management',
+      'Live Budget Tracking & Forecasting',
+      'Instant Status Updates',
+      'Intelligent Resource Allocation',
+      'Seamless Team Collaboration',
+      'Actionable Analytics Dashboard',
     ],
     status: 'Coming Soon',
     href: '/innovations/atlvs',
@@ -45,18 +29,34 @@ const innovations = [
   {
     id: 'compvss',
     name: 'COMPVSS',
-    tagline: 'Experiential Team (Operations) Management',
-    description: 'Comprehensive operations management platform for experiential teams. Optimize crew scheduling, track certifications, and manage logistics seamlessly.',
+    tagline: 'Experiential Team & Workforce Management',
+    description: 'Your crew operations nerve center. Schedule teams, track certifications, coordinate logistics, and monitor performance—everything you need to deploy the right people at the right time.',
     features: [
-      'Crew Scheduling',
-      'Certification Tracking',
-      'Equipment Management',
-      'Logistics Coordination',
-      'Time Tracking',
-      'Performance Analytics',
+      'Smart Crew Scheduling',
+      'Equipment & Inventory Management',
+      'Automated Time Tracking',
+      'Certification & Compliance Tracking',
+      'Multi-Site Logistics Coordination',
+      'Real-Time Performance Analytics',
     ],
     status: 'Coming Soon',
     href: '/innovations/compvss',
+  },
+  {
+    id: 'gvteway',
+    name: 'GVTEWAY',
+    tagline: 'Experiential Ticketing & Social Communities',
+    description: 'The ultimate fan experience platform. Discover events, secure tickets, unlock exclusive memberships, and connect with communities who share your passions—all in one seamless destination.',
+    features: [
+      'Event Discovery & Search',
+      'Ticket Management & Transfers',
+      'Membership & Rewards Programs',
+      'Community & Fan Engagement',
+      'Artist & Venue Profiles',
+      'Personalized Recommendations',
+    ],
+    status: 'Coming Soon',
+    href: '/innovations/gvteway',
   },
 ];
 
@@ -92,7 +92,7 @@ export default function InnovationsPage() {
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12">
               {innovations.map((innovation, index) => (
                 <FadeIn key={innovation.id} delay={index * 0.1}>
-                  <div className="border-2 border-black bg-white p-8 hover:scale-[1.02] transition-transform duration-200">
+                  <div className="border-2 border-black bg-white p-8 hover:scale-[1.02] transition-transform duration-200 h-full flex flex-col">
                     <div className="mb-6">
                       <div className="flex items-start justify-between mb-4">
                         <Typography variant="h2" uppercase>
@@ -110,7 +110,7 @@ export default function InnovationsPage() {
                       </Typography>
                     </div>
 
-                    <div className="mb-8">
+                    <div className="mb-8 flex-grow">
                       <Typography variant="h6" uppercase className="mb-4">
                         Key Features
                       </Typography>

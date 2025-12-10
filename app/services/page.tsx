@@ -50,7 +50,7 @@ const services = [
   {
     title: 'DELIVER',
     subtitle: 'Project Management as Operational Excellence',
-    description: 'Load-in schedules, vendor coordination, permit acquisition, contingency planning. We&apos;ve managed simultaneous productions across continents and solved 3 AM problems that would break other crews.',
+    description: "Load-in schedules, vendor coordination, permit acquisition, contingency planning. We've managed simultaneous productions across continents and solved 3 AM problems that would break other crews.",
     capabilities: [
       'Load-in Management',
       'Vendor Coordination',

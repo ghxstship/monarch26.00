@@ -48,6 +48,19 @@ const solutions = [
     ],
   },
   {
+    title: 'Musical',
+    subtitle: 'Tours // Concerts // Live Music',
+    description: 'Concert tours, music festivals, and live performances that move audiences. From intimate venues to stadium shows, we orchestrate musical experiences that resonate long after the last note.',
+    capabilities: [
+      'Concert Tours',
+      'Music Festivals',
+      'Live Performances',
+      'Artist Production',
+      'Sound Design',
+      'Venue Management',
+    ],
+  },
+  {
     title: 'Experiential',
     subtitle: 'Brand Activations // Pop-ups // Interactive',
     description: 'Brand activations, pop-ups, and interactive experiences that create lasting impressions. We design moments that audiences remember long after the event ends.',
@@ -71,19 +84,6 @@ const solutions = [
       'Entertainment Systems',
       'Audience Experience',
       'Production Management',
-    ],
-  },
-  {
-    title: 'Global',
-    subtitle: 'Multi-market // International // Cross-continental',
-    description: 'Multi-market campaigns, international tours, and cross-continental operations spanning six continents. We navigate cultural nuances, logistical complexities, and regulatory requirements with precision.',
-    capabilities: [
-      'Multi-market Campaigns',
-      'International Tours',
-      'Cross-continental Ops',
-      'Cultural Adaptation',
-      'Global Logistics',
-      'Regulatory Navigation',
     ],
   },
 ];

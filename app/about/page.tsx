@@ -176,7 +176,7 @@ export default function AboutPage() {
                   {
                     date: 'June 1990',
                     location: 'California',
-                    title: 'First Port: San Diego',
+                    title: 'First Port: Newport Beach',
                     description: 'The vessel launched. A kid who could read sheet music before maps set sail.',
                     Icon: Waves,
                   },
@@ -190,28 +190,28 @@ export default function AboutPage() {
                   {
                     date: 'August 2008',
                     location: 'Indiana',
-                    title: 'Indiana University',
+                    title: 'The Conservatory',
                     description: 'Classical musician learning precision and adaptability under pressure. Concert halls became the first stage.',
                     Icon: Music,
                   },
                   {
                     date: 'January 2012',
                     location: 'Cruise Ships',
-                    title: 'Open Ocean',
+                    title: 'The High Seas',
                     description: 'Entertainment at scale—systems that work across floating cities. Carnival taught us hospitality without borders.',
                     Icon: Ship,
                   },
                   {
                     date: 'December 2015',
                     location: 'Miami',
-                    title: 'Gateway Port',
+                    title: 'The 305',
                     description: 'Docked in the cruise capital. Where the Caribbean meets production excellence.',
                     Icon: Palmtree,
                   },
                   {
                     date: 'December 2018',
                     location: 'Orlando',
-                    title: 'Festival Grounds',
+                    title: 'The Site Yard',
                     description: 'Festival production mastery with Insomniac. 50,000+ capacity venues and impossible logistics became routine.',
                     Icon: Tent,
                   },
@@ -235,7 +235,7 @@ export default function AboutPage() {
                       index % 2 === 0 ? 'md:pr-1/2 md:text-right' : 'md:pl-1/2 md:ml-auto'
                     }`}>
                       {/* Timeline Dot */}
-                      <div className="absolute left-8 md:left-1/2 w-4 h-4 bg-black rounded-full transform -translate-x-1/2 md:translate-x-0 md:-translate-x-1/2" />
+                      <div className="absolute left-8 md:left-1/2 w-4 h-4 bg-black rounded-full transform -translate-x-1/2 top-6" />
                       
                       {/* Content Card */}
                       <div className={`ml-20 md:ml-0 ${
