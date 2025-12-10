@@ -89,10 +89,10 @@ export default function ContactPage() {
             <SlideUp>
               <div className="text-center max-w-3xl mx-auto">
                 <Typography variant="hero" className="text-white mb-4" uppercase>
-                  Let&apos;s Make Problems
+                  Let&apos;s Venture Beyond
                 </Typography>
                 <Typography variant="h3" className="text-grey-400 mb-6">
-                  The fun kind. The kind that ends with champagne and case studies.
+                  Destination unknown. Case studies inevitable.
                 </Typography>
                 <Typography variant="body" className="text-grey-400 text-xl">
                   From festival grounds to motorsport hospitality to Fortune 500 brand activations—we&apos;ve navigated 
