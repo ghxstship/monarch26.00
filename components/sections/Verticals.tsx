@@ -10,27 +10,27 @@ import { Music, Trophy, ShoppingBag, Hotel, Building2 } from 'lucide-react';
 const industries = [
   {
     title: 'Concerts, Festivals & Tours',
-    description: 'Live music at every scale. Club shows to stadium spectacles.',
+    description: 'Festival production, concert touring, and live music event management at every scale.',
     icon: Music,
   },
   {
     title: 'Sports & Entertainment',
-    description: 'Stadium activations and fan experiences that match game day energy.',
+    description: 'Stadium activations, sports marketing, and fan experience design that matches game day energy.',
     icon: Trophy,
   },
   {
     title: 'Retail',
-    description: 'Pop-ups and brand environments that drive traffic and conversion.',
+    description: 'Pop-up experiences, retail activations, and brand environments that drive traffic and conversion.',
     icon: ShoppingBag,
   },
   {
     title: 'Hospitality',
-    description: 'Hotels, resorts, and cruise lines. Hospitality without borders.',
+    description: 'Hotel entertainment, resort programming, and cruise line production. Hospitality without borders.',
     icon: Hotel,
   },
   {
     title: 'Corporate & Private',
-    description: 'Summits, launches, and galas that don\'t feel corporate.',
+    description: 'Corporate event production, product launches, and executive summits that don\'t feel corporate.',
     icon: Building2,
   },
 ];
@@ -45,9 +45,10 @@ export function Verticals() {
               The Fleet
             </Typography>
             <Typography variant="body" className="text-grey-600 max-w-2xl mx-auto">
-              Different waters. Same standards. Every industry has its own language, its own politics, 
-              its own way of measuring success. We&apos;ve learned them all—not from textbooks, but from 
-              3 AM problem-solving sessions and post-mortems that actually meant something.
+              Event production and experiential marketing across every major industry vertical. From concert 
+              touring and festival production to corporate event management and hospitality operations—we&apos;ve 
+              mastered the unique demands of each sector through 3 AM problem-solving and post-mortems that 
+              actually meant something.
             </Typography>
           </div>
         </FadeIn>

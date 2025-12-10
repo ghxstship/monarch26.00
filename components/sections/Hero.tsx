@@ -34,9 +34,10 @@ export function Hero() {
             transition={{ duration: 0.8, delay: 0.4 }}
           >
             <Typography variant="body" className="text-grey-400 max-w-2xl mx-auto mb-12">
-              Thirteen years building the impossible. Festival stages that defied physics, hospitality operations 
-              where failure wasn&apos;t an option, and brand activations that became industry benchmarks. We turned 
-              &quot;that can&apos;t be done&quot; into &quot;when do you need it by?&quot;
+              Full-service experiential production agency specializing in live events, brand activations, and 
+              immersive experiences. Thirteen years turning impossible deadlines into legendary productions—from 
+              50,000-capacity festival stages to intimate VIP hospitality. We don&apos;t do &quot;can&apos;t.&quot; 
+              We do &quot;when do you need it by?&quot;
             </Typography>
           </motion.div>
 

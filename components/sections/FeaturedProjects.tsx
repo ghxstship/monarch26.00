@@ -40,8 +40,9 @@ export function FeaturedProjects() {
               The Museum
             </Typography>
             <Typography variant="body" className="text-grey-400 max-w-2xl mx-auto">
-              Fifty-two countries. Hundreds of projects. More &quot;that&apos;s impossible&quot; moments than we can count—all 
-              of which we made possible anyway. Here&apos;s a glimpse of where we&apos;ve been.
+              Case studies from festival production, brand activations, and experiential marketing campaigns 
+              across 52 countries. Every project a masterclass in event logistics, creative execution, and 
+              making the impossible look inevitable.
             </Typography>
           </div>
         </SlideUp>

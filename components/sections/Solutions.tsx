@@ -9,27 +9,27 @@ import { FadeIn } from '../animations/FadeIn';
 const solutions = [
   {
     title: 'Social',
-    description: 'Strategy, content production, community building, and always-on content studios.',
+    description: 'Social media strategy, content production, influencer marketing, and community management.',
   },
   {
     title: 'Digital',
-    description: 'Web design, UX development, performance marketing, and interactive experiences.',
+    description: 'Website design, UX/UI development, digital marketing, and interactive brand experiences.',
   },
   {
     title: 'Virtual',
-    description: 'Virtual events, livestreams, podcasts, webinars, and on-demand content.',
+    description: 'Virtual event production, livestream management, webinar hosting, and hybrid experiences.',
   },
   {
     title: 'Physical',
-    description: 'Live events, fabrication, scenic builds, and turnkey production management.',
+    description: 'Live event production, scenic fabrication, stage design, and turnkey event management.',
   },
   {
     title: 'Experiential',
-    description: 'Brand activations, installations, interactive tech, and VIP experience design.',
+    description: 'Brand activations, immersive installations, interactive technology, and VIP experience design.',
   },
   {
     title: 'International',
-    description: 'Global touring, multi-city rollouts, and cross-market campaign localization.',
+    description: 'Global event touring, multi-city campaign rollouts, and international production coordination.',
   },
 ];
 
@@ -43,8 +43,9 @@ export function Solutions() {
               The Destinations
             </Typography>
             <Typography variant="body" className="text-grey-600 max-w-2xl mx-auto">
-              Six platforms. Zero excuses. We deliver experiences across every medium—ensuring your vision 
-              reaches audiences wherever they are.
+              Six integrated delivery platforms spanning social media marketing, digital experience design, 
+              virtual event production, live event management, experiential activations, and global campaign 
+              execution. Your vision, every channel, zero excuses.
             </Typography>
           </div>
         </FadeIn>

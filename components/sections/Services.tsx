@@ -8,13 +8,13 @@ import { Container } from '../layout/Container';
 import { FadeIn } from '../animations/FadeIn';
 
 const services = [
-  { title: 'DISCOVER', subtitle: 'Research & Strategy', icon: Search },
-  { title: 'DESIGN', subtitle: 'Creative & Concept', icon: Pencil },
-  { title: 'DEVELOP', subtitle: 'Pre-Production', icon: Hammer },
-  { title: 'DELIVER', subtitle: 'Production & Logistics', icon: Truck },
-  { title: 'DIRECT', subtitle: 'Operations & Execution', icon: Clapperboard },
-  { title: 'DISRUPT', subtitle: 'Innovation & Tech', icon: Zap },
-  { title: 'DOMINATE', subtitle: 'Scale & Optimize', icon: Crown },
+  { title: 'DISCOVER', subtitle: 'Market Research & Strategic Planning', icon: Search },
+  { title: 'DESIGN', subtitle: 'Creative Direction & Concept Development', icon: Pencil },
+  { title: 'DEVELOP', subtitle: 'Pre-Production & Technical Planning', icon: Hammer },
+  { title: 'DELIVER', subtitle: 'Production Management & Logistics', icon: Truck },
+  { title: 'DIRECT', subtitle: 'On-Site Operations & Show Calling', icon: Clapperboard },
+  { title: 'DISRUPT', subtitle: 'Technology Integration & Innovation', icon: Zap },
+  { title: 'DOMINATE', subtitle: 'Performance Analytics & Optimization', icon: Crown },
 ];
 
 export function Services() {
@@ -27,8 +27,8 @@ export function Services() {
               The Itinerary
             </Typography>
             <Typography variant="body" className="text-grey-600 max-w-2xl mx-auto">
-              Seven waypoints from vision to victory. Our operational methodology refined through 
-              13 years of charting impossible courses.
+              End-to-end event production methodology from strategic discovery through flawless execution. 
+              Seven phases refined through 13 years of delivering complex productions on impossible timelines.
             </Typography>
           </div>
         </FadeIn>

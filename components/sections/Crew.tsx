@@ -17,9 +17,9 @@ export function Crew() {
               The Misfits
             </Typography>
             <Typography variant="body" className="text-grey-600 max-w-2xl mx-auto">
-              The people who navigate the impossible. Every crew member brings battle-tested expertise from 
-              high-stakes productions where failure wasn&apos;t an option. We&apos;ve built teams that deliver 
-              under pressure, solve problems at 3 AM, and turn &quot;that can&apos;t be done&quot; into 
+              Event production professionals, technical directors, and creative strategists who navigate the 
+              impossible. Battle-tested expertise from high-stakes festival production, brand activations, and 
+              global operations. We solve problems at 3 AM and turn &quot;that can&apos;t be done&quot; into 
               &quot;when do you need it by?&quot;
             </Typography>
           </div>
@@ -32,8 +32,9 @@ export function Crew() {
                 Meet The Crew
               </Typography>
               <Typography variant="body" className="text-grey-700 mb-6 flex-grow">
-                From production managers to technical directors, creative designers to fabricators—our crew 
-                brings decades of combined experience across festivals, brand activations, and global operations.
+                Production managers, technical directors, creative designers, scenic fabricators, and AV 
+                technicians—decades of combined experience across festival production, experiential marketing, 
+                and international event operations.
               </Typography>
               <Link href="/crew">
                 <button className="font-bebas uppercase tracking-wide px-6 py-3 text-base border-2 border-black text-black hover:bg-black hover:text-white transition-all w-full sm:w-auto">
@@ -49,8 +50,9 @@ export function Crew() {
                 Join The Crew
               </Typography>
               <Typography variant="body" className="text-grey-400 mb-6 flex-grow">
-                We&apos;re always looking for talented people who thrive under pressure and excel at solving 
-                impossible problems. If you&apos;ve got production experience and creative vision, we want to hear from you.
+                Seeking event production talent: stage managers, lighting designers, audio engineers, and 
+                logistics coordinators who thrive under pressure. If you&apos;ve got production experience and 
+                creative vision, we want to hear from you.
               </Typography>
               <Link href="/careers">
                 <button className="font-bebas uppercase tracking-wide px-6 py-3 text-base border-2 border-white text-white hover:bg-white hover:text-black transition-all w-full sm:w-auto">

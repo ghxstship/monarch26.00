@@ -24,9 +24,9 @@ export function History() {
               The History
             </Typography>
             <Typography variant="body" className="text-grey-400 max-w-2xl mx-auto">
-              Thirteen years operating at the intersection of hospitality, live entertainment, and experiential 
-              marketing. From classical concert halls to cruise ships to festival grounds to motorsport hospitality—every 
-              port of call taught lessons that became operational advantages.
+              Thirteen years of event production experience spanning hospitality management, live entertainment, 
+              and experiential marketing. From cruise ship entertainment to 50,000-capacity festival production 
+              to motorsport VIP hospitality—every project refined our operational methodology.
             </Typography>
           </div>
         </SlideUp>

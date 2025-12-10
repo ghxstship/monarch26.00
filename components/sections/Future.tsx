@@ -12,19 +12,19 @@ const apps = [
   {
     name: 'ATLVS',
     type: 'Internal',
-    description: 'Internal operations platform powering our production workflow. The backbone of operational excellence.',
+    description: 'Project management and resource allocation platform built for experiential production agencies.',
     icon: Globe,
   },
   {
     name: 'COMPVSS',
     type: 'B2B',
-    description: 'Enterprise solution for brands and partners. Navigate complex productions with confidence.',
+    description: 'Enterprise workforce management and crew scheduling software for event production teams.',
     icon: Compass,
   },
   {
     name: 'GVTEWAY',
     type: 'B2C',
-    description: 'Consumer-facing platform connecting audiences to unforgettable experiences. Your gateway to the extraordinary.',
+    description: 'Event ticketing, fan engagement, and community platform connecting audiences to experiences.',
     icon: Key,
   },
 ];
@@ -39,8 +39,9 @@ export function Future() {
               The Tools
             </Typography>
             <Typography variant="body" className="text-grey-400 max-w-2xl mx-auto">
-              Innovation meets execution. We&apos;re building the next generation of experiential technology—platforms 
-              that scale operations, connect audiences, and transform how brands create unforgettable moments.
+              Proprietary event management software and experiential technology platforms. We&apos;re building 
+              the tools that scale production operations, streamline crew coordination, and transform how 
+              brands create measurable, unforgettable moments.
             </Typography>
           </div>
         </SlideUp>
