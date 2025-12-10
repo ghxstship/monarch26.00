@@ -99,7 +99,7 @@ export default function SolutionsPage() {
             <SlideUp>
               <div className="text-center max-w-3xl mx-auto">
                 <Typography variant="hero" className="text-white mb-4" uppercase>
-                  The Solutions
+                  Solutions
                 </Typography>
                 <Typography variant="h3" className="text-grey-400 mb-6">
                   Six platforms. Infinite possibilities.
