@@ -1,7 +1,6 @@
 'use client';
 
 import { useState } from 'react';
-import Image from 'next/image';
 import Link from 'next/link';
 import { Header } from '@/components/layout/Header';
 import { Footer } from '@/components/layout/Footer';
@@ -18,7 +17,6 @@ const projects = [
     year: '2024',
     vertical: 'Immersive Entertainment',
     location: 'Las Vegas, NV',
-    image: 'https://images.unsplash.com/photo-1555396273-367ea4eb4db5?w=600&h=450&fit=crop&q=80',
   },
   {
     id: 2,
@@ -27,7 +25,6 @@ const projects = [
     year: '2023',
     vertical: 'Experiential Marketing',
     location: 'Las Vegas, NV',
-    image: 'https://images.unsplash.com/photo-1568605117036-5fe5e7bab0b7?w=600&h=450&fit=crop&q=80',
   },
   {
     id: 3,
@@ -36,7 +33,6 @@ const projects = [
     year: '2023',
     vertical: 'Immersive Entertainment',
     location: 'Miami, FL',
-    image: 'https://images.unsplash.com/photo-1566073771259-6a8506099945?w=600&h=450&fit=crop&q=80',
   },
   {
     id: 4,
@@ -45,7 +41,6 @@ const projects = [
     year: '2023',
     vertical: 'Experiential Marketing',
     location: 'Los Angeles, CA',
-    image: 'https://images.unsplash.com/photo-1551632436-cbf8dd35adfa?w=600&h=450&fit=crop&q=80',
   },
   {
     id: 5,
@@ -54,7 +49,6 @@ const projects = [
     year: '2023-2024',
     vertical: 'Immersive Entertainment',
     location: 'Miami, FL',
-    image: 'https://images.unsplash.com/photo-1429962714451-bb934ecdc4ec?w=600&q=80',
   },
   {
     id: 6,
@@ -63,7 +57,6 @@ const projects = [
     year: '2023',
     vertical: 'Experiential Marketing',
     location: 'Las Vegas, NV',
-    image: 'https://images.unsplash.com/photo-1568605117036-5fe5e7bab0b7?w=600&q=80',
   },
   {
     id: 7,
@@ -72,7 +65,6 @@ const projects = [
     year: '2022',
     vertical: 'Immersive Entertainment',
     location: 'Caribbean',
-    image: 'https://images.unsplash.com/photo-1548574505-5e239809ee19?w=600&q=80',
   },
 ];
 
@@ -145,13 +137,11 @@ export default function WorkPage() {
                 <FadeIn key={project.id} delay={index * 0.05}>
                   <div className="border-2 border-black bg-white overflow-hidden hover:scale-[1.02] transition-transform duration-200 cursor-pointer h-full flex flex-col">
                     <div className="relative w-full aspect-[4/3] bg-grey-200 flex-shrink-0">
-                      <Image
-                        src={project.image}
-                        alt={project.title}
-                        fill
-                        className="object-cover"
-                        sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw"
-                      />
+                      <div className="absolute inset-0 flex items-center justify-center">
+                        <Typography variant="h4" className="text-grey-500" uppercase>
+                          Project Image
+                        </Typography>
+                      </div>
                     </div>
                     <div className="p-4 sm:p-6 flex-grow flex flex-col">
                       <Typography variant="h4" uppercase className="mb-2 min-h-[3em] leading-tight text-sm sm:text-base">

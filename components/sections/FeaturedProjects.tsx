@@ -1,7 +1,6 @@
 'use client';
 
 import React from 'react';
-import Image from 'next/image';
 import Link from 'next/link';
 import { Typography } from '../ui/Typography';
 import { Container } from '../layout/Container';
@@ -12,22 +11,18 @@ const projects = [
   {
     title: 'Salvage City Supper Club at EDC Las Vegas',
     metadata: 'Client: Insomniac // Year: 2024 // Location: Las Vegas, NV',
-    image: 'https://images.unsplash.com/photo-1555396273-367ea4eb4db5?w=800&h=450&fit=crop&q=80',
   },
   {
     title: 'Heineken Turn4 Nightclub at F1 Las Vegas Grand Prix',
     metadata: 'Client: Heineken // Year: 2023 // Location: Las Vegas, NV',
-    image: 'https://images.unsplash.com/photo-1568605117036-5fe5e7bab0b7?w=800&h=450&fit=crop&q=80',
   },
   {
     title: 'Red Bull Unforeseen Motel Nightclub at III Points Miami',
     metadata: 'Client: Red Bull // Year: 2023 // Location: Miami, FL',
-    image: 'https://images.unsplash.com/photo-1566073771259-6a8506099945?w=800&h=450&fit=crop&q=80',
   },
   {
     title: 'PATRÓN Cristalino North American Launch with Becky G',
     metadata: 'Client: PATRÓN // Year: 2023 // Location: Los Angeles, CA',
-    image: 'https://images.unsplash.com/photo-1551632436-cbf8dd35adfa?w=800&h=450&fit=crop&q=80',
   },
 ];
 
@@ -53,13 +48,11 @@ export function FeaturedProjects() {
             <SlideUp key={project.title} delay={index * 0.1}>
               <div className="border-2 border-white bg-black overflow-hidden hover:scale-[1.02] transition-transform duration-200 cursor-pointer h-full flex flex-col">
                 <div className="relative w-full aspect-[16/9] bg-grey-900 flex-shrink-0">
-                  <Image
-                    src={project.image}
-                    alt={project.title}
-                    fill
-                    className="object-cover"
-                    sizes="(max-width: 768px) 100vw, 50vw"
-                  />
+                  <div className="absolute inset-0 flex items-center justify-center">
+                    <Typography variant="h3" className="text-grey-700" uppercase>
+                      Image
+                    </Typography>
+                  </div>
                 </div>
                 <div className="p-4 sm:p-6 flex-grow flex flex-col">
                   <Typography variant="h4" uppercase className="mb-2 text-white text-sm sm:text-base md:text-lg leading-tight">
