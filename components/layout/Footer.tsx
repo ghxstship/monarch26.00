@@ -60,8 +60,8 @@ export function Footer() {
       className="bg-black text-white border-t-2 border-white"
     >
       <Container className="py-12 sm:py-16">
-        {/* Mobile: Brand centered at top */}
-        <div className="text-center mb-10 sm:hidden">
+        {/* Mobile: Brand at top */}
+        <div className="text-left mb-10 sm:hidden">
           <Typography variant="h3" className="text-white mb-2" uppercase>
             GHXSTSHIP
           </Typography>
