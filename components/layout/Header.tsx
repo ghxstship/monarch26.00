@@ -4,7 +4,6 @@ import React, { useState } from 'react';
 import Link from 'next/link';
 import { motion, AnimatePresence } from 'framer-motion';
 import { Typography } from '../ui/Typography';
-import { Button } from '../ui/Button';
 import { Container } from './Container';
 
 export function Header() {
@@ -50,9 +49,9 @@ export function Header() {
               </Link>
             ))}
             <Link href="/contact">
-              <Button variant="outlined" size="sm" className="border-white text-white hover:bg-white hover:text-black">
+              <button className="font-bebas uppercase tracking-wide px-4 py-2 text-sm border-2 border-[#C1FF72] bg-[#C1FF72] text-black hover:bg-transparent hover:text-[#C1FF72] transition-all">
                 Start a Project
-              </Button>
+              </button>
             </Link>
           </nav>
 
@@ -107,9 +106,9 @@ export function Header() {
                   </Link>
                 ))}
                 <Link href="/contact">
-                  <Button variant="outlined" size="lg" className="border-white text-white hover:bg-white hover:text-black mt-4">
+                  <button className="font-bebas uppercase tracking-wide px-8 py-4 text-lg border-2 border-[#C1FF72] bg-[#C1FF72] text-black hover:bg-transparent hover:text-[#C1FF72] transition-all mt-4">
                     Start a Project
-                  </Button>
+                  </button>
                 </Link>
               </nav>
             </Container>
