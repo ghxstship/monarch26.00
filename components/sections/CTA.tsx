@@ -35,9 +35,9 @@ export function CTA() {
                 Start a Project
               </Button>
             </Link>
-            <Link href="/work">
+            <Link href="/museum">
               <Button variant="outlined" size="lg">
-                View Our Work
+                View the Museum
               </Button>
             </Link>
           </div>

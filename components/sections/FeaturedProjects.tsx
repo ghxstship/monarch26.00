@@ -73,7 +73,7 @@ export function FeaturedProjects() {
 
         <FadeIn delay={0.5}>
           <div className="text-center">
-            <Link href="/work">
+            <Link href="/museum">
               <button className="font-bebas uppercase tracking-wide px-8 py-4 text-lg border-2 border-white text-white hover:bg-white hover:text-black transition-all">
                 Explore The Museum
               </button>

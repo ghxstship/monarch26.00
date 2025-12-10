@@ -31,9 +31,9 @@ export default function NotFound() {
                     Go Home
                   </Button>
                 </Link>
-                <Link href="/work">
+                <Link href="/museum">
                   <Button variant="outlined" size="lg" className="border-white text-white hover:bg-white hover:text-black">
-                    View Our Showcase
+                    View the Museum
                   </Button>
                 </Link>
               </div>

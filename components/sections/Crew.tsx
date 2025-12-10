@@ -35,7 +35,7 @@ export function Crew() {
                 From production managers to technical directors, creative designers to fabricators—our crew 
                 brings decades of combined experience across festivals, brand activations, and global operations.
               </Typography>
-              <Link href="/team">
+              <Link href="/crew">
                 <button className="font-bebas uppercase tracking-wide px-6 py-3 text-base border-2 border-black text-black hover:bg-black hover:text-white transition-all w-full sm:w-auto">
                   Meet The Crew
                 </button>

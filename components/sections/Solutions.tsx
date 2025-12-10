@@ -40,7 +40,7 @@ export function Solutions() {
         <FadeIn>
           <div className="text-center mb-16">
             <Typography variant="h1" uppercase className="mb-4">
-              The Solutions
+              The Destinations
             </Typography>
             <Typography variant="body" className="text-grey-600 max-w-2xl mx-auto">
               Six platforms. Infinite possibilities. We deliver experiences across every medium—ensuring your vision 

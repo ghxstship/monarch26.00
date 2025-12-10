@@ -42,7 +42,7 @@ export function Verticals() {
         <FadeIn>
           <div className="text-center mb-16">
             <Typography variant="h1" uppercase className="mb-4">
-              The Industries
+              The Fleet
             </Typography>
             <Typography variant="body" className="text-grey-600 max-w-2xl mx-auto">
               Different waters. Same standards. Every industry has its own language, its own politics, 

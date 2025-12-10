@@ -15,9 +15,9 @@ export function Header() {
     { label: 'Services', href: '/services' },
     { label: 'Solutions', href: '/solutions' },
     { label: 'Innovations', href: '/innovations' },
-    { label: 'Showcase', href: '/work' },
+    { label: 'Museum', href: '/museum' },
     { label: 'Story', href: '/about' },
-    { label: 'Careers', href: '/careers' },
+    { label: 'Crew', href: '/crew' },
     { label: 'Contact', href: '/contact' },
   ];
 

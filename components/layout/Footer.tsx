@@ -42,10 +42,13 @@ export function Footer() {
       title: 'Company',
       links: [
         { label: 'Story', href: '/about' },
-        { label: 'Showcase', href: '/work' },
+        { label: 'Crew', href: '/crew' },
+        { label: 'Museum', href: '/museum' },
         { label: 'Innovations', href: '/innovations' },
         { label: 'Careers', href: '/careers' },
         { label: 'Contact', href: '/contact' },
+        { label: 'Privacy Policy', href: '/privacy' },
+        { label: 'Terms of Service', href: '/terms' },
       ],
     },
   ];

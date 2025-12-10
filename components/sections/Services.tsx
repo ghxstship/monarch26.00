@@ -5,45 +5,16 @@ import { Search, Pencil, Hammer, Truck, Clapperboard, Zap, Crown } from 'lucide-
 import Link from 'next/link';
 import { Typography } from '../ui/Typography';
 import { Container } from '../layout/Container';
-import { SlideUp } from '../animations/SlideUp';
 import { FadeIn } from '../animations/FadeIn';
 
 const services = [
-  {
-    title: 'DISCOVER',
-    description: 'Strategic discovery and market analysis. We map the territory between "I have a crazy idea" and "this might actually work." Understanding objectives, spotting constraints before they become disasters, and designing experiences that move audiences without bankrupting anyone.',
-    icon: Search,
-  },
-  {
-    title: 'DESIGN',
-    description: 'Concept development backed by actual physics. Environmental design, experience mapping, visual identity creation, and journey architecture. Every element serves strategic objectives while maintaining creative integrity—and structural integrity. Both matter.',
-    icon: Pencil,
-  },
-  {
-    title: 'DEVELOP',
-    description: 'Production execution where vision becomes tangible. Steel, pixels, fabric, circuits—whatever the medium, we engineer it at scale. Our teams build festival infrastructure, branded environments, and installations that make engineers nervous and audiences lose their minds. In a good way.',
-    icon: Hammer,
-  },
-  {
-    title: 'DELIVER',
-    description: "Project management as operational excellence. Load-in schedules, vendor coordination, permit acquisition, contingency planning. We've managed simultaneous productions across continents and solved real-time problems that would make lesser crews quit on the spot.",
-    icon: Truck,
-  },
-  {
-    title: 'DIRECT',
-    description: 'On-site technical direction and real-time problem solving. Our teams supervise every detail from first truck arrival to final strike, ensuring execution matches design intent and client expectations—even when reality has other plans.',
-    icon: Clapperboard,
-  },
-  {
-    title: 'DISRUPT',
-    description: 'Innovation without recklessness. We deploy emerging technologies ahead of adoption curves, create experiences that set new industry standards, and push boundaries with proper engineering documentation and adequate insurance coverage. Because chaos is fun, lawsuits are not.',
-    icon: Zap,
-  },
-  {
-    title: 'DOMINATE',
-    description: 'Post-event analysis and continuous improvement. Performance metrics, lessons learned, evolution planning. Results that speak louder than promises—delivered on time, within budget, as specified. Revolutionary concept in this industry, apparently.',
-    icon: Crown,
-  },
+  { title: 'DISCOVER', subtitle: 'Research & Strategy', icon: Search },
+  { title: 'DESIGN', subtitle: 'Creative & Concept', icon: Pencil },
+  { title: 'DEVELOP', subtitle: 'Pre-Production', icon: Hammer },
+  { title: 'DELIVER', subtitle: 'Production & Logistics', icon: Truck },
+  { title: 'DIRECT', subtitle: 'Operations & Execution', icon: Clapperboard },
+  { title: 'DISRUPT', subtitle: 'Innovation & Tech', icon: Zap },
+  { title: 'DOMINATE', subtitle: 'Scale & Optimize', icon: Crown },
 ];
 
 export function Services() {
@@ -53,67 +24,69 @@ export function Services() {
         <FadeIn>
           <div className="text-center mb-16">
             <Typography variant="h1" uppercase className="mb-4">
-              The Services
+              The Itinerary
             </Typography>
             <Typography variant="body" className="text-grey-600 max-w-2xl mx-auto">
-              Seven D&apos;s. Zero shortcuts. Our operational methodology refined through 13 years of 
-              high-stakes production. Discover. Design. Develop. Deliver. Direct. Disrupt. Dominate.
+              Seven waypoints from vision to victory. Our operational methodology refined through 
+              13 years of charting impossible courses.
             </Typography>
           </div>
         </FadeIn>
 
-        {/* Vertical Timeline */}
-        <div className="max-w-4xl mx-auto">
+        {/* Itinerary Timeline */}
+        <div className="max-w-5xl mx-auto">
+          {/* Timeline Track */}
           <div className="relative">
-            {/* Timeline Line */}
-            <div className="absolute left-8 md:left-1/2 top-0 bottom-0 w-0.5 bg-black transform md:-translate-x-1/2" />
+            {/* Vertical Line - Mobile */}
+            <div className="absolute left-6 top-0 bottom-0 w-0.5 bg-black md:hidden" />
+            
+            {/* Horizontal Line - Desktop */}
+            <div className="hidden md:block absolute left-0 right-0 top-8 h-0.5 bg-black" />
 
-            {/* Timeline Items */}
-            {services.map((service, index) => (
-              <SlideUp key={service.title} delay={index * 0.1}>
-                <div className={`relative mb-12 md:mb-16 ${
-                  index % 2 === 0 ? 'md:pr-1/2 md:text-right' : 'md:pl-1/2 md:ml-auto'
-                }`}>
-                  {/* Timeline Dot */}
-                  <div className="absolute left-8 md:left-1/2 w-4 h-4 bg-black rounded-full transform -translate-x-1/2 md:translate-x-0 md:-translate-x-1/2" />
-                  
-                  {/* Content Card */}
-                  <div className={`ml-20 md:ml-0 ${
-                    index % 2 === 0 ? 'md:mr-12' : 'md:ml-12'
-                  }`}>
-                    <div className="border-2 border-black p-4 sm:p-6 bg-white">
-                      {/* Icon */}
-                      <div className={`mb-3 ${
-                        index % 2 === 0 ? 'md:text-right' : 'md:text-left'
-                      }`}>
-                        <service.icon className="w-10 h-10 inline-block" strokeWidth={1.5} />
-                      </div>
-                      
-                      {/* Title */}
-                      <Typography 
-                        variant="h4" 
-                        uppercase 
-                        className={`mb-4 ${
-                          index % 2 === 0 ? 'md:text-right' : 'md:text-left'
-                        }`}
-                      >
+            {/* Desktop: Horizontal Layout */}
+            <div className="hidden md:grid md:grid-cols-7 gap-2">
+              {services.map((service, index) => (
+                <FadeIn key={service.title} delay={index * 0.1}>
+                  <div className="flex flex-col items-center group cursor-pointer">
+                    {/* Step Number */}
+                    <div className="w-16 h-16 bg-black text-white flex items-center justify-center mb-4 group-hover:bg-white group-hover:text-black group-hover:border-2 group-hover:border-black transition-all">
+                      <service.icon className="w-7 h-7" strokeWidth={1.5} />
+                    </div>
+                    {/* Title */}
+                    <Typography variant="h6" uppercase className="text-center mb-1">
+                      {service.title}
+                    </Typography>
+                    {/* Subtitle */}
+                    <Typography variant="meta" className="text-grey-500 text-center text-xs">
+                      {service.subtitle}
+                    </Typography>
+                  </div>
+                </FadeIn>
+              ))}
+            </div>
+
+            {/* Mobile: Vertical Layout */}
+            <div className="md:hidden space-y-8">
+              {services.map((service, index) => (
+                <FadeIn key={service.title} delay={index * 0.05}>
+                  <div className="flex items-start gap-6 group">
+                    {/* Step Marker */}
+                    <div className="relative z-10 w-12 h-12 bg-black text-white flex items-center justify-center flex-shrink-0 group-hover:bg-white group-hover:text-black group-hover:border-2 group-hover:border-black transition-all">
+                      <service.icon className="w-5 h-5" strokeWidth={1.5} />
+                    </div>
+                    {/* Content */}
+                    <div className="pt-2">
+                      <Typography variant="h5" uppercase className="mb-1">
                         {service.title}
                       </Typography>
-                      
-                      {/* Description */}
-                      <Typography 
-                        variant="body" 
-                        className={`text-grey-700 ${
-                          index % 2 === 0 ? 'md:text-right' : 'md:text-left'
-                        }`}
-                      >
-                        {service.description}
+                      <Typography variant="meta" className="text-grey-500 text-sm">
+                        {service.subtitle}
                       </Typography>
                     </div>
                   </div>
-                </div>
-              </SlideUp>
-            ))}
+                </FadeIn>
+              ))}
+            </div>
           </div>
         </div>
 
@@ -121,7 +94,7 @@ export function Services() {
           <div className="text-center mt-16">
             <Link href="/services">
               <button className="font-bebas uppercase tracking-wide px-8 py-4 text-lg border-2 border-black text-black hover:bg-black hover:text-white transition-all">
-                Explore All Services
+                View Full Itinerary
               </button>
             </Link>
           </div>
