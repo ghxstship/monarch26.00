@@ -22,7 +22,7 @@ const projects = [
   {
     title: 'Red Bull Unforeseen Motel Nightclub at III Points Miami',
     metadata: 'Client: Red Bull // Year: 2023 // Location: Miami, FL',
-    image: 'https://images.unsplash.com/photo-1566073771259-6a8506099945?w=800&q=80',
+    image: 'https://images.unsplash.com/photo-1706824358848-6d3b0f7f5a5c?w=800&q=80',
   },
   {
     title: 'PATRÓN Cristalino North American Launch with Becky G',
