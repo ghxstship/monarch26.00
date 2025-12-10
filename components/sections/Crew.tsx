@@ -14,7 +14,7 @@ export function Crew() {
         <SlideUp>
           <div className="text-center mb-16">
             <Typography variant="h1" uppercase className="mb-4">
-              The Misfits
+              The Crew
             </Typography>
             <Typography variant="body" className="text-grey-600 max-w-2xl mx-auto">
               Event production professionals, technical directors, and creative strategists who navigate the 
