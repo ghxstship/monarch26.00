@@ -59,15 +59,15 @@ export default function AboutPage() {
                 </Typography>
                 
                 <Typography variant="body" className="text-grey-400 text-xl leading-relaxed mb-6">
-                  The cruise ships came first. Floating cities where entertainment never stops and failure 
-                  isn&apos;t an option. Started as a musician. Became a DJ. Then somehow ended up 
+                  The cruise ships came first. Carnival, Celebrity, Norwegian—floating cities where entertainment never 
+                  stops and failure isn&apos;t an option. Started as a musician. Became a DJ. Then somehow ended up 
                   supervising talent acquisition across oceans and time zones. Built a casting system that turned 
                   weeks into minutes. Not because we were smart—because we had to. When you&apos;re sourcing talent 
                   across dozens of countries and the old system is drowning, you either innovate or quit. We didn&apos;t quit.
                 </Typography>
                 
                 <Typography variant="body" className="text-grey-400 text-xl leading-relaxed mb-6">
-                  Then came the festivals. Massive crowds. Bigger productions. Audio, lighting, video, 
+                  Then came the festivals. Insomniac. EDC. Massive crowds. Bigger productions. Audio, lighting, video, 
                   staging—all the technical systems that make or break a show. Learned that festival production is just 
                   controlled chaos with better insurance. Streamlined operations. Built communication platforms. Connected 
                   internal teams with external contractors. Reduced timelines. Maintained world-class standards. And discovered 
@@ -75,16 +75,16 @@ export default function AboutPage() {
                 </Typography>
                 
                 <Typography variant="body" className="text-grey-400 text-xl leading-relaxed mb-6">
-                  Motorsport hospitality changed everything. Managing operations across premium venues for an 
+                  Formula 1 Las Vegas changed everything. Managing hospitality operations across premium venues for the 
                   inaugural Grand Prix. International clientele. Celebrities. Athletes. Entertainment executives. The kind 
                   of high-stakes environment where one mistake becomes international news. Where perfect execution isn&apos;t 
                   celebrated—it&apos;s expected. We didn&apos;t make mistakes. We made memories.
                 </Typography>
                 
                 <Typography variant="body" className="text-grey-400 text-xl leading-relaxed mb-6">
-                  The brand activations taught us scale. Nightclubs at motorsport events. Immersive experiences 
-                  at music festivals. Product launches with global artists. Fortune 500 brands that demand 
-                  operational excellence and zero margin for error. Each activation a masterclass in logistics, 
+                  The brand activations taught us scale. Heineken&apos;s Turn 4 Nightclub at F1. Red Bull&apos;s Unforeseen 
+                  Motel at III Points Miami. PATRÓN Cristalino&apos;s North American launch with Becky G. Fortune 500 brands 
+                  that demand operational excellence and zero margin for error. Each activation a masterclass in logistics, 
                   creativity, and making the impossible look inevitable. Each one a reminder that the difference between 
                   legendary and forgotten is usually just better execution.
                 </Typography>
