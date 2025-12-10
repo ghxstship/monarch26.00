@@ -282,7 +282,8 @@ export default function TeamPage() {
                 </Typography>
                 <Typography variant="body" className="text-grey-700 text-lg leading-relaxed">
                   Remote-friendly for the right roles. Global operations mean flexible schedules. But when it&apos;s 
-                  showtime, we show up. Every time. No exceptions.
+                  showtime, we show up. Every time. No exceptions. We&apos;re not a family. We&apos;re a crew. 
+                  Families have to keep you. Crews choose to sail together.
                 </Typography>
               </SlideUp>
             </div>

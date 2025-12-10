@@ -23,10 +23,10 @@ export function CTA() {
           </Typography>
           
           <Typography variant="body" className="text-grey-600 max-w-2xl mx-auto mb-12">
-            Thirteen years of turning constraints into creative advantages. We&apos;ve delivered festival 
-            infrastructure for 50,000+ attendees, managed F1 hospitality operations, and built brand 
-            activations for Fortune 500s. If you&apos;ve got the vision and the budget, we&apos;ve got the 
-            operational expertise and creative audacity to make it real.
+            We&apos;ve done the impossible often enough that it&apos;s become routine. Festival infrastructure, 
+            motorsport hospitality, Fortune 500 activations—we&apos;ve navigated them all. If you&apos;ve got 
+            the vision and the budget, we&apos;ve got the operational expertise and creative audacity to 
+            make it real. Your turn.
           </Typography>
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center">

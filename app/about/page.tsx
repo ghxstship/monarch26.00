@@ -59,15 +59,15 @@ export default function AboutPage() {
                 </Typography>
                 
                 <Typography variant="body" className="text-grey-400 text-xl leading-relaxed mb-6">
-                  The cruise ships came first. Carnival, Celebrity, Norwegian—floating cities where entertainment never 
-                  stops and failure isn&apos;t an option. Started as a musician. Became a DJ. Then somehow ended up 
+                  The cruise ships came first. Floating cities where entertainment never stops and failure 
+                  isn&apos;t an option. Started as a musician. Became a DJ. Then somehow ended up 
                   supervising talent acquisition across oceans and time zones. Built a casting system that turned 
                   weeks into minutes. Not because we were smart—because we had to. When you&apos;re sourcing talent 
                   across dozens of countries and the old system is drowning, you either innovate or quit. We didn&apos;t quit.
                 </Typography>
                 
                 <Typography variant="body" className="text-grey-400 text-xl leading-relaxed mb-6">
-                  Then came the festivals. Insomniac. EDC. Massive crowds. Bigger productions. Audio, lighting, video, 
+                  Then came the festivals. Massive crowds. Bigger productions. Audio, lighting, video, 
                   staging—all the technical systems that make or break a show. Learned that festival production is just 
                   controlled chaos with better insurance. Streamlined operations. Built communication platforms. Connected 
                   internal teams with external contractors. Reduced timelines. Maintained world-class standards. And discovered 
@@ -75,16 +75,16 @@ export default function AboutPage() {
                 </Typography>
                 
                 <Typography variant="body" className="text-grey-400 text-xl leading-relaxed mb-6">
-                  Formula 1 Las Vegas changed everything. Managing hospitality operations across premium venues for the 
+                  Motorsport hospitality changed everything. Managing operations across premium venues for an 
                   inaugural Grand Prix. International clientele. Celebrities. Athletes. Entertainment executives. The kind 
                   of high-stakes environment where one mistake becomes international news. Where perfect execution isn&apos;t 
                   celebrated—it&apos;s expected. We didn&apos;t make mistakes. We made memories.
                 </Typography>
                 
                 <Typography variant="body" className="text-grey-400 text-xl leading-relaxed mb-6">
-                  The brand activations taught us scale. Heineken&apos;s Turn 4 Nightclub at F1. Red Bull&apos;s Unforeseen 
-                  Motel at III Points Miami. PATRÓN Cristalino&apos;s North American launch with Becky G. Fortune 500 brands 
-                  that demand operational excellence and zero margin for error. Each activation a masterclass in logistics, 
+                  The brand activations taught us scale. Nightclubs at motorsport events. Immersive experiences 
+                  at music festivals. Product launches with global artists. Fortune 500 brands that demand 
+                  operational excellence and zero margin for error. Each activation a masterclass in logistics, 
                   creativity, and making the impossible look inevitable. Each one a reminder that the difference between 
                   legendary and forgotten is usually just better execution.
                 </Typography>
@@ -217,9 +217,9 @@ export default function AboutPage() {
                     { title: 'Origin: Newport Beach', location: 'California', date: 'June 1990', description: 'The vessel launched. A kid who could read sheet music before maps set sail.', Icon: Waves },
                     { title: 'Viking Territory', location: 'Minnesota', date: 'January 1996', description: 'Navigated to colder climates. Learned that ice and snow build character.', Icon: Snowflake },
                     { title: 'The Conservatory', location: 'Indiana', date: 'August 2008', description: 'Classical musician learning precision and adaptability under pressure. Concert halls became the first stage.', Icon: Music },
-                    { title: 'The High Seas', location: 'International Waters', date: 'January 2012', description: 'Entertainment at scale—systems that work across floating cities. Carnival taught us hospitality without borders.', Icon: Ship },
+                    { title: 'The High Seas', location: 'International Waters', date: 'January 2012', description: 'Entertainment at scale—systems that work across floating cities. Cruise lines taught us hospitality without borders.', Icon: Ship },
                     { title: 'The 305', location: 'Miami', date: 'December 2015', description: 'Docked in the cruise capital. Where the Caribbean meets production excellence.', Icon: Palmtree },
-                    { title: 'The Site Yard', location: 'Orlando', date: 'December 2018', description: 'Festival production mastery with Insomniac. 50,000+ capacity venues and impossible logistics became routine.', Icon: Tent },
+                    { title: 'The Site Yard', location: 'Orlando', date: 'December 2018', description: 'Festival production mastery. 50,000+ capacity venues and impossible logistics became routine.', Icon: Tent },
                     { title: 'The Ship Yard', location: 'Somewhere Beyond the Sea', date: 'July 2023', description: 'Every lesson, every failure, every impossible deadline—all distilled into something new. The ship sets sail.', Icon: Ghost },
                     { title: 'Current Coordinates', location: 'Tampa', date: 'October 2025', description: 'Home port established. Building the future of experiential innovation from the Gulf Coast.', Icon: Anchor },
                     { title: 'Destination: Unknown', location: 'Classified', date: 'TBD', description: 'The voyage continues. New waters to chart. New impossibilities to make possible.', Icon: HelpCircle },

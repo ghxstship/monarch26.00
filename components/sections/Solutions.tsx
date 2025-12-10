@@ -43,7 +43,7 @@ export function Solutions() {
               The Destinations
             </Typography>
             <Typography variant="body" className="text-grey-600 max-w-2xl mx-auto">
-              Six platforms. Infinite possibilities. We deliver experiences across every medium—ensuring your vision 
+              Six platforms. Zero excuses. We deliver experiences across every medium—ensuring your vision 
               reaches audiences wherever they are.
             </Typography>
           </div>

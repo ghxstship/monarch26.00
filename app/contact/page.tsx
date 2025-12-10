@@ -95,7 +95,7 @@ export default function ContactPage() {
                   The fun kind. The kind that ends with champagne and case studies.
                 </Typography>
                 <Typography variant="body" className="text-grey-400 text-xl">
-                  From festival grounds to Formula 1 hospitality to Fortune 500 brand activations—we&apos;ve navigated 
+                  From festival grounds to motorsport hospitality to Fortune 500 brand activations—we&apos;ve navigated 
                   complex productions where failure wasn&apos;t an option. If you&apos;ve got the vision and the budget, 
                   we&apos;ve got the operational expertise to make it real. Tell us about your project. We&apos;ll tell you 
                   if it&apos;s possible. Spoiler: it probably is.
@@ -204,7 +204,7 @@ export default function ContactPage() {
                 {submitStatus === 'success' && (
                   <div className="p-4 bg-green-100 border-2 border-green-600 mb-6">
                     <Typography variant="body" className="text-green-800">
-                      Thank you! Your message has been sent successfully. We&apos;ll get back to you soon.
+                      Message received. We’ll chart a course back to you within 48 hours. Probably sooner—we’re impatient too.
                     </Typography>
                   </div>
                 )}

@@ -171,11 +171,11 @@ export default function WorkPage() {
           <Container>
             <div className="text-center">
               <Typography variant="h1" uppercase className="text-white mb-6">
-                Want to See More?
+                Ready to Add to the Collection?
               </Typography>
               <Typography variant="body" className="text-grey-400 max-w-2xl mx-auto mb-8">
-                These are just a few highlights. Contact us to learn more about our full portfolio 
-                and how we can bring your vision to life.
+                These are just the highlights. The full archive includes projects we can&apos;t talk about 
+                yet and a few we&apos;re legally required to pretend never happened. Let&apos;s discuss yours.
               </Typography>
               <Link href="/contact">
                 <button className="font-bebas uppercase tracking-wide px-8 py-4 text-lg border-2 border-white text-white hover:bg-white hover:text-black transition-all">
