@@ -6,7 +6,7 @@ import { Container } from '@/components/layout/Container';
 import { Typography } from '@/components/ui/Typography';
 import { SlideUp } from '@/components/animations/SlideUp';
 import { FadeIn } from '@/components/animations/FadeIn';
-import { Waves, Snowflake, Music, Ship, Palmtree, Tent, Ghost, Anchor } from 'lucide-react';
+import { Waves, Snowflake, Music, Ship, Palmtree, Tent, Ghost, Anchor, HelpCircle } from 'lucide-react';
 import { TeamMemberCard } from '@/components/ui/TeamMemberCard';
 
 export default function AboutPage() {
@@ -165,133 +165,90 @@ export default function AboutPage() {
               </div>
             </FadeIn>
 
-            {/* Vertical Timeline */}
-            <div className="max-w-4xl mx-auto">
+            {/* Journey Timeline */}
+            <div className="max-w-6xl mx-auto">
+              {/* Timeline Track */}
               <div className="relative">
-                {/* Timeline Line */}
-                <div className="absolute left-8 md:left-1/2 top-0 bottom-0 w-0.5 bg-black transform md:-translate-x-1/2" />
+                {/* Vertical Line - Mobile */}
+                <div className="absolute left-6 top-0 bottom-0 w-0.5 bg-black lg:hidden" />
+                
+                {/* Horizontal Line - Desktop */}
+                <div className="hidden lg:block absolute left-0 right-0 top-8 h-0.5 bg-black" />
 
-                {/* Timeline Items */}
-                {[
-                  {
-                    date: 'June 1990',
-                    location: 'California',
-                    title: 'First Port: Newport Beach',
-                    description: 'The vessel launched. A kid who could read sheet music before maps set sail.',
-                    Icon: Waves,
-                  },
-                  {
-                    date: 'January 1996',
-                    location: 'Minnesota',
-                    title: 'Northern Waters',
-                    description: 'Navigated to colder climates. Learned that ice and snow build character.',
-                    Icon: Snowflake,
-                  },
-                  {
-                    date: 'August 2008',
-                    location: 'Indiana',
-                    title: 'The Conservatory',
-                    description: 'Classical musician learning precision and adaptability under pressure. Concert halls became the first stage.',
-                    Icon: Music,
-                  },
-                  {
-                    date: 'January 2012',
-                    location: 'Cruise Ships',
-                    title: 'The High Seas',
-                    description: 'Entertainment at scale—systems that work across floating cities. Carnival taught us hospitality without borders.',
-                    Icon: Ship,
-                  },
-                  {
-                    date: 'December 2015',
-                    location: 'Miami',
-                    title: 'The 305',
-                    description: 'Docked in the cruise capital. Where the Caribbean meets production excellence.',
-                    Icon: Palmtree,
-                  },
-                  {
-                    date: 'December 2018',
-                    location: 'Orlando',
-                    title: 'The Site Yard',
-                    description: 'Festival production mastery with Insomniac. 50,000+ capacity venues and impossible logistics became routine.',
-                    Icon: Tent,
-                  },
-                  {
-                    date: 'July 2023',
-                    location: 'Dry Dock',
-                    title: 'GHXSTSHIP Launches',
-                    description: 'Every lesson, every failure, every impossible deadline—all distilled into something new. The ship sets sail.',
-                    Icon: Ghost,
-                  },
-                  {
-                    date: 'October 2025',
-                    location: 'Tampa',
-                    title: 'Current Coordinates',
-                    description: 'Home port established. Building the future of experiential innovation from the Gulf Coast.',
-                    Icon: Anchor,
-                  },
-                ].map((milestone, index) => (
-                  <SlideUp key={milestone.date} delay={index * 0.1}>
-                    <div className={`relative mb-12 md:mb-16 ${
-                      index % 2 === 0 ? 'md:pr-1/2 md:text-right' : 'md:pl-1/2 md:ml-auto'
-                    }`}>
-                      {/* Timeline Dot */}
-                      <div className="absolute left-8 md:left-1/2 w-4 h-4 bg-black rounded-full transform -translate-x-1/2 top-6" />
-                      
-                      {/* Content Card */}
-                      <div className={`ml-20 md:ml-0 ${
-                        index % 2 === 0 ? 'md:mr-12' : 'md:ml-12'
-                      }`}>
-                        <div className="border-2 border-black p-4 sm:p-6 bg-white">
-                          {/* Icon */}
-                          <div className={`mb-3 ${
-                            index % 2 === 0 ? 'md:flex md:justify-end' : 'md:flex md:justify-start'
-                          }`}>
-                            <milestone.Icon size={40} className="text-black" strokeWidth={1.5} />
-                          </div>
-                          
-                          {/* Date & Location */}
-                          <div className={`mb-2 ${
-                            index % 2 === 0 ? 'md:text-right' : 'md:text-left'
-                          }`}>
-                            <Typography variant="meta" className="text-grey-500 uppercase tracking-wider">
-                              {milestone.date}
-                            </Typography>
-                          </div>
-                          
-                          {/* Title */}
-                          <Typography 
-                            variant="h4" 
-                            uppercase 
-                            className={`mb-2 ${
-                              index % 2 === 0 ? 'md:text-right' : 'md:text-left'
-                            }`}
-                          >
+                {/* Desktop: Horizontal Layout */}
+                <div className="hidden lg:grid lg:grid-cols-9 gap-2">
+                  {[
+                    { title: 'Origin', subtitle: 'Newport Beach', date: '1990', Icon: Waves },
+                    { title: 'Viking Territory', subtitle: 'Minnesota', date: '1996', Icon: Snowflake },
+                    { title: 'The Conservatory', subtitle: 'Indiana', date: '2008', Icon: Music },
+                    { title: 'The High Seas', subtitle: 'Intl. Waters', date: '2012', Icon: Ship },
+                    { title: 'The 305', subtitle: 'Miami', date: '2015', Icon: Palmtree },
+                    { title: 'The Site Yard', subtitle: 'Orlando', date: '2018', Icon: Tent },
+                    { title: 'The Ship Yard', subtitle: 'Beyond the Sea', date: '2023', Icon: Ghost },
+                    { title: 'Current', subtitle: 'Tampa', date: '2025', Icon: Anchor },
+                    { title: 'Unknown', subtitle: 'Classified', date: 'TBD', Icon: HelpCircle },
+                  ].map((stop, index) => (
+                    <FadeIn key={stop.title} delay={index * 0.1}>
+                      <div className="flex flex-col items-center group cursor-pointer">
+                        {/* Step Icon */}
+                        <div className="w-16 h-16 bg-black text-white flex items-center justify-center mb-4 group-hover:bg-white group-hover:text-black group-hover:border-2 group-hover:border-black transition-all">
+                          <stop.Icon className="w-7 h-7" strokeWidth={1.5} />
+                        </div>
+                        {/* Title */}
+                        <Typography variant="meta" uppercase className="text-center mb-1 text-xs font-bold">
+                          {stop.title}
+                        </Typography>
+                        {/* Subtitle */}
+                        <Typography variant="meta" className="text-grey-500 text-center text-[10px]">
+                          {stop.subtitle}
+                        </Typography>
+                        {/* Date */}
+                        <Typography variant="meta" className="text-grey-400 text-center text-[10px] mt-1">
+                          {stop.date}
+                        </Typography>
+                      </div>
+                    </FadeIn>
+                  ))}
+                </div>
+
+                {/* Mobile/Tablet: Vertical Layout */}
+                <div className="lg:hidden space-y-8">
+                  {[
+                    { title: 'Origin: Newport Beach', location: 'California', date: 'June 1990', description: 'The vessel launched. A kid who could read sheet music before maps set sail.', Icon: Waves },
+                    { title: 'Viking Territory', location: 'Minnesota', date: 'January 1996', description: 'Navigated to colder climates. Learned that ice and snow build character.', Icon: Snowflake },
+                    { title: 'The Conservatory', location: 'Indiana', date: 'August 2008', description: 'Classical musician learning precision and adaptability under pressure. Concert halls became the first stage.', Icon: Music },
+                    { title: 'The High Seas', location: 'International Waters', date: 'January 2012', description: 'Entertainment at scale—systems that work across floating cities. Carnival taught us hospitality without borders.', Icon: Ship },
+                    { title: 'The 305', location: 'Miami', date: 'December 2015', description: 'Docked in the cruise capital. Where the Caribbean meets production excellence.', Icon: Palmtree },
+                    { title: 'The Site Yard', location: 'Orlando', date: 'December 2018', description: 'Festival production mastery with Insomniac. 50,000+ capacity venues and impossible logistics became routine.', Icon: Tent },
+                    { title: 'The Ship Yard', location: 'Somewhere Beyond the Sea', date: 'July 2023', description: 'Every lesson, every failure, every impossible deadline—all distilled into something new. The ship sets sail.', Icon: Ghost },
+                    { title: 'Current Coordinates', location: 'Tampa', date: 'October 2025', description: 'Home port established. Building the future of experiential innovation from the Gulf Coast.', Icon: Anchor },
+                    { title: 'Destination: Unknown', location: 'Classified', date: 'TBD', description: 'The voyage continues. New waters to chart. New impossibilities to make possible.', Icon: HelpCircle },
+                  ].map((milestone, index) => (
+                    <FadeIn key={milestone.title} delay={index * 0.05}>
+                      <div className="flex items-start gap-6 group">
+                        {/* Step Marker */}
+                        <div className="relative z-10 w-12 h-12 bg-black text-white flex items-center justify-center flex-shrink-0 group-hover:bg-white group-hover:text-black group-hover:border-2 group-hover:border-black transition-all">
+                          <milestone.Icon className="w-5 h-5" strokeWidth={1.5} />
+                        </div>
+                        {/* Content */}
+                        <div className="pt-1">
+                          <Typography variant="meta" className="text-grey-500 uppercase tracking-wider text-xs">
+                            {milestone.date}
+                          </Typography>
+                          <Typography variant="h5" uppercase className="mb-1">
                             {milestone.title}
                           </Typography>
-                          
-                          {/* Location Badge */}
-                          <div className={`mb-3 ${
-                            index % 2 === 0 ? 'md:flex md:justify-end' : 'md:flex md:justify-start'
-                          }`}>
-                            <span className="inline-block px-3 py-1 bg-black text-white text-xs uppercase tracking-wider">
-                              {milestone.location}
-                            </span>
-                          </div>
-                          
-                          {/* Description */}
-                          <Typography 
-                            variant="body" 
-                            className={`text-grey-700 ${
-                              index % 2 === 0 ? 'md:text-right' : 'md:text-left'
-                            }`}
-                          >
+                          <span className="inline-block px-2 py-0.5 bg-black text-white text-[10px] uppercase tracking-wider mb-2">
+                            {milestone.location}
+                          </span>
+                          <Typography variant="body" className="text-grey-600 text-sm">
                             {milestone.description}
                           </Typography>
                         </div>
                       </div>
-                    </div>
-                  </SlideUp>
-                ))}
+                    </FadeIn>
+                  ))}
+                </div>
               </div>
             </div>
           </Container>
