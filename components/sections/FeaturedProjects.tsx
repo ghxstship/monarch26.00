@@ -17,7 +17,7 @@ const projects = [
   {
     title: 'Heineken Turn4 Nightclub at F1 Las Vegas Grand Prix',
     metadata: 'Client: Heineken // Year: 2023 // Location: Las Vegas, NV',
-    image: 'https://images.unsplash.com/photo-1541447270888-83e8494f9c07?w=800&q=80',
+    image: 'https://images.unsplash.com/photo-1504707748692-419802cf939d?w=800&q=80',
   },
   {
     title: 'Red Bull Unforeseen Motel Nightclub at III Points Miami',

@@ -27,7 +27,7 @@ const projects = [
     year: '2023',
     vertical: 'Experiential Marketing',
     location: 'Las Vegas, NV',
-    image: 'https://images.unsplash.com/photo-1541447270888-83e8494f9c07?w=600&q=80',
+    image: 'https://images.unsplash.com/photo-1504707748692-419802cf939d?w=600&q=80',
   },
   {
     id: 3,
