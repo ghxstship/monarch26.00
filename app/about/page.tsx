@@ -115,10 +115,10 @@ export default function AboutPage() {
               {stats.map((stat, index) => (
                 <FadeIn key={stat.label} delay={index * 0.1}>
                   <div className="text-center border-2 border-black p-4 sm:p-6 md:p-8 flex flex-col justify-center min-h-[140px] sm:min-h-[160px] md:min-h-[180px]">
-                    <Typography variant="hero" className="mb-3 leading-none">
+                    <Typography variant="h1" className="mb-3 leading-none text-4xl sm:text-5xl md:text-6xl">
                       {stat.value}
                     </Typography>
-                    <Typography variant="h6" uppercase className="text-sm md:text-base leading-tight">
+                    <Typography variant="meta" uppercase className="text-xs sm:text-sm tracking-wider">
                       {stat.label}
                     </Typography>
                   </div>
@@ -131,7 +131,7 @@ export default function AboutPage() {
         {/* Founder Section */}
         <section className="py-24 bg-white">
           <Container>
-            <div className="max-w-4xl mx-auto">
+            <div className="max-w-sm mx-auto">
               <SlideUp>
                 <Typography variant="h2" uppercase className="mb-12 text-center">
                   The Founder
@@ -285,7 +285,7 @@ export default function AboutPage() {
           <Container>
             <div className="text-center max-w-2xl mx-auto">
               <SlideUp>
-                <Typography variant="h2" uppercase className="mb-6">
+                <Typography variant="h1" uppercase className="mb-6">
                   Ready to Set Sail?
                 </Typography>
                 <Typography variant="body" className="text-grey-700 text-lg mb-8">

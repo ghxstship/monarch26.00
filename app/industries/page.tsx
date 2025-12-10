@@ -214,7 +214,7 @@ export default function IndustriesPage() {
           <Container>
             <div className="text-center max-w-2xl mx-auto">
               <SlideUp>
-                <Typography variant="h2" uppercase className="text-white mb-6">
+                <Typography variant="h1" uppercase className="text-white mb-6">
                   Your Industry. Our Expertise.
                 </Typography>
                 <Typography variant="body" className="text-grey-400 text-lg mb-8">
