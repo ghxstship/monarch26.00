@@ -322,6 +322,28 @@ export default function AboutPage() {
             </div>
           </Container>
         </section>
+
+        {/* CTA Section */}
+        <section className="py-24 bg-white">
+          <Container>
+            <div className="text-center max-w-2xl mx-auto">
+              <SlideUp>
+                <Typography variant="h2" uppercase className="mb-6">
+                  Ready to Set Sail?
+                </Typography>
+                <Typography variant="body" className="text-grey-700 text-lg mb-8">
+                  We don&apos;t do &quot;let&apos;s circle back.&quot; We do &quot;let&apos;s make it happen.&quot; 
+                  If you&apos;ve got an impossible idea, we&apos;ve got the crew to build it.
+                </Typography>
+                <a href="/contact">
+                  <button className="font-bebas uppercase tracking-wide px-8 py-4 text-lg border-2 border-black text-black hover:bg-black hover:text-white transition-all">
+                    Board the Ship
+                  </button>
+                </a>
+              </SlideUp>
+            </div>
+          </Container>
+        </section>
       </main>
       <Footer />
     </>
