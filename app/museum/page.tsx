@@ -18,7 +18,7 @@ const projects = [
     year: '2024',
     vertical: 'Immersive Entertainment',
     location: 'Las Vegas, NV',
-    image: 'https://source.unsplash.com/t05q7TZObzc/600x450',
+    image: 'https://images.unsplash.com/photo-1555396273-367ea4eb4db5?w=600&h=450&fit=crop&q=80',
   },
   {
     id: 2,
@@ -27,7 +27,7 @@ const projects = [
     year: '2023',
     vertical: 'Experiential Marketing',
     location: 'Las Vegas, NV',
-    image: 'https://source.unsplash.com/3uu5_kn1k_Y/600x450',
+    image: 'https://images.unsplash.com/photo-1568605117036-5fe5e7bab0b7?w=600&h=450&fit=crop&q=80',
   },
   {
     id: 3,
@@ -36,7 +36,7 @@ const projects = [
     year: '2023',
     vertical: 'Immersive Entertainment',
     location: 'Miami, FL',
-    image: 'https://source.unsplash.com/SQXEO9iGNtg/600x450',
+    image: 'https://images.unsplash.com/photo-1566073771259-6a8506099945?w=600&h=450&fit=crop&q=80',
   },
   {
     id: 4,
@@ -45,7 +45,7 @@ const projects = [
     year: '2023',
     vertical: 'Experiential Marketing',
     location: 'Los Angeles, CA',
-    image: 'https://source.unsplash.com/ISz9aojNEjM/600x450',
+    image: 'https://images.unsplash.com/photo-1551632436-cbf8dd35adfa?w=600&h=450&fit=crop&q=80',
   },
   {
     id: 5,

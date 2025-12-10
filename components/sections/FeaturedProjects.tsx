@@ -12,22 +12,22 @@ const projects = [
   {
     title: 'Salvage City Supper Club at EDC Las Vegas',
     metadata: 'Client: Insomniac // Year: 2024 // Location: Las Vegas, NV',
-    image: 'https://source.unsplash.com/t05q7TZObzc/800x450',
+    image: 'https://images.unsplash.com/photo-1555396273-367ea4eb4db5?w=800&h=450&fit=crop&q=80',
   },
   {
     title: 'Heineken Turn4 Nightclub at F1 Las Vegas Grand Prix',
     metadata: 'Client: Heineken // Year: 2023 // Location: Las Vegas, NV',
-    image: 'https://source.unsplash.com/3uu5_kn1k_Y/800x450',
+    image: 'https://images.unsplash.com/photo-1568605117036-5fe5e7bab0b7?w=800&h=450&fit=crop&q=80',
   },
   {
     title: 'Red Bull Unforeseen Motel Nightclub at III Points Miami',
     metadata: 'Client: Red Bull // Year: 2023 // Location: Miami, FL',
-    image: 'https://source.unsplash.com/SQXEO9iGNtg/800x450',
+    image: 'https://images.unsplash.com/photo-1566073771259-6a8506099945?w=800&h=450&fit=crop&q=80',
   },
   {
     title: 'PATRÓN Cristalino North American Launch with Becky G',
     metadata: 'Client: PATRÓN // Year: 2023 // Location: Los Angeles, CA',
-    image: 'https://source.unsplash.com/ISz9aojNEjM/800x450',
+    image: 'https://images.unsplash.com/photo-1551632436-cbf8dd35adfa?w=800&h=450&fit=crop&q=80',
   },
 ];
 
