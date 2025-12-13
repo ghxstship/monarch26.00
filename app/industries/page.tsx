@@ -23,7 +23,7 @@ const industries = [
   {
     id: 'concerts-festivals-tours',
     title: 'Concerts, Festivals & Tours',
-    description: 'Live music production at every scale. From intimate club shows to stadium spectacles, multi-day festivals to world tours. We\'ve called cues at 3 AM, managed impossible changeovers, and delivered experiences that audiences remember for life.',
+    description: 'Live music production at every scale. From intimate club shows to stadium spectacles, multi-day festivals to world tours. We\'ve held the line through monsoons, gear failures, and scope creep that should\'ve been stopped at the door.',
     capabilities: [
       'Concert Production',
       'Festival Design & Operations',
@@ -166,8 +166,7 @@ export default function IndustriesPage() {
                 </Typography>
                 <Typography variant="body" className="text-grey-400 text-xl">
                   Every industry has its own language, its own politics, its own way of measuring success. 
-                  We&apos;ve learned them all—not from textbooks, but from 3 AM problem-solving sessions and 
-                  post-mortems that actually meant something.
+                  We&apos;ve learned them all—not from textbooks, but from knowing when to push forward and when to pull the plug.
                 </Typography>
               </div>
             </SlideUp>

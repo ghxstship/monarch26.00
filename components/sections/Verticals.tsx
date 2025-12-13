@@ -47,8 +47,7 @@ export function Verticals() {
             <Typography variant="body" className="text-grey-600 max-w-2xl mx-auto">
               Event production and experiential marketing across every major industry vertical. From concert 
               touring and festival production to corporate event management and hospitality operations—we&apos;ve 
-              mastered the unique demands of each sector through 3 AM problem-solving and post-mortems that 
-              actually meant something.
+              mastered the unique demands of each sector through hard-won lessons about what works and what&apos;s just wishful thinking.
             </Typography>
           </div>
         </FadeIn>

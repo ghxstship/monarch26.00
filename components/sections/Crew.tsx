@@ -19,8 +19,7 @@ export function Crew() {
             <Typography variant="body" className="text-grey-600 max-w-2xl mx-auto">
               Event production professionals, technical directors, and creative strategists who navigate the 
               impossible. Battle-tested expertise from high-stakes festival production, brand activations, and 
-              global operations. We solve problems at 3 AM and turn &quot;that can&apos;t be done&quot; into 
-              &quot;when do you need it by?&quot;
+              global operations. We deliver what we commit to—nothing more, nothing less.
             </Typography>
           </div>
         </SlideUp>

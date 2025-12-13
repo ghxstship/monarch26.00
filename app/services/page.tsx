@@ -118,7 +118,7 @@ export default function ServicesPage() {
                   Seven D&apos;s. Zero shortcuts.
                 </Typography>
                 <Typography variant="body" className="text-grey-400 text-xl">
-                  Our operational methodology refined through 13 years of solving problems that emerge at 3 AM during setup. 
+                  Our operational methodology refined through 13 years of solving curveballs that would break lesser crews. 
                   Discover. Design. Develop. Deliver. Direct. Disrupt. Dominate.
                 </Typography>
               </div>

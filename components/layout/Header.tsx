@@ -49,7 +49,7 @@ export function Header() {
               </Link>
             ))}
             <Link href="/contact">
-              <button className="font-bebas uppercase tracking-wide px-4 py-2 text-sm border-2 border-[#C1FF72] bg-[#C1FF72] text-black hover:bg-transparent hover:text-[#C1FF72] transition-all">
+              <button className="font-bebas uppercase tracking-wide px-4 py-2 text-sm border-2 border-[#2edb3a] bg-[#2edb3a] text-black hover:bg-transparent hover:text-[#2edb3a] transition-all">
                 Start a Project
               </button>
             </Link>
@@ -106,7 +106,7 @@ export function Header() {
                   </Link>
                 ))}
                 <Link href="/contact">
-                  <button className="font-bebas uppercase tracking-wide px-8 py-4 text-lg border-2 border-[#C1FF72] bg-[#C1FF72] text-black hover:bg-transparent hover:text-[#C1FF72] transition-all mt-4">
+                  <button className="font-bebas uppercase tracking-wide px-8 py-4 text-lg border-2 border-[#2edb3a] bg-[#2edb3a] text-black hover:bg-transparent hover:text-[#2edb3a] transition-all mt-4">
                     Start a Project
                   </button>
                 </Link>

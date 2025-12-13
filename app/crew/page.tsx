@@ -183,8 +183,7 @@ export default function TeamPage() {
                 </Typography>
                 <Typography variant="body" className="text-grey-400 text-xl">
                   Every crew member brings battle-tested expertise from high-stakes productions where failure wasn&apos;t 
-                  an option. We deliver under pressure, solve problems at 3 AM, and turn &quot;that can&apos;t be done&quot; 
-                  into &quot;when do you need it by?&quot;
+                  an option. We deliver under pressure, know what&apos;s worth fighting for and what&apos;s not worth the risk.
                 </Typography>
               </div>
             </SlideUp>

@@ -41,7 +41,7 @@ export default function CareersPage() {
     },
     {
       title: 'Resilient',
-      description: '3 AM load-ins build character. So does failure.',
+      description: 'Saying no to bad ideas builds character. So does failure.',
     },
     {
       title: 'Ready',

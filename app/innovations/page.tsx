@@ -78,8 +78,7 @@ export default function InnovationsPage() {
                 </Typography>
                 <Typography variant="body" className="text-grey-400 text-xl">
                   Production management platforms that understand reality, not just project theory. Tools built 
-                  by crews who&apos;ve managed load-in at 3 AM, solved problems with duct tape and prayer, and know 
-                  what actually matters when everything&apos;s on fire. Metaphorically. Usually.
+                  by veterans who&apos;ve wrangled 47 departments into harmony and know when to say no.
                 </Typography>
               </div>
             </SlideUp>
@@ -114,7 +113,7 @@ export default function InnovationsPage() {
                       <Typography variant="h6" uppercase className="mb-4">
                         Key Features
                       </Typography>
-                      <ul className="grid grid-cols-2 gap-3">
+                      <ul className="flex flex-col gap-2">
                         {innovation.features.map((feature) => (
                           <li key={feature}>
                             <Typography variant="body" className="text-grey-700">

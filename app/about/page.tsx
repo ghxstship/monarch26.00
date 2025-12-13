@@ -54,8 +54,8 @@ export default function AboutPage() {
                   Every legend starts somewhere. This one started with a kid who could read sheet music before 
                   he could read maps—and ended up navigating experiences across continents. Five woodwinds mastered 
                   at Indiana University. Classical training that taught precision, discipline, and the art of performing 
-                  under pressure. But concert halls don&apos;t prepare you for festival grounds at 3 AM when the main 
-                  stage rigging fails and thousands of people are waiting.
+                  under pressure. But concert halls don&apos;t prepare you for festival grounds when Mother Nature rewrites 
+                  your runsheet and 50,000 fans are already through the gates.
                 </Typography>
                 
                 <Typography variant="body" className="text-grey-400 text-xl leading-relaxed mb-6">
@@ -93,7 +93,7 @@ export default function AboutPage() {
                   Factory Town and Salvage City Supper Club became the proving grounds. Venues that never sleep. Operations 
                   that run around the clock. Integrating live entertainment with luxury dining for festival crowds that expect 
                   perfection. Every failure taught something. Every impossible deadline revealed what&apos;s actually possible. 
-                  Every 3 AM emergency added another story we probably shouldn&apos;t tell clients. Every crisis became a case 
+                  Every hard lesson sharpened the instinct for what&apos;s actually achievable. Every crisis became a case 
                   study in what happens when you refuse to accept &quot;it can&apos;t be done.&quot;
                 </Typography>
                 
